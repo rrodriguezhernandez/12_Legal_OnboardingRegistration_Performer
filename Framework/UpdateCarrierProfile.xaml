@@ -1,0 +1,463 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="UpdateCarrierProfile" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="In_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="In_TransactionItem" Type="InArgument(ui:QueueItem)" />
+    <x:Property Name="Out_BizExcpt" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="Out_Remarks" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1874,2233</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>UpdateCarrierProfile_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="UpdateCarrierProfile" sap:VirtualizedContainerService.HintSize="608,2168" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Truck Entry" sap:VirtualizedContainerService.HintSize="546,2057" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1840" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Search for Carrier Code" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="2" DisplayName="Type Into 'INPUT CarrierSearchText'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="%[k(Enter)]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="2351, 192, 171, 31" CvType="InputBox" DesignTimeRectangle="2354, 198, 167, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT CarrierSearchText'" FullSelectorArgument="&lt;webctrl id='CarrierSearchText' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='CarrierSearchText' tag='INPUT' type='text' class='md-text-field md-text-field--margin md-full-width md-text carrier-search-text' aaname='' /&gt;" Guid="41b0ff05-c0d0-458d-86ae-a7656935891b" InformativeScreenshot="2393445f6c6bc18bcaf36e6569fd4f9d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvTextArea="2380, 146, 126, 18" CvTextArgument="Hello, rpabot rc" CvType="Text" DesignTimeRectangle="2370, 136, 178, 38" ElementType="Button" FriendlyName="'Hello, rpabotrc'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='arrive_NavBar__helloUser arrive_NavBar__darkHelloUser' aaname='Hello, rpabotrc' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NCheckState DisplayName="Check it DOT search returns any result" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="541,510" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;Carrier DOT not found&quot;]" />
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,147" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Boolean">[Out_BizExcpt]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[Out_Remarks]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">Carrier DOT not found</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
+                    <ui:Return DisplayName="Terminate workflow" sap:VirtualizedContainerService.HintSize="479,25" sap2010:WorkflowViewState.IdRef="Return_1" />
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Carrier found&quot;]" />
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="2390, 246, 154, 16" CvTextArgument="! Carrier not found" CvType="Text" DesignTimeRectangle="2370, 244, 186, 24" DesignTimeScaleFactor="1" FriendlyName="'error_outlineCarrier not'" FullSelectorArgument="&lt;webctrl parentid='carriers-search-empty-content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='carriers-search-empty-content' tag='DIV' type='' class='carriers-search-empty__error' aaname='' check:innerText='*Carrier not found' /&gt;" Guid="de5ff4bf-6e1b-4a1b-9956-4cc9c55d3ce5" InformativeScreenshot="4a4d24ee1db5042bf50b284cf7b44d97.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="2370, 282, 186, 32" ElementType="Button" FriendlyName="'Go to carrier search'" FullSelectorArgument="&lt;webctrl parentid='carriers-search-empty-content' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='carriers-search-empty-content' tag='BUTTON' type='button' class='md-btn md-btn--raised md-btn--text md-pointer--hover md-text md-inline-block' aaname='Go to carrier search' check:innerText='GO TO CARRIER SEARCH' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL4AAAAkCAYAAAA3iYC4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUDSURBVHhe7Z3fShxJFMbnefIYYS/2NfIUeZLkdm/0JgTCEnKhIuyNhORSCKi4EiXojoo4OOo4zljxa/3MmZOva8q96p4+B344U3XqT1f9qpWGdHp3d3cJTKfTNJlMKm5vb58Yj8dB0Dqsw/QajtP3HoWn5Dc3N2k0GqXr6+sgaD1wGU7zMPAA9PABhR/3BunPTz/Si3cHQbBwwG04DtfhfA+nACcjpA8WHTgO1+F8Dyfg4uJCJgbBogHX4XwPfwOdnZ3JpCBYNOA6nO/h1n9yciKTgmDRgOtwvnd1dZWOj49lUhAsGnAdzof4QaeYEb/f78ukIFg04HqIH3SOVov/9tsgjadpJnYH49/y3u8NH2sfAm3Q1ucB1SfDtnv1Tz/9dzV5rHkINbZH9Y/5+Tw7Z1+fm6PNxXxUYN6YP3PsddW1YU7p2E2nteJ/7o+qxcZPlnFT7MYyTwkxb6NUW/D6y2ka3t7NjKPG9qAfhJ2zug5gBcRnW8exbDkPIuaF+aEM9RSWeX4OPke1sZSO3XRaKb5afEVdXulG1YlfJ4cSm/CwzJszYO7ZaFrh51l3XX6+ap7smwfU59RdGykdu+m0UvzSRc7loS63wUC19+LY/Jzc6AOBPn2dx+aqOZTKpyQO8R9opfjzNofk8ko26jnSgdyheI4Ydt5qPFWmfoup68f4CMxH5eC7Cl5T6dhNZyHEp3AM1qmNJ00V3/ehpOIcfHjx6iSm9Myxa5RbM1A6dtNppfg5iezG5fJKRFQ5OblzdegDYaVTqDwKzHlQPpTjO+fpx7Vrwbkh7PV40f13T+nYTaeV4nMTufgWu3F+k4i6iyqU+KBOjpzcuTlbUF8XbOuvi9eD8AfGzpPzs9ftc/x3T+nYTaeV4gNKaRebZXbjVB42DeGF9rCtz6PEViAKkbvzqYNh56f6Bb7cywdYZq9dScxrZ1ufo9pYOA7b27Jcu6bRWvEBF9yGWnwKxyjdoDrxgb3TMawMdag5s3/OU/WDMgRy2IfP43x5+FDvr5WHCIG+fA7HUfGcsW1dE2m1+EHwfwnxg04S4gedJMQPOkmIH3SSEH8O/ikHn8CoOoZ/kmKfAKmnHnX9qFw++WHYsfjExrfLPZ3qKiF+BisM5fWP/rzkCj4CRKh81Q8FxxxYpgTmoUFZiF9OiJ9hntil4lM8SmplBqofLzHqkOPbWkL8cmbEj39sPgtFrZO7RHz+poCQb+7zlJgl4pfIG+KXE29ZyMC7LEMJq8LmsQ/kso2XXJVBUgTv8CrHQ/HrIsT/xZP48UIpjZcJn1GGuhIZ/d3WCw3QjwqfUyp+3PHn8/RCKbxO7fT0NP3x93eZ2HUgHMRDlN6FIR8ktIeF/Vg5bT/2oFlRS+QN8cuA43C9eoUg3h2O9wn+9fXf9PLDnmzQdfzdep749rD4sO18PxxHHRiOrQjx5wO34Thch/PV25IHg0Ha399Pm5ubaX19Pa2urqaVlZW0tLTUOTY2Nqq36QJ8RtnR0VEl0O7ubvX9/Py8+s8FsF62LWE+fubKVT8oQ+Cnb8fxbR7KOOfLy8u0traWbdc1lpeXK6exxnAcrldvS8ZL8vHHPv72OTi4vwvdL9LOzk7a3t6u2Nra6hyHh4eVkDYgGutxx6iL4XBYvX8d/90Mfq3afvEd5ajHWqMfn2fHtmNSdIZtxzbsl21wEBC2n65Af+EynMa6wHG4PplM0k8sahJY1d5PqQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+            </Sequence>
+            <Sequence DisplayName="Update Overview tab" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'edit'" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1092, 304, 23, 21" CvType="Icon" DesignTimeRectangle="1095, 305, 18, 18" DesignTimeScaleFactor="1" FriendlyName="'edit'" FullSelectorArgument="&lt;webctrl parentid='carrier-details-tab-toolbar' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='carrier-details-tab-toolbar' tag='I' type='' class='md-icon material-icons' aaname='edit' check:innerText='edit' /&gt;" Guid="7d010920-e3ff-434b-8590-c255d289df87" InformativeScreenshot="1dee686c5168cc26762849d785cc8d5c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvTextArea="1008, 261, 83, 12" CvTextArgument="ACCOUNTING" CvType="Text" DesignTimeRectangle="995, 250, 110, 38" ElementType="ListItem" FriendlyName="'ACCOUNTING'" FullSelectorArgument="&lt;webctrl id='accounting-tab' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl id='accounting-tab' tag='LI' type='' class='md-fake-btn md-pointer--hover md-fake-btn--no-outline md-tab md-tab--inactive tabs-card__tab-selector' aaname='' check:innerText='ACCOUNTING' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAqCAYAAABvAA/nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPdSURBVHhe7ZfJaxRREMZz8ujdm+BNPHkRFUUUEQ8eBEFEXBBBRAQFFzyICC4oCiLuK664xN0/QURcY9yTOFkmezJZJuZc1q8zb+i0PXFidzB51MBHz3u1vFf1vap+XTE4OCiGiY+KfD4vhomPikkvasQw8WFEegIj0hMYkZ7AiPQERqQnMCI9gRHpCYxIT2BEegIj0hMYkZ7AiPQEqRI59XVGzrf1yfPcL9nf2P2HfGNNu9zsyMszlT9RXGnvlxVfW4ryxZ+ycrq1N5Chc7crLzsynTL5ZW0gn/GuXg425eRh90CwBs8DOp72JiMz3zfI9Y5+eaRza3+0FX2ebR3az7afncE88krF8tC6h9QHOqd07ftdQ77jgC+nW44/dBhH9018rDW3qqlokxSpErnyW6s8KGz2qpJEAE62XoMmEAK/oGRfVBAQZC393CyzPjTKNSUCAiHkTCGp6GzXhHBICB7fdzrzgfye2jI+0dIrs6sayyaSMfYcAHRc4o839wRgnUvtffJU54gHXeb2NnTHElnKHzrRffP/RiHOy5EcJUGqRFKFBA85j3MDskErkHlXqci21nUM0yfAffrcXd8VBHdSSXEVuEoPBuRTuTu1MknaLU3GvI9DJ5knY3R2ZbpGRaQ7IOhEKwg4XXxS7W6+FJGl/LnDHd435J3TfNzWuXAlJ0FqRFJRtE2qCFIIDFKQzdEWQiDIaJ/OZvrb+mC8oLpJjmklRJM55VWdLKzOyhLVcck5nM0V5cDZHcn2lE0k+6SaqRD8JyVyJH+A/y4XY4XUiKT6qEJaDMEQFJW5SP9DFiRGiQwjnPA4uUsOz7h5WmG5RDK3p9ABsA8n3tmNhsiR/AH+Mxe2B9G9JkEqRNIKOXEEQjUyFx7/rSJJ1EgVOV9bEu8n5GlUJHO0N95RtGUOQXTt0RJZyh/gv6tIWi2kc8jHHZG0Pkhiw1FwqaHtjvU7koSwBi19c+3QGrybWZ91t+i64cQjX6NjbN1ekxBZyl/cOxJ/cYcuCVIh0pHAKeNWBmixBEBgEOJurYDAOb0kHZtlX4bfWpGhgz06fILE3f54MubWCvlcNtAPr4E/9+6KJh6bcKtLSmScP+bYH2MOO3lxN3ZsV38fJ0TSUvjUiFYbOKrtjgB4Mt5U2x4kleQSSNx3JJ8myNzBKPc7Ejl63F4rC90BP/jj8wZ5NPHAVbVLvJv/FyJBnD/2R/cJ74vY16m9s0uK1C47hv8LI9ITGJGewIj0BEakJzAiPYER6QmMSE9gRHoCI9ITGJGewIj0BEakJzAiPYER6QmMSE9QIfbz4mdEevET+Q06GTaD2f9rKgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[Out_Remarks]" sap:VirtualizedContainerService.HintSize="497,267" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                <Sequence x:Key="V" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'V'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" DesignTimeRectangle="1146, 905, 20, 20" DesignTimeScaleFactor="1" FriendlyName="'check_box_outline_blank'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;i' idx='8' parentid='modal-confirmation' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='md-icon material-icons md-text--inherit' parentid='modal-confirmation' tag='I' aaname='check_box_outline_blank' check:innerText='check_box_outline_blank' /&gt;" Guid="d8a188bf-8cae-49d5-933b-acffaf36284a" InformativeScreenshot="a92a32912626078cb82a321df7a52440.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvTextArea="1180, 907, 7, 14" CvTextArgument="V" CvType="Text" DesignTimeRectangle="1176, 904, 10, 22" ElementType="Text" FriendlyName="'V'" FullSelectorArgument="&lt;webctrl id='carrier-editor-van-label' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='carrier-editor-van-label' tag='SPAN' type='' class='' aaname='V' check:innerText='V' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA4AAAAaCAYAAACHD21cAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE+SURBVDhP3ZQxqoNAEIa9VQ5gbxewCCIIKSxtU0l6m7R6gNwgF7BKI+kshCAKERGJFiIxTpjJLFHfazbdex8IM7P8y78zgwp8yV8SDsPAoRxKVVUcyqHkec6hHMr1eoXH4wFRFIGqqnC5XPjoA7oyTROOxyNXWHi/36FtW3AcB4Ig4KMP5/MZNE2DJEm4wsKyLCnBG23bhqZpKEfGcYTD4QCu60Lf91xl4e12oySOY7p5alfYPJ1OXHlDQtGgrutgt9vN7KLN9XoNWZZx5Q0J0zTlFOhmYRdn7Hkefct5/xBirOs62S2KAgzDgDAM+fTDzCqCDdjv92QXBZZl0TuXzJojQMF2u6X3+r5PnV1CQjEOAVrcbDawWq1oMX6DhLgAU8TsljOdQkJcOVm+X/K6rjmUQ3k+nxzK8f//cgAvAPNmxSB5RLAAAAAASUVORK5CYII=" SearchSteps="Selector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1219, 905, 205, 30" CvType="InputBox" DesignTimeRectangle="1222, 914, 200, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'15'" FullSelectorArgument="&lt;webctrl id='carrier-editor-vanCount' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='carrier-editor-vanCount' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text--disabled' aaname='Count ' /&gt;" Guid="6c840e22-2010-4812-bde7-0819d810794b" InformativeScreenshot="8a1774323767572146b301d840b0f5d9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvTextArea="1180, 907, 7, 14" CvTextArgument="V" CvType="Text" DesignTimeRectangle="1176, 904, 10, 22" ElementType="Text" FriendlyName="'V'" FullSelectorArgument="&lt;webctrl id='carrier-editor-van-label' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='carrier-editor-van-label' tag='SPAN' type='' class='' aaname='V' check:innerText='V' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA4AAAAaCAYAAACHD21cAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE+SURBVDhP3ZQxqoNAEIa9VQ5gbxewCCIIKSxtU0l6m7R6gNwgF7BKI+kshCAKERGJFiIxTpjJLFHfazbdex8IM7P8y78zgwp8yV8SDsPAoRxKVVUcyqHkec6hHMr1eoXH4wFRFIGqqnC5XPjoA7oyTROOxyNXWHi/36FtW3AcB4Ig4KMP5/MZNE2DJEm4wsKyLCnBG23bhqZpKEfGcYTD4QCu60Lf91xl4e12oySOY7p5alfYPJ1OXHlDQtGgrutgt9vN7KLN9XoNWZZx5Q0J0zTlFOhmYRdn7Hkefct5/xBirOs62S2KAgzDgDAM+fTDzCqCDdjv92QXBZZl0TuXzJojQMF2u6X3+r5PnV1CQjEOAVrcbDawWq1oMX6DhLgAU8TsljOdQkJcOVm+X/K6rjmUQ3k+nxzK8f//cgAvAPNmxSB5RLAAAAAASUVORK5CYII=" SearchSteps="Selector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                </Sequence>
+              </Switch>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="1722, 1112, 51, 13" CvTextArgument="SUBMIT" CvType="Text" DesignTimeRectangle="1715, 1102, 65, 36" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl aaname='Submit' parentid='modal-confirmation' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' parentid='modal-confirmation' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block md-btn--dialog button__confirm' check:innerText='SUBMIT' /&gt;" Guid="05bea3ab-1e66-4f12-b257-7681feb052c1" InformativeScreenshot="9954e49068f0374c61369f7e6ecc2817.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvTextArea="1645, 1112, 55, 13" CvTextArgument="CANCEL" CvType="Text" DesignTimeRectangle="1638, 1102, 69, 36" ElementType="Button" FriendlyName="'Cancel'" FullSelectorArgument="&lt;webctrl parentid='modal-confirmation' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='modal-confirmation' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block md-btn--dialog button__cancel' aaname='Cancel' check:innerText='CANCEL' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAAoCAYAAACy29cjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGoSURBVGhD7ZY7jsJAEET3iMSkEBMTk3IRDkHMHbgDKXGvSt7Slhobah0go60njfD8PN1vZiy+KrwkkgwiySCSDCLJIJIMIskgkgwiySCSDCLJIJIMIskgkgzmSToeq1ar33K5/HQIt1vVdjuM7aANfRijnE6P49Gma6FOuIb2s+z3Vfd71fVatdkMvzP5myQsisUZAMDi6/WjKNQ5tsugZE0YdEldJqVwHutjm0TeLgnBTJ0AFUeZ5/Pw22UgeQTeg1dJU8lpDIuUhAR0p6dAQLvdkEQXCPgeFO1TSWPzOouTxNPRT8UYmiwSgTANkoJ6kjqPY57B+f17hMJ3LlISxh0Oj1J0ngrQ6zNX0sddNwQ8trMUAfQ9lI+6SsLzx103oLuuaDuTVXoyKgkwEZxAtk8lp+2LlMRd1x1moBCD5/79ISqmSwKYjxOn7XjWTdFTBxYpiSBIvUoM8tkVwRj8n0KwmK8yABPu7ZTHoqeUc7SfhXKxHtbt/X2dJ8yT9M+IJINIMogkg0gyiCSDSDKIJINIMogkg0gyiCSDSDKIJINIMoikl1R9AxEimnMhEB44AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Update Contact tab" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CONTACTS'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="686, 261, 67, 12" CvTextArgument="CONTACTS" CvType="Text" DesignTimeRectangle="688, 261, 65, 13" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'CONTACTS'" FullSelectorArgument="&lt;webctrl class='md-tab-label' parentid='contacts-tab' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='md-tab-label' parentid='contacts-tab' tag='DIV' type='' aaname='CONTACTS' check:innerText='CONTACTS' /&gt;" Guid="b00599f6-1ed4-4be0-a1b9-16a0fb943d19" InformativeScreenshot="e502e92dd7d477c60b465678fc9be294.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvTextArea="577, 261, 65, 12" CvTextArgument="OVERVIEW" CvType="Text" DesignTimeRectangle="579, 261, 62, 13" ElementType="Text" FriendlyName="'OVERVIEW'" FullSelectorArgument="&lt;webctrl class='md-tab-label' parentid='overview-tab' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='md-tab-label' parentid='overview-tab' tag='DIV' type='' aaname='OVERVIEW' check:innerText='OVERVIEW' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEIAAAARCAYAAABpTnqxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANMSURBVFhH7ZZLa1NBFMdd+QH8Gi5cC64FFy5EXIgIgghuRFwKbgRx4cKFC0EEFREREUFFEVFc+OimPmrbtKZq0jZNk6ZN82reyfH8JvdcppcboWvvwCGZc2bO4z//OXN37f6YlkTSkgARSAJEIAkQgWwD4sDUkrzd3JLWYCgMft/ofN+XrNxarchAddl2z62zPXcLVWE1+ucbDbcvOnKdnrwqb7exp9ofyMO1mpxJF6TcG7h4l7Kl0Pdp1bMG/ZNSXWr6H18Hp5fljsaNG6Ve30lD95z/veb8PC7VnI1amJ/8uSoV9VXs9uVIasXpQiD2TmZkqtF2GzY0qZmtjlvMmKy35ZRuRt/UABczo2T3TCzIt2APIFhyaxrgR6MTCuA+C0AyW0r9U2BfdTdWNuWr58dyMvAzCvLlxfVYIOJizTU7bt/N/KbzY74XWl1X59WlDekMh24dNbAmBOJKYASlY6m80/HL3E7qc63lHFqyx+fyDpx6fyjnfhXD5N5VRsj7EmczBqG7nitLT2lC0fu/Lzo7BcCcR8oaDiIOiLhY94sjGww4NJOTfAe4RwdMzmb3QQ+BMPq8rzRDI2LFE/jaclm6mpkhC+IgP98czS05kH5QrDm5p0GPKv2iiXO9YIUVeng2JwUF3SgdBXkcEHGxYE9bD3Va/cNeWPyn3XU62EBNgA74VmcIBAkyogj7ekvWksMhhdAnWGvJ+QOWwbY4GyOtoOKX/R+qzRAYY8isFgN9xwHhD4vFvYfJMIHeAgD0IkB+Xd5yrOPa0yuszh0xgjmAkOzT9boLRpMzh5bcp2rLJY5go9majTtN/yEp5ELQ0BC7nhQ/oXFhG30C2zgg4mIBHEzBP+wlz7MLBbeXpk7O/hVEdtQj0PHLHERZT7O0hmPJRVkVZ3uh9xNAacS2n+tCovjntfBBHgdEXCyE+49/wDRWcajM0UcPPAQi+mrQgfllxCXLwGqdGfFPPdrJ7dWwxE/Mj14hH2TkpffM0ixNPw6IuFictF0tBmzHhz31yO2AaSYhEMi/viP8ddbtYYu9w4glFx0kb98R/gkaK2hqHAQ6a27RZjYOiOgwu32DWN/AB03YrqR9Y5hsA+J/lgSIQBIgAkmAcJKWvz/wbyUeA8H/AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ACCOUNTING'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1092, 290, 25, 22" CvType="Icon" DesignTimeRectangle="1094, 291, 20, 20" DesignTimeScaleFactor="1" FriendlyName="'person_add'" FullSelectorArgument="&lt;webctrl parentid='contacts-tab__toolbar' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='contacts-tab__toolbar' tag='I' type='' class='md-icon material-icons md-text--inherit' aaname='person_add' check:innerText='person_add' /&gt;" Guid="15f105b5-f022-41bd-b59f-f4c01e1fe2c5" InformativeScreenshot="be660af3da669ed39e64e85ba3ce6f56.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvTextArea="1008, 261, 83, 12" CvTextArgument="ACCOUNTING" CvType="Text" DesignTimeRectangle="1010, 261, 80, 13" ElementType="Text" FriendlyName="'ACCOUNTING'" FullSelectorArgument="&lt;webctrl class='md-tab-label' parentid='accounting-tab' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='md-tab-label' parentid='accounting-tab' tag='DIV' type='' aaname='ACCOUNTING' check:innerText='ACCOUNTING' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAARCAYAAABD/oseAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANcSURBVFhH7ZbJaxRREMY9efTuTfAmnryIiiKKiAcPgiAiLoggIoKCCx5EBBcUBRH3FVdc4u6fICKuMe6TOMlkkslkJpPVe1m/nqmm+6V7nDjtrQ8f3a/29716y6TJLzOSIjmkhCaMlNCEkRKaMMYROu1NVi70DcuLym85kBsI6cCmTFFu9Y/Kc9U/VVwtjsjKb72+fsnnvJwpDHk6bO6VR2VntiRTXrV7+pnvO+VQd0UeDYx5Ofge1PH0t1mZ9aFLbvSPyGOVrfvZ58c8V6jWs/1XyZOjb1GsCOQ9rDGwOa25H5SrsaNALLNtJB42jN26mR+55rV2+z5gHKGrvhfkYc3pmpJFINNt0OQEpICLSvolBYEhbdmXHpn9MSfXlRCIhJiztclhs0MLY7Eogth3S6Oe/r76Mj7ZOyRzWnMNE8oYfxYCGyPgRM+gB/JcLg7LM5UxH2yR7esaiCQ0Lh42bt3836zN84rD0ThC6UqKgKQnlTHZqB2J3DoX3baO/pA9ifbrd09n2UtySsmxjlytC8Qi0Mm7tFMp/rYWNf9TdWX5MsZmd7Y8IUJtobBxOwqYLTHpfpPHERoXz5osWDcknlc+7qgs2NkhQukwtjNdBTkkgBx0c7W1CYiObW0+M951euOFbd1yXDvDndTU1x2yqC0vS9XGijySr/h6YH5H84MNE0qddDcdQ/xmCa0XD/BvXNRDiFC6ka6k9QlKcDp1sf5DGmS6hAYRnHiU3orkGyVnizZKKLK9tR2Bf5AA85sIofXiAf6RBf2BW6tPKFuUFSAg3YksOP5bh1JwvQ5doFuF8wt9Eh2KjG3HGcZxwWK4uSdKaFw8wL91KEcA5NNssYSyJSELRxdcPhwH//sMpTBycNRsaa/m4OwmP3m3at4gAejX6hhfq7UZQuPiRZ2hxItafJ9QIwPWucUAW59AJIAYu+UBBbCaTB6f5V/Dtzw6bPDHhqdT1G3JlzG3PIvApYB9MAfx7GxzCcAnuAWbJTQqHjLqY0zTwYu9cPBd88MhlFbnieR2Hzim25BAfBlvbi96k2OSBIx6h/KkQmcL1Og7FD123PYttd1CHOLxLEPvEgCsy40Ak/8LoSAqHvWxG4N1Mff16m9+IHQppWgeKaEJIyU0YaSEJoqM/AFSCFEqQQqkjAAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Update Address tab" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ADDRESSES'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="793, 261, 73, 12" CvTextArgument="ADDRESSES" CvType="Text" DesignTimeRectangle="795, 261, 70, 13" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'ADDRESSES'" FullSelectorArgument="&lt;webctrl class='md-tab-label' parentid='addresses-tab' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='md-tab-label' parentid='addresses-tab' tag='DIV' type='' aaname='ADDRESSES' check:innerText='ADDRESSES' /&gt;" Guid="885bf171-5039-4ff0-9cdc-765585bd943a" InformativeScreenshot="d324dfe3db4648e6ef9b58f9f90b8a84.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvTextArea="686, 261, 68, 12" CvTextArgument="CONTACTS" CvType="Text" DesignTimeRectangle="688, 261, 65, 13" ElementType="Text" FriendlyName="'CONTACTS'" FullSelectorArgument="&lt;webctrl class='md-tab-label' parentid='contacts-tab' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='md-tab-label' parentid='contacts-tab' tag='DIV' type='' aaname='CONTACTS' check:innerText='CONTACTS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAAARCAYAAACLkmHIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM2SURBVFhH7Za7a1RBFMat/AP8D6wtrAXBzkYsLIMIgijio7Cw00pRES20UGwULEQRFHwVIlj4RBI1msRk89okm93NJvt+P7LH85tkrrObu+4NWt6Bs7tzZuY73/lm5sxu2fo+IqF1WiiKj4Wi+Fgoio91iHI9lpFEoyVtEWmpzdaacnYm5Y3vG4nJYLEmTSZoK7ba8iBVkG2fJs34WLlu/B/yVc93eCIhhdaqxOpN+VqqmXG/Vm+35eJ82qx5qJiEiGr83cPzXnysF0cbp1eDG1hvsmUpr64lQB7kQ15uDE+UywtpqepkyE1UGhKpNsyiTHNVjkaSsvfngswrAeDi9ZYJAjj95+mSwbCigHFF8fC5orzQeT9KdWP59QTApD+k5E5NLcmu73MmURp8zkWXPbJ/43hzMSufC1WDNaV+0Cs6d1Q54Xu6UpR3+YrBTet8fOQBf3B2DkW9OEaUHYOzMq5BALqTyHmDLzMlA/JMk7mXzG8AODOdkpIGhtQhTd6KQiNZhHRFoW+x7dy7imt9GCKQeE7XkDCJ4A/C0fo4cQjnxtyjp2ROOeG/tH4i94/GZKbWMOIcHE94640oB8YWZUmPJORJwg6ya/QHxuPyUXeBdn/pTxIQnVSRCAQREuU3gewJ2qwoiMDaJ7qzcGJXB37FA3G0Pj9RsNd6dcDmhL/NVeT4ZNIbc82IYol3B3StVxKu34pyO54zCbDb17QGBBWFnUvqOq7WEb2y1CB7MoJwtNZLlO1fZuTRcsGrKXwu6hzKg7s+0EkBeDMnhd+34lmvEHLFgohC8ojANQEbDNs/ofWmH0fr6yWKNcQ5H10xuAjDyXYL+n+vKVYUMIed16afKLxWFEW/RowLivkvNYWaQe1AAE4kPr55ybqFNqJgtrJjEJ7W5NnprC44qbsEuPv6jOgcwOi7r48VhT6vCVeI1k+U0zqXJ571Y5W1FwNLKWkayffjaLH9RLGbZPmDbWtfNzdPFOyGPmsUNia6/wHseJD/Ka4o2OPlom/gblHsjn9T4hYPu7qQkYYCUGvY2X4cMT9RMK7IK40DbxrredqPdRXcDlFCW7NQFB8LRfGxUJQNFpHfmF/jSFpf0BgAAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'ACCOUNTING'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1090, 295, 19, 19" CvTextArea="1092, 297, 15, 15" CvType="Icon" DesignTimeRectangle="1090, 295, 20, 20" DesignTimeScaleFactor="1" FriendlyName="'add'" FullSelectorArgument="&lt;webctrl parentid='tabs-card-panel-2' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='tabs-card-panel-2' tag='I' type='' class='md-icon material-icons md-text--inherit' aaname='add' check:innerText='add' /&gt;" Guid="4094931f-94c9-471c-96e5-ea1c145c5b7b" InformativeScreenshot="a1300df4d1784273853354356a4b202c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvTextArea="1008, 261, 83, 12" CvTextArgument="ACCOUNTING" CvType="Text" DesignTimeRectangle="1010, 261, 80, 13" ElementType="Text" FriendlyName="'ACCOUNTING'" FullSelectorArgument="&lt;webctrl class='md-tab-label' parentid='accounting-tab' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='md-tab-label' parentid='accounting-tab' tag='DIV' type='' aaname='ACCOUNTING' check:innerText='ACCOUNTING' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAARCAYAAABD/oseAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANcSURBVFhH7ZbJaxRREMY9efTuTfAmnryIiiKKiAcPgiAiLoggIoKCCx5EBBcUBRH3FVdc4u6fICKuMe6TOMlkkslkJpPVe1m/nqmm+6V7nDjtrQ8f3a/29716y6TJLzOSIjmkhCaMlNCEkRKaMMYROu1NVi70DcuLym85kBsI6cCmTFFu9Y/Kc9U/VVwtjsjKb72+fsnnvJwpDHk6bO6VR2VntiRTXrV7+pnvO+VQd0UeDYx5Ofge1PH0t1mZ9aFLbvSPyGOVrfvZ58c8V6jWs/1XyZOjb1GsCOQ9rDGwOa25H5SrsaNALLNtJB42jN26mR+55rV2+z5gHKGrvhfkYc3pmpJFINNt0OQEpICLSvolBYEhbdmXHpn9MSfXlRCIhJiztclhs0MLY7Eogth3S6Oe/r76Mj7ZOyRzWnMNE8oYfxYCGyPgRM+gB/JcLg7LM5UxH2yR7esaiCQ0Lh42bt3836zN84rD0ThC6UqKgKQnlTHZqB2J3DoX3baO/pA9ifbrd09n2UtySsmxjlytC8Qi0Mm7tFMp/rYWNf9TdWX5MsZmd7Y8IUJtobBxOwqYLTHpfpPHERoXz5osWDcknlc+7qgs2NkhQukwtjNdBTkkgBx0c7W1CYiObW0+M951euOFbd1yXDvDndTU1x2yqC0vS9XGijySr/h6YH5H84MNE0qddDcdQ/xmCa0XD/BvXNRDiFC6ka6k9QlKcDp1sf5DGmS6hAYRnHiU3orkGyVnizZKKLK9tR2Bf5AA85sIofXiAf6RBf2BW6tPKFuUFSAg3YksOP5bh1JwvQ5doFuF8wt9Eh2KjG3HGcZxwWK4uSdKaFw8wL91KEcA5NNssYSyJSELRxdcPhwH//sMpTBycNRsaa/m4OwmP3m3at4gAejX6hhfq7UZQuPiRZ2hxItafJ9QIwPWucUAW59AJIAYu+UBBbCaTB6f5V/Dtzw6bPDHhqdT1G3JlzG3PIvApYB9MAfx7GxzCcAnuAWbJTQqHjLqY0zTwYu9cPBd88MhlFbnieR2Hzim25BAfBlvbi96k2OSBIx6h/KkQmcL1Og7FD123PYttd1CHOLxLEPvEgCsy40Ak/8LoSAqHvWxG4N1Mff16m9+IHQppWgeKaEJIyU0YaSEJoqM/AFSCFEqQQqkjAAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address *'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1010, 679, 181, 30" CvType="InputBox" DesignTimeRectangle="1013, 687, 177, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT address-editor-fo…'" FullSelectorArgument="&lt;webctrl id='address-editor-form-address' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='address-editor-form-address' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Address *' /&gt;" Guid="b29b2b13-5792-445f-ad19-e48c59427151" InformativeScreenshot="2e52529a0e244db356ed19fddd55aa37.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvElementArea="1010, 679, 181, 30" CvType="InputBox" DesignTimeRectangle="1013, 687, 57, 13" ElementType="Text" FriendlyName="'Address *'" FullSelectorArgument="&lt;webctrl parentid='address-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='address-editor-dialog' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' aaname='Address *' check:innerText='Address *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD0AAAARCAYAAABuDKSkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALbSURBVFhH7ZRZSyNREIXnT/soeROffDCouGKI4i7RgFFxAUUFN8QFXNCgRg2K0Zi4L0e+mr5tZ8wMDnkR4oGmk3tvV9U5dW79Uhnih3S5oCTSt7e36uzs1Pn5ubfygaenJw0MDCiZTHor3wdFSV9eXqqhoUFHR0feSnF8d9LknpiY8P59oCjpxcVFNTU1aWxsTK+vr97qZ3xX0mdnZ1pYWNDa2pqmpqa0tbWlzc1Nb7cI6bu7O3V1dWl7e1sdHR3WdYe3tzft7OyopqZGVVVVSiQSamtr80mnUikTKxQKaWhoyPYg7QSYnJxUbW2tVldX7fzJyYkikYgqKirsfXFxYeuISWzikAcCTvyrqyv19vaqsrLS6oAMdQXBWeqOxWJqbGzUwcGBHh8f/XOfSGPp/v5+3d/fW6ddgQByzc3NOjw8tMC7u7uqq6uz9Vwup2g0aqqyd3p6qnA4XECauJlMxv7zJtbe3p6dX19fNzIUNzMzY7Z8fn7W9fW1CcK5l5cXDQ8Pa3l52QjQUWKk02mvwg/s7+9rZGRE09PTxiEoTAFpkkMUewMSuUIAdqEDnANBeyNEd3e3Hh4ebC9ob/cbxR3+FYv85KVbFEtMYrj6RkdHdXNzY3s0BzGCYB2n8j3OXVlZMQEdCkhzqKWlxVcun8+rvb3dH2goFhwMwUIhBzGKA8VI89uBWNg6+GBZxKNAOk8t1dXVmp2d9ePSgPn5eRu02BvxnHBfRQHpYoXwuIFWaqeDpIk1Pj5eYDvwZ/foVF9fn513ey4/V4SmkPt/4JNGwZ6eHm1sbHgrv3F8fGwDKZvNGrlS7nSQNEOrtbXVLA8Z7u7c3JyRRGS6S8cR0ZGmRmyPC9w3JZHGwhRN8UGQmEmMGCTinjOBmax0fXBw0EgDpjECYVMmJ3t/Iw2C07u+vt5ik4NrFY/H/enNMHJzhSuIo9z0Xlpa8jv/VRTYu1zwQ7pcUIakpXec/2P3KsJh9gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'City, St *'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1195, 679, 180, 30" CvType="InputBox" DesignTimeRectangle="1198, 687, 177, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT address-editor-fo…'" FullSelectorArgument="&lt;webctrl id='address-editor-form-city-state' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='address-editor-form-city-state' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='City, St *' /&gt;" Guid="3f5d6847-907d-41a0-803a-f0a0dfacab02" InformativeScreenshot="b5c3626f2161d491b8ffddd9f5b7c628.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvElementArea="1195, 679, 180, 30" CvType="InputBox" DesignTimeRectangle="1198, 687, 48, 13" ElementType="Text" FriendlyName="'City, St *'" FullSelectorArgument="&lt;webctrl parentid='address-editor-form-city-state-menu' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='address-editor-form-city-state-menu' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' aaname='City, St *' check:innerText='City, St *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAARCAYAAACSGY9uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKJSURBVEhL7VbdSyJxFN1/2mcfhN5U0gdBJEQTw+8PBEFBMM1MMTU/QEFFsYdSNLUixe5ybv5mG21W28SNZQ8Mzp35zW/uOffcO/6gfwz/CX13fIrQYrGg4XBIr6+vqyvfDxuERqMReTweUqvVfITDYZpMJnzv9vaWTk5OaDwecxyPx6lQKPD5Z7FcLqlYLJLRaCSVSkVms5kajYYkVrvdJq/XS/P5nON14HokEqG7u7vVlTfICE2nUzo9PaVSqcQvxEPZbJZcLhe9vLysVv3CVwhVKhXe9+HhgWNUHmI1m02OlQjBJblcjur1OoVCIRYhnU5z7oCMEJIDa5ARmM1mZLVaqdfrsRoOh4MGgwFZLBZWFgdejETsdjs9Pz/zc0jUZrNtKCgAMTKZzCp6Q7lcplQqxffE3nq9fmMPvKNWq5FWq6VEIsGOETnLCG1TXBB6fHzk+P36p6cnri6IAyDo8/kULYMKGAwGVhvPruN3loNbUB1YFu0hqgNIhPAgNvhTQvB+Mplk1XG+TRwA+wWDQe7Vz/QQXINqoioQDr0tsLcKAd1ul/sCFnC73RtWUQISa7VabGP0FrBtKChBRujq6mqnHlIiBG+fnZ3R5eUlBQIBxWSwDskKewrk83neE9gLITHlqtUqk8JmmHKiFz4idHFxIfsuwXIajUYiCkH6/b5MJKw/Pz9n/4sph1/EEBUAIafTKQ2ZXSEjBLz/Dh0dHVE0GpUIrBPqdDqk0+nI7/fzOAXgZ5PJJNlNSWmsv76+lr5D+IUYYh2EAKHj42Oeqrtig9BXAUKYQCIxVArD4lDYKyGQiMVidHNzwzGqgPj+/p7jQ2BvhGAL2AYW/ehfxaGwd8v9XRD9BE6CMKLCyVxqAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Postal Code *'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1380, 679, 183, 31" CvType="InputBox" DesignTimeRectangle="1384, 687, 177, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT address-editor-fo…'" FullSelectorArgument="&lt;webctrl id='address-editor-form-postalcode' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='address-editor-form-postalcode' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Postal Code *' /&gt;" Guid="719e364c-3efa-49a9-a004-c8931e64b61c" InformativeScreenshot="651005b9e586456160cf4b33724f5233.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvElementArea="1380, 679, 183, 31" CvType="InputBox" DesignTimeRectangle="1384, 687, 79, 13" ElementType="Text" FriendlyName="'Postal Code *'" FullSelectorArgument="&lt;webctrl aaname='Postal Code *' parentid='address-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Postal Code *' parentid='address-editor-dialog' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' check:innerText='Postal Code *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAARCAYAAAChIpBnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANUSURBVFhH7ZZZSyNREIXnT/sovvmmPgQNKIqSCCouoIgLcSEQxQUx7ii44hrc17jV8NX07blp0p3FHpiHPtBo7lJ97qlTdfuXRAgNkZghIhIzRPx3YqZSKVlZWXF+/TscHBzIwMCAvL+/OyM/hysmB6ipqXGfuro66evrk1wu56yoDpCFNOTLQZCYt7e30t/fr9x4RkZG5OHhwZmtDNWKyfrR0VG5urpyRv6iQEw7+NfXl6yurkoikZDHx0cdqwZhiQmHZDIp2WxWuRF3YWFBE57P551V5aNSMT8+PmRpaUm2t7dleHhYdnd3JZPJFGjjKyZ4fn6W7u5uNwunp6fS1dWlzm1tbZXDw0P5/v7WOVzDwWpra6WxsVE2NjZ0X1NTk+t2hAJ2nJaWFjk6OtJx4CcmYzgCIQ2enp6ks7NTTk5O9LfNIRaLyfr6usuPc01PT6ujeef4+HjBeW1O/C1Wka+vr7K1tSUNDQ0yMzMjd3d3BXwCnYkgHR0dcn9/Lzc3N9LW1qYZYe74+FjnEOzz81Oztby8rOTPz8917cXFhcaznUks9u3t7ela4iEIwgA/MYPKH7y8vKhz4QC/6+trFWV/f1/n2dvb26vvgdPU1JR7XnM2OLF3bW2tqOP5zTmpWNqNt2J9eybZpcTJGCDA2NiYmwmESKfTMj8/r2MTExOabXoYc2QRkb1ispY54xgOhwjG/cVEMzGCxMTdPT098vb25oyIOhPO7B8aGtLEGdhl7j2btyIN4IrQrEP4s7MzZ+YPAsvcBvOmTA3sMbI2Nzcn8XhcyxyCvNQrJiJChDZhEkcrCBITlHJmsR5oxnCtzQHY64lrG4kHM9ntpxyULaafM3mME80cZUPpQsYrJqVPmV9eXuo+rwv8RFtcXAzsmX7OpCxJdClnTk5OutVSLcoW09szsbjpi5Clx1ACEKIxe8Xc2dnROBycXkY84mxubkpzc3NJMc1tznr2EZfbfHBwUP/39kwuI95DFQBi+vVMLpv29nbtr4Y/NzUGqQRliwmCbnMaPs4wtzmfEcZFiFxfX6+3KWP0WX7zzM7OqvCm/wSVs/2dyV56NM42KHWbU0XshR/v5TvVnNf7hWEuyErgihnh54jEDBGRmCEiEjM0iPwG0bjwI5hbtz4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="1722, 860, 51, 13" CvTextArgument="SUBMIT" CvType="Text" DesignTimeRectangle="1715, 850, 65, 36" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl aaname='Submit' parentid='address-editor-dialog' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' parentid='address-editor-dialog' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block md-btn--dialog button__confirm' check:innerText='SUBMIT' /&gt;" Guid="466aad43-bba8-458c-aeff-02722206d7c1" InformativeScreenshot="fd06845d8889d92e70721e79d84163c1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvTextArea="1645, 859, 55, 14" CvTextArgument="CANCEL" CvType="Text" DesignTimeRectangle="1638, 850, 69, 36" ElementType="Button" FriendlyName="'Cancel'" FullSelectorArgument="&lt;webctrl parentid='address-editor-dialog' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='address-editor-dialog' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block md-btn--dialog button__cancel' aaname='Cancel' check:innerText='CANCEL' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAAoCAYAAACy29cjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG1SURBVGhD7ZbNbcJAFITTituhCOiABiiAO5XQA0fXQAu++rjRWJlk9LBh4kNklPmkFd4/73vf7lp8tPCSSDKIJINIMogkg0gyiCSDSDKIJINIMogkg0gyiCSDSDJYJelyubSu675L3/dfPT8Mw9AOh8M0toI29GGMcr1eH8ajTddCnXAN7Wc5nU5tHMd2v9/bfr+fftfyK0lYFIszAIDFd7vdgyjUObbKoGRNGFRJVSalcB7rc5tE/lwSglk6ASqOMm+32/RbZSB5BF6DV0lLyWkMm5SEBHSnl0BAx+NxSqIKBHwPivappLl5lc1J4umop2IOTRaJQJgGSUE1SZ3HMc/g/Po9QuE7NykJ487n84MUnacC9PqslfR21w0Bz+0sRQB9D+WjrpLw/HbXDeiuK9rOZJWajEoCTAQnkO1LyWn7JiVx13WHGSjE4Ll+f4iKqZIA5uPEaTuedVP01IFNSiIIUq8Sg3x2RTAG/6cQLOarDMCEazvlsegp5RztZ6FcrId1a39d5xmrJP03IskgkgwiySCSDCLJIJIMIskgkgwiySCSDCLJIJIMIskgkgwi6SWtfQIeISCBFZdv0gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Update Scheduled Lanes tab" sap:VirtualizedContainerService.HintSize="450,1243" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Origin *'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1145, 313, 195, 30" CvType="InputBox" DesignTimeRectangle="1148, 321, 191, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT trucks-card-origin'" FullSelectorArgument="&lt;webctrl id='trucks-card-origin' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='trucks-card-origin' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Origin *' /&gt;" Guid="dee08cb8-b2e3-4926-b40e-4744a1eca30f" InformativeScreenshot="baf2e4ec6b797df1ed66ce7767975b44.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvElementArea="1145, 313, 195, 30" CvType="InputBox" DesignTimeRectangle="1148, 321, 43, 13" ElementType="Text" FriendlyName="'Origin *'" FullSelectorArgument="&lt;webctrl parentid='trucks-card-origin-menu' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='trucks-card-origin-menu' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' aaname='Origin *' check:innerText='Origin *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC8AAAARCAYAAABNV/VxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIBSURBVEhL7ZTbi0FRFIfnn/bszaPiQbkkRB7kkgdyiaLcihRKCuWBIoXcb2v6rTnbbHLmkjOmqfnqxNpWe397nWW90B/mX/63eFh+sVjQarVSInUOhwNNp1M6n8/KyuNcyWPjVqtFFouFdDod2Ww26nQ6qgcej0eKx+NULBaVFXWGwyE5nU6azWbKytfp9/uUTqeV6J0r+Xq9zgdMJhM6nU40Ho85bjabSsZzGY1GXBh4ZTIZLqzscpFfLpfkcrloMBgoK28g9vl8tNls+DJut5sSiQSZzWaOUZFarca5+/2ecrkc6fV6MhqNlEqlyOv1clshF/uI71gvlUqcZzAYWBIFk0GMVotEImS1WqnX69Fut7t0wkVe3lxmPp+Tx+Ph3/GYTCYql8t8WWwuyzcaDd4D/wP0OKrlcDjuymOfSqXCeaiw3W7n9Vu63S7FYjHKZrN8jtzCF3lUGC1yK48Yhwp5VAziAiEPiXA4zK9WgF5Vk5cLhTcWDAY5Xwai7Xabq79er6larfI5gm9X/jZHyN8TeFT+M77d82rymDzRaJSnk+Bp8kCeNnhl+JSnzUfyAHl+v/9LPa+5PIQ/mvOfyUO4UCjw9MAUCYVCz5N/FFxSXBRAJhAIsNxPoKk8JkMymeRZvN1uufL5fP7qQlqiqTwqDFm0DR5xkZ9CU/nnQvQKoYDjtLu45O0AAAAASUVORK5CYII=" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Destination'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1350, 315, 196, 29" CvType="InputBox" DesignTimeRectangle="1354, 321, 191, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT trucks-card-desti…'" FullSelectorArgument="&lt;webctrl id='trucks-card-destination' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='trucks-card-destination' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Destination' /&gt;" Guid="7de26023-71b0-4358-b107-6f4ff247938b" InformativeScreenshot="f3472f911acc8f6e7a0317e3ccde6f66.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvElementArea="1350, 315, 196, 29" CvType="InputBox" DesignTimeRectangle="1354, 321, 66, 13" ElementType="Text" FriendlyName="'Destination'" FullSelectorArgument="&lt;webctrl parentid='trucks-card-destination-menu' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='trucks-card-destination-menu' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' aaname='Destination' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAARCAYAAABgpdrLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK9SURBVFhH7ZbLayJBEMb3n/Yo3kQI6EHwoggRRTHxfRDFFwqGiEhIFERBPWmi+CQxPhJr+Qp7tuM6EzcKe5kPBvpd1b+urp5fpOuodDAq0sGo6L+AWSwW9Pb2tq9dRrvdjsbjMW23233LeVLAwFGXy0UGg4G/q6sryuVyF9lAJpOhWq3G5Y+PD0omk3R3d8f1n2qz2VAoFKJut8v12WxGbreb+v0+18/VX2CEofV6Tff39+T1emm5XHLbTyWDuZQOwVxaqmAghGUsFqOnpyeuf35+0sPDA1mtVjKZTJROpxkghPmIBLSbzWaOiNfX1y9RiI1gQzIolAuFAt3e3pLRaKTr62sajUbch+vRbrfJ4XDwfNE3HA7JZrMp62IN2Pf5fNwHwU6pVGJf8MHX1WrFfVo2hTTBQNgAFoLq9TovgrAFkHg8TpVKhfuKxSKPA0z0Yxw2BaFdjhi5jjKugMgPqOMDlOfnZ3I6nTQYDLherVYVuIcRI4PBWEAJh8Mc7fAVYJAacLhaNoVOAhONRpl2JBKhVqu17yEeKxwFoGAwyMZgAOPRDsGoFhi5T14T+ej9/V1x+OXlha82fNUCAxgYJ+cb+IW2+XyuaVPo5IgRjojwFR/IwxGQf3x85DUsFguf2LlgxNW12+2KPaz/HRi5LCS3nQ1GzjEoI2I6nc6+949wojhZnDAEUDc3N7wp6KdgcBX9fj9fTQibwua+A6MWMbjek8nkPDDYKBKU/Cpho4FAgB0FDEBClOBkU6kURwkA4hodgimXy8qVOBVMo9HgdWAfdbyShxHTbDZ5ngwGduQcg7HZbJZ9FDnmn8GIkD32HyO/SsjmyCnT6ZT78AIlEgnlVcrn88qL1ev1eA4iTiS7U8CIpIk1MR8J3uPxcJ6AcCiwJfyUrw/ma71KJ4PR9VU6GBXpYFSkgzkqot9c/5FnXSXuMwAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to expand equipment type dropdown" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" DesignTimeRectangle="1312, 368, 65, 60" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'V'" FullSelectorArgument="&lt;webctrl id='trucks-card-select-field-toggle' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='trucks-card-select-field-toggle' tag='DIV' type='' class='md-paper md-paper--0 md-fake-btn md-pointer--hover md-fake-btn--no-outline md-select-field md-text' aaname='' /&gt;" Guid="8a349ca4-9f61-48bd-81c2-3b8dca8bd7ec" InformativeScreenshot="58f2e70fa08a52c6ee0aeda3b095bdd7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CvElementArea="1145, 394, 151, 29" CvType="InputBox" DesignTimeRectangle="1148, 392, 147, 18" ElementType="InputBox" FriendlyName="'TEXTAREA trucks-card-no…'" FullSelectorArgument="&lt;webctrl id='trucks-card-notes' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='trucks-card-notes' tag='TEXTAREA' type='' class='md-text-field md-text-field--multiline md-full-width md-text' aaname='Notes' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJcAAAAWCAYAAADNcw4EAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIqSURBVGhD7Zc5qyJREEbnTxu+VIwUE0EUwQ3FFTQQRUUQIxXUSDEQEUQFV9y3Gr4au+nn8oKBG0xPHbjY1O0l8FBf3V8kCIoQuQRliFyCMkQuQRkil6AMkUtQhsglKEPkEpQhcgnKELkEZYhcgjJELkEZIpegDF2u3W5HXq+XKpUK3W63R/VPPRwO02w2e1Q+cz6fKZlM0mAweFSE/5kXuaxW6zc5RC7hb3mRC3IEg0Habrd63SgXBKpWqywhVqFQoOPxyPsOh4MsFguvYrHI9y+XS4rFYvT19UUul4uGwyHX0R1brRbZ7XbeSyQS+jcFc/AiV7/fp2w2q8ejUa77/c5ipVIp2u/3dDqdWK5yucz3Pncu3BMKhajZbPI+6n6/n9brNY1GI75erVZ0uVz4Hfl8/lskC/82L3JBAPzhPp+Pr41yabKMx+PHU0Tz+ZxrEOZZLnSpaDTKnQ0Y9yeTCXk8Hpb5er3yOhwOLLBgDt7KBXq9HsfjdDrV5TKKpmGsPcuFXy0mjQtxCIkgaTweJ5vNxtGJCBXMw0e5EE+5XI4ymQwFAoEfOxfibbFYvO1cmKVQfwY1raPhW/V6ndLpNEekYA4+ygUQj263mwd1yPU8c0GQUqmkz0qaXN1ul5/HgI6u1m63eR/P1Go1jlDEYSQSoc1mw+9tNBoil8n4US6AeHQ6nXoUQqB3p0WNTqfDdQzowHhaxMkQkQjRtG6lnRYxm6ELCmaB6DdOVDC7HW6ayQAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Select Equipment type from dropdown" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="1326, 445, 11, 12" CvTextArgument="V" CvType="Text" DesignTimeRectangle="1312, 432, 50, 40" DesignTimeScaleFactor="1" FriendlyName="'V'" FullSelectorArgument="&lt;webctrl id='trucks-card-select-field-options-active' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='trucks-card-select-field-options-active' tag='DIV' type='' class='md-fake-btn md-pointer--hover md-fake-btn--no-outline md-list-tile md-text' aaname='' check:innerText='V' /&gt;" Guid="0cbec37f-c5aa-4887-a3ca-9d4edbb2fe81" InformativeScreenshot="2e64ad88993a11d0bcf126a3c817ed9b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="1312, 428, 50, 128" ElementType="List" FriendlyName="'UL trucks-card-select-f…'" FullSelectorArgument="&lt;webctrl id='trucks-card-select-field-menu-options' tag='UL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='trucks-card-select-field-menu-options' tag='UL' type='' class='md-list md-layover-child md-layover-child--bl md-layover-child--simplified md-list--menu md-list--menu-restricted md-list--menu-bl md-paper md-paper--2' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAACECAYAAADbR9ijAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ6SURBVHhe7Z1NTxNRFIbnH7g0Jm7qAqOGxKUsSHTjgsSdKxKBhCWJC7asXLBw4y8w4SMhJJgYLK1BpQFpqyKWFiwgkvJNgEAo399w7HszM7Z1NMTMHTiT8yRv6Vwuw3ly2gFK74xxcnJCx8fHdHR0RIeHhyoHBwe0v7+vsre390d2d3cds7Oz40qK9+tUg1UfarXqhgNc4GTkS+ELsKPt7W2Vra0t2tzctLOxsUHZbPavWV9fdyVO+8b3toJaUJtVpyWfL2fgDsz9AlzgZOAO7P0CXOBk4M7q6qo5zB+4wMnAY3phYcEc5g9c4GSsrKzQ5OQkzczM+CJwgZOxtLRE4+PjjpM4Bi5wMtC6dDrtOIlj4AInY25ujoaHhx0ncQxc4KTEUqmU4ySOgYsSm52d9Z0YnJRYMpl0nMQxcFFi1kbxBK6xXESMS0SMW0SMW0TsvLn//gvde/eZporG62JJuvamn96NefOnketizwZG6GpnP71K/7DHUpkpuhOO06PI14K5OuO6WOxnhm4EY/Q0/ntfL1Njqlv4mD9XZ1wXQx73DtLdt59ofGpabT/5mKBbuY4lc50rnqsrWsSsDjUNj9HAZIZuhgo76EW0iKFT6Bg69SKRVpL5zzkvokUMQYdu5x5+Dz8MqCNl8VFSd7SJ4bB+PRilK6/76Pm3745zdEabGPIg16lATg5HSqfP64xWsYuMiHGLiHGLiHGLiHGLiHGLiHGLiHGL/8Xq6+upvLzcfPsHfwrESkpKzGH+FIiVlZWZw/wRMW74Xww32PALIsYNEeOGiHFDxLjhuhje615dXU2BQECltLSUampqKB6P09nZmTlLP9rEBgcH1fbp6SklEgmqrKykiYkJNeYFthju9Pb2msP/T7EYwBqThoaGgjHdwAVOWjsWi8WoqqqK5ufn1ZgX2B1zW8x6jiGQGh0dNWd4gzYxq2MjIyNUV1dHa2tratsrtIth9V1jYyN1dnaqba/QLgbQtdraWrU6yCs8EbO61t7e7tnPMtfFLgsixg0R44aIcUPEuCFi3LDFIpGIiHFAxLghYtywxfBKrS/Fpqen/SmGGxFjgIhxQ8S4IWLcEDFuiBg3XBdz+h80gncNeHkqUW1i+f/4uwhE7Lz4Xiz/+VVRUUGZTMac4Q3SsfMiYpqxxdx6+c23YpcFEeOGiHHDFpPX7plgi+FGxBggYtywxayTjPsFuNhnT8ep1P1CwWnhRYwBtph16QW/ABd16QWsFMIFJvwCXOCkxLBUwy/ARYktLi56vhRKJ3CBk7G8vOzpUkPdwAVOBq7+hN/wh4aGqK+vj7q6uqijo4Pa2tqotbWVWlpaVJqbm6mpqenCgzpQD2pDjagVNaN2OMAFTgauxobWwRSLRaPRKPX09FB3dzeFw2EKhUJ2sIN/JRgMuhKnfSP5taA21IhaUTNqhwNcstks/QKJaCiAnyLwtgAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Available Date" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1390, 393, 107, 31" CvType="InputBox" DesignTimeRectangle="1394, 401, 101, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'02/05/2024'" FullSelectorArgument="&lt;webctrl id='trucks-card-available' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='trucks-card-available' tag='INPUT' type='text' class='md-text-field md-text-field--margin md-full-width md-text' aaname='' /&gt;" Guid="fe9a11b5-64c7-434e-951c-4e55879eb6e6" InformativeScreenshot="1c3a8174734523d05ffb28c2bf795b5a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="1312, 368, 65, 60" ElementType="DropDown" FriendlyName="'V'" FullSelectorArgument="&lt;webctrl id='trucks-card-select-field-toggle' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='trucks-card-select-field-toggle' tag='DIV' type='' class='md-paper md-paper--0 md-fake-btn md-pointer--hover md-fake-btn--no-outline md-select-field md-text' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAABACAYAAABMQLqaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJHSURBVHhe7dk/ryFRGMfxfSs6nffiLSholFQSEYlCJRHR0EgUEkRHRCERjUJCIyp/GxJCIf57bp6zx+xO/O5du1vdM88nmcic0fjmOGOOHyReSBRAogASBZAogEQBJAogUQCJAkgUQKIAEgWQKIBEASQKYEU5HA6Uy+UoFArZjslkYl2v1+sUjUYpkUhQp9Ohy+WirpnGFqVYLNJ6vdYjv/CHr9Vq1Ov16Hq90vl8pmazSe12m+73u36XOd6KslgsqFwuqxhP+/1evX+73eoRc7wVpd/vU6vV0mc/8eypVqs0m830iDm+XFMqlYr68J9F4evPNcckMlMAWVOAt6I4+u7z7u8UHs9kMrTZbNQ101hR/sbj8aDBYKAiGv31+RfH41EFMs1/RTGVRAEkCiBRAIkCSBRAogASBZAogEQBJAqgovDzCz/cpdPpl2cZ3rUPBAK02+30iPmsmTIcDsnn89FqtdIjpPZN4vE4lUolPeIMVhTeLwmHw9TtdvUI0Xw+J7/fr16dxLam8O5aMpmk2+2mzhuNBsViMds2pBPYovCM4PVjuVyqvZJIJGKbOd/V6XSibDZLqVTKOvicxxFbFJ4hPFN4hozHYxXo9zXmO+P9ZLfbTS6XS73y+WdsURjPDF5cC4WCuiOZtLPGITwez5dB2EsUvvUGg0Hyer00Go30qDn4r5k/eYnC8vm82rHnO5ITwShOJ1EAiQJIFECiABIFkCiARAEkCiBRAIkCWFGm06njjyeZKYBEASQKIFEAiQJIlBdEH21OKlDULdcZAAAAAElFTkSuQmCC" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 2576, 1355" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="67c0587f8cf897ed14ab0c1d1680ba08.jpg" Selector="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" Title="Truck Entry" Url="https://xlr8.arrivelogistics.com/#/truck-entry" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

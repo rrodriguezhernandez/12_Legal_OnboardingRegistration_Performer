@@ -7,11 +7,12 @@
     <x:Property Name="Out_CreationProcessComplete" Type="OutArgument(x:Boolean)" />
     <x:Property Name="Out_UpdateProcessComplete" Type="OutArgument(x:Boolean)" />
     <x:Property Name="Out_CarrierCode" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_AppExcpt" Type="OutArgument(x:Boolean)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>607,2730</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1874,2107</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -95,7 +96,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="617,2665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="617,2042" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -103,7 +104,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="555,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Processing transaction with DOT &quot; +in_TransactionItem.SpecificContent(&quot;DOT&quot;).ToString]" />
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="555,147" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="555,178" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -122,6 +123,14 @@
               <InArgument x:TypeArguments="x:String">
                 <Literal x:TypeArguments="x:String" Value="" />
               </InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:Boolean">[Out_AppExcpt]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
         </scg:List>
@@ -145,9 +154,12 @@
         <OutArgument x:TypeArguments="x:String" x:Key="Out_CarrierCode">
           <VisualBasicReference x:TypeArguments="x:String" ExpressionText="Out_CarrierCode" />
         </OutArgument>
+        <OutArgument x:TypeArguments="x:Boolean" x:Key="Out_AppExcpt">
+          <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="Out_AppExcpt" />
+        </OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <If Condition="[Out_BizExcpt]" sap:VirtualizedContainerService.HintSize="555,836" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[Out_BizExcpt Or Out_AppExcpt]" sap:VirtualizedContainerService.HintSize="555,182" sap2010:WorkflowViewState.IdRef="If_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -217,9 +229,12 @@
         <OutArgument x:TypeArguments="x:String" x:Key="Out_Remarks">
           <VisualBasicReference x:TypeArguments="x:String" ExpressionText="Out_Remarks" />
         </OutArgument>
+        <OutArgument x:TypeArguments="x:Boolean" x:Key="Out_AppExcpt">
+          <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="Out_AppExcpt" />
+        </OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <If Condition="[Out_BizExcpt]" sap:VirtualizedContainerService.HintSize="555,836" sap2010:WorkflowViewState.IdRef="If_2">
+    <If Condition="[Out_BizExcpt Or Out_AppExcpt]" sap:VirtualizedContainerService.HintSize="555,836" sap2010:WorkflowViewState.IdRef="If_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>

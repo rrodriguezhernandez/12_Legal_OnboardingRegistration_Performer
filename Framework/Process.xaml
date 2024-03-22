@@ -12,7 +12,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>531,1720</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,1720</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -211,7 +211,7 @@
         <OutArgument x:TypeArguments="x:Int32">[DelayTime]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:Int32">[New Random().Next(7,11)]</InArgument>
+        <InArgument x:TypeArguments="x:Int32">[New Random().Next(8,11)]</InArgument>
       </Assign.Value>
     </Assign>
     <Delay Duration="[TimeSpan.FromSeconds(DelayTime)]" sap:VirtualizedContainerService.HintSize="479,90" sap2010:WorkflowViewState.IdRef="Delay_1" />

@@ -211,7 +211,7 @@
         <OutArgument x:TypeArguments="x:Int32">[DelayTime]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:Int32">[New Random().Next(8,11)]</InArgument>
+        <InArgument x:TypeArguments="x:Int32">[New Random().Next(9,11)]</InArgument>
       </Assign.Value>
     </Assign>
     <Delay Duration="[TimeSpan.FromSeconds(DelayTime)]" sap:VirtualizedContainerService.HintSize="479,90" sap2010:WorkflowViewState.IdRef="Delay_1" />

@@ -1,4 +1,4 @@
-{
+﻿{
   "DefaultOCREngine": "UiPath.Core.Activities.GoogleOCR, UiPath.UiAutomation.Activities",
   "UiPath.UiAutomation.Activities.GoogleCloudOCR.ApiKey": "",
   "UiPath.UiAutomation.Activities.GoogleCloudOCR.Region": "Global",
@@ -22,5 +22,7 @@
   "UiPath.OCR.Activities.UiPathDocumentOCR.Endpoint": "https://du.uipath.com/ocr",
   "UiPath.OCR.Activities.UiPathDocumentOCR.ApiKey": "",
   "UiPath.OCR.Activities.CjkOCR.Endpoint": "",
-  "UiPath.OCR.Activities.CjkOCR.ApiKey": ""
+  "UiPath.OCR.Activities.CjkOCR.ApiKey": "",
+  "UiPath.OCR.Activities.ExtendedLanguagesOCR.Endpoint": "https://du.uipath.com/extended-ocr",
+  "UiPath.OCR.Activities.ExtendedLanguagesOCR.ApiKey": ""
 }

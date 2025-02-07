@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1847,4636</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1326,5148</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>UpdateCarrierProfile_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -117,7 +117,7 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UpdateCarrierProfile" sap:VirtualizedContainerService.HintSize="1126,4571" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="UpdateCarrierProfile" sap:VirtualizedContainerService.HintSize="1336,5756" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="CarrierName" />
       <Variable x:TypeArguments="x:String" Name="EquipmentVan" />
@@ -131,7 +131,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1064,4483" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1274,5668" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -139,36 +139,36 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1026,4232" sap2010:WorkflowViewState.IdRef="Sequence_131">
+        <Sequence sap:VirtualizedContainerService.HintSize="1236,5417" sap2010:WorkflowViewState.IdRef="Sequence_131">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Using Truck Entry section" sap:VirtualizedContainerService.HintSize="964,168" sap2010:WorkflowViewState.IdRef="Sequence_152">
+          <Sequence DisplayName="Using Truck Entry section" sap:VirtualizedContainerService.HintSize="1174,1021" sap2010:WorkflowViewState.IdRef="Sequence_152">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Truck Entry" sap:VirtualizedContainerService.HintSize="388,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Truck Entry" sap:VirtualizedContainerService.HintSize="546,901" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1078,1414" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,661" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Check if a message box appears in ANow" sap:VirtualizedContainerService.HintSize="1016,811" sap2010:WorkflowViewState.IdRef="Sequence_96">
+                    <Sequence DisplayName="Check if a message box appears in ANow" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_96">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -208,8 +208,8 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NCheckState>
                     </Sequence>
-                    <Delay Duration="00:00:02.5000000" sap:VirtualizedContainerService.HintSize="1016,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                    <Sequence DisplayName="Search for Carrier Code" sap:VirtualizedContainerService.HintSize="1016,57" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                    <Delay Duration="00:00:02.5000000" sap:VirtualizedContainerService.HintSize="450,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <Sequence DisplayName="Search for Carrier Code" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_53">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -331,7 +331,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NCheckState>
                     </Sequence>
-                    <Sequence DisplayName="Update Overview tab" sap:VirtualizedContainerService.HintSize="1016,57" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                    <Sequence DisplayName="Update Overview tab" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_68">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -586,7 +586,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
                     </Sequence>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1016,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,192" sap2010:WorkflowViewState.IdRef="Sequence_59">
                           <sap:WorkflowViewStateService.ViewState>
@@ -773,7 +773,396 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <Sequence DisplayName="Update Address tab" sap:VirtualizedContainerService.HintSize="1016,57" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                    <Sequence DisplayName="Update Compliance tab" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_95">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="IsAutosCheckboxAvailable" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="550,57" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Entering information in the Compliance tab&quot;]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="2" DisplayName="Click on the Compliance tab" sap:VirtualizedContainerService.HintSize="550,57" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="898, 261, 82, 11" CvTextArgument="COMPLIANCE" CvType="Text" DesignTimeRectangle="885, 250, 110, 38" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl id='compliance-tab' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl id='compliance-tab' tag='LI' type='' class='md-fake-btn md-pointer--hover md-fake-btn--no-outline md-tab md-tab--inactive tabs-card__tab-selector' aaname='' check:innerText='COMPLIANCE' /&gt;" Guid="31f77a32-1472-4250-91b3-851f140b995c" InformativeScreenshot="bf40a5ae6a06a9ba247305186b76e8e7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CvTextArea="1008, 261, 82, 12" CvTextArgument="ACCOUNTING" CvType="Text" DesignTimeRectangle="1010, 261, 80, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl class='md-tab-label' parentid='accounting-tab' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='md-tab-label' parentid='accounting-tab' tag='DIV' type='' aaname='ACCOUNTING' check:innerText='ACCOUNTING' /&gt;" Guid="b0b6b1c2-9023-4d6d-806a-00b7ab889259" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAARCAYAAABD/oseAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANcSURBVFhH7ZbJaxRREMY9efTuTfAmnryIiiKKiAcPgiAiLoggIoKCCx5EBBcUBRH3FVdc4u6fICKuMe6TOMlkkslkJpPVe1m/nqmm+6V7nDjtrQ8f3a/29716y6TJLzOSIjmkhCaMlNCEkRKaMMYROu1NVi70DcuLym85kBsI6cCmTFFu9Y/Kc9U/VVwtjsjKb72+fsnnvJwpDHk6bO6VR2VntiRTXrV7+pnvO+VQd0UeDYx5Ofge1PH0t1mZ9aFLbvSPyGOVrfvZ58c8V6jWs/1XyZOjb1GsCOQ9rDGwOa25H5SrsaNALLNtJB42jN26mR+55rV2+z5gHKGrvhfkYc3pmpJFINNt0OQEpICLSvolBYEhbdmXHpn9MSfXlRCIhJiztclhs0MLY7Eogth3S6Oe/r76Mj7ZOyRzWnMNE8oYfxYCGyPgRM+gB/JcLg7LM5UxH2yR7esaiCQ0Lh42bt3836zN84rD0ThC6UqKgKQnlTHZqB2J3DoX3baO/pA9ifbrd09n2UtySsmxjlytC8Qi0Mm7tFMp/rYWNf9TdWX5MsZmd7Y8IUJtobBxOwqYLTHpfpPHERoXz5osWDcknlc+7qgs2NkhQukwtjNdBTkkgBx0c7W1CYiObW0+M951euOFbd1yXDvDndTU1x2yqC0vS9XGijySr/h6YH5H84MNE0qddDcdQ/xmCa0XD/BvXNRDiFC6ka6k9QlKcDp1sf5DGmS6hAYRnHiU3orkGyVnizZKKLK9tR2Bf5AA85sIofXiAf6RBf2BW6tPKFuUFSAg3YksOP5bh1JwvQ5doFuF8wt9Eh2KjG3HGcZxwWK4uSdKaFw8wL91KEcA5NNssYSyJSELRxdcPhwH//sMpTBycNRsaa/m4OwmP3m3at4gAejX6hhfq7UZQuPiRZ2hxItafJ9QIwPWucUAW59AJIAYu+UBBbCaTB6f5V/Dtzw6bPDHhqdT1G3JlzG3PIvApYB9MAfx7GxzCcAnuAWbJTQqHjLqY0zTwYu9cPBd88MhlFbnieR2Hzim25BAfBlvbi96k2OSBIx6h/KkQmcL1Og7FD123PYttd1CHOLxLEPvEgCsy40Ak/8LoSAqHvWxG4N1Mff16m9+IHQppWgeKaEJIyU0YaSEJoqM/AFSCFEqQQqkjAAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="4" DelayBefore="1" DisplayName="Click on Add" sap:VirtualizedContainerService.HintSize="550,84" sap2010:WorkflowViewState.IdRef="NClick_39" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1077, 304, 24, 23" CvType="Icon" DesignTimeRectangle="1080, 305, 20, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='edit' parentid='tabs-card-panel-3' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='edit' parentid='tabs-card-panel-3' tag='I' type='' class='md-icon material-icons md-text--inherit' check:innerText='edit' /&gt;" Guid="76cc3e28-f0ab-4476-8350-11d1956f7a51" InformativeScreenshot="8799cd69c470be2d68ef27523dcfd224.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CvElementArea="994, 248, 127, 40" CvTextArea="1008, 261, 82, 12" CvTextArgument="ACCOUNTING" CvType="Button" DesignTimeRectangle="1010, 261, 80, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl class='md-tab-label' parentid='accounting-tab' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='md-tab-label' parentid='accounting-tab' tag='DIV' type='' aaname='ACCOUNTING' check:innerText='ACCOUNTING' /&gt;" Guid="5f887f80-6fda-40fe-a157-2bb91e7dd614" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAARCAYAAABD/oseAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANcSURBVFhH7ZbJaxRREMY9efTuTfAmnryIiiKKiAcPgiAiLoggIoKCCx5EBBcUBRH3FVdc4u6fICKuMe6TOMlkkslkJpPVe1m/nqmm+6V7nDjtrQ8f3a/29716y6TJLzOSIjmkhCaMlNCEkRKaMMYROu1NVi70DcuLym85kBsI6cCmTFFu9Y/Kc9U/VVwtjsjKb72+fsnnvJwpDHk6bO6VR2VntiRTXrV7+pnvO+VQd0UeDYx5Ofge1PH0t1mZ9aFLbvSPyGOVrfvZ58c8V6jWs/1XyZOjb1GsCOQ9rDGwOa25H5SrsaNALLNtJB42jN26mR+55rV2+z5gHKGrvhfkYc3pmpJFINNt0OQEpICLSvolBYEhbdmXHpn9MSfXlRCIhJiztclhs0MLY7Eogth3S6Oe/r76Mj7ZOyRzWnMNE8oYfxYCGyPgRM+gB/JcLg7LM5UxH2yR7esaiCQ0Lh42bt3836zN84rD0ThC6UqKgKQnlTHZqB2J3DoX3baO/pA9ifbrd09n2UtySsmxjlytC8Qi0Mm7tFMp/rYWNf9TdWX5MsZmd7Y8IUJtobBxOwqYLTHpfpPHERoXz5osWDcknlc+7qgs2NkhQukwtjNdBTkkgBx0c7W1CYiObW0+M951euOFbd1yXDvDndTU1x2yqC0vS9XGijySr/h6YH5H84MNE0qddDcdQ/xmCa0XD/BvXNRDiFC6ka6k9QlKcDp1sf5DGmS6hAYRnHiU3orkGyVnizZKKLK9tR2Bf5AA85sIofXiAf6RBf2BW6tPKFuUFSAg3YksOP5bh1JwvQ5doFuF8wt9Eh2KjG3HGcZxwWK4uSdKaFw8wL91KEcA5NNssYSyJSELRxdcPhwH//sMpTBycNRsaa/m4OwmP3m3at4gAejX6hhfq7UZQuPiRZ2hxItafJ9QIwPWucUAW59AJIAYu+UBBbCaTB6f5V/Dtzw6bPDHhqdT1G3JlzG3PIvApYB9MAfx7GxzCcAnuAWbJTQqHjLqY0zTwYu9cPBd88MhlFbnieR2Hzim25BAfBlvbi96k2OSBIx6h/KkQmcL1Og7FD123PYttd1CHOLxLEPvEgCsy40Ak/8LoSAqHvWxG4N1Mff16m9+IHQppWgeKaEJIyU0YaSEJoqM/AFSCFEqQQqkjAAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="550,2192" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <TryCatch.Try>
+                          <Sequence sap:VirtualizedContainerService.HintSize="512,1939" sap2010:WorkflowViewState.IdRef="Sequence_153">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Current Contract Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="[now.ToString(&quot;MMddyyyy&quot;)]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="821, 460, 127, 12" CvTextArgument="Current Contract Date" CvType="Text" DesignTimeRectangle="822, 460, 141, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='contact-editor-form-contract-date' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='contact-editor-form-contract-date' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Current Contract Date' /&gt;" Guid="5ced1c8a-605f-4b97-82db-600f6d413ec0" InformativeScreenshot="1956cfe304ba232e483821efa7ae7863.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="821, 460, 127, 12" CvTextArgument="Current Contract Date" CvType="Text" DesignTimeRectangle="822, 460, 125, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Current Contract Date' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Current Contract Date' parentid='compliance-editor-dialog' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' check:innerText='Current Contract Date' /&gt;" Guid="fedf8608-5e83-4efa-b554-3314ad8a6303" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIEAAAARCAYAAAD6xs8TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARdSURBVGhD7ZjZLyZREMXnn/Yo3rxICBIPiBDEvj4QYgtCeBBrBLGH2LfYt5r51Xz1pVzdzcxIPEyfpMPte2/VqarTt6u/H5Liv0cqghSpCFKkIkjxC29E8PLyIrOzs1JaWio5OTlSVlYmS0tL8vr6mlnxPdjc3JS2tjZ5fHzM3HkL7o+Pj0tBQYHyrqqqku3t7S/hPTAwIDMzM5nR1yEpJvwRB1dubq7U1NTI+vr6p+P5KF8hsiLAAc4bGxvl4uJCx8fHx5rQtbW1zKrvQVJQCHd4eFh6enrk9vZWeSOAiooKOTg4yKz6e3yXCGyOeI6OjrQOi4uLmRXJ+GsRXF9fS21trezt7WXu/AaEuru75fn5+V1CvDP+Z39XV5dUVlZqIVBwX1+flJSUaCCsGxsbk/z8fL0mJye1iNzHzvT0tO5B/a2trcoJn/ZUFBUVqR0PxuxBuAYSx77R0VEdh377+/vl/v5e5+Dd1NQkIyMjOldYWKjJvrm50TjMN/wQGX8HBwc1JnLBut7eXsnLy3sTE3h4eFBf5ndiYkKenp4+jMmLwLCzsyN1dXXKAcT5jbJtJzyxsR5OcDNkRcDi+vp6NR6Hj0QAGV4fEMVecXGxTE1NaTEhQiHa29u1AFdXV9LQ0KCnjInACs98S0tL1pf3EyJpDiAI8wsvK8zQ0JByMt7Ly8s6Xl1dlerqauUBfMye59nZmdpC5NiiuAiRvdjEFsKyhOMbDgsLC2oriXeUCKgL9bGixvkFoW1EbQ8KXHioeeAMWRGwEeX/iwgonDmGLMq1ZJIExvv7+zoG2MIme7BjQQCbA2FQHlEJ84jye3p6qvcuLy/f2fbJBlEi2NjY0DECu7u701PSxhSd9fhF5IeHhzoHEI6N/zQmePFK4ERI8gu8bUTS0dGh4jaEvr/0JPCGQ3v89cerXRAkIPZiw4Cfz4ggaQ6ERQX+Xrg/XB8lAs/z/PxcTwaOWYuJ9QiNonm/Hkm82R/Ohbzi/AJv2zjbGrvghlBBVgQ8FRwZ/9ITeOKQ9SKIejIMRtQnFz+fEQHNHwHF9QRxJwGx8mSGtv9EBBytzc3NMjc3p0c0sPVR8bLf9yJxMbE/nPM9QZJf4G3bSWCnVxSyIiBxGEFdCIIxXwckywzYPCR4emlMzFkYVCgCe0daF8+Y9yOfPuxhryUX4MuLgITiMwR2+DrgOGQe3jSl9hQy9j0BvmjseKeyN+QdJQIaOuyEPPHH2pWVFbVlX1Nwt3jxxT6KTzFo0EBSTOw3Tvjd3d3VU9S+DpL8gtA2Pv1XH/Wcn5/X/0FWBACD/neC8vJybdxsMUmk+6d75zcEAjSyYTJDEQDmrEvnGENEzHPfJxd4EdBXEBSN5snJid7zYL/9TgC38CvH++VCMHFPZCiCra0t7arjXlsIjlzgt7OzUy86dcDDgi98ws1/OSTFROx2bMf9TpDkN7RtdSUO1nOK8DoxvBFBiv8TqQhSpCJIkYoghYj8BDPddvEwZLFeAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <If Condition="[In_TransactionItem.SpecificContent(&quot;Zip&quot;).ToString.Length &gt; 5]" DisplayName="Check Zipcode lenght to determine contract type" sap:VirtualizedContainerService.HintSize="450,84" sap2010:WorkflowViewState.IdRef="If_10">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="376,489" sap2010:WorkflowViewState.IdRef="Sequence_88">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Current Contract Version'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="2024CAN" Version="V3">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="975, 453, 145, 29" CvType="InputBox" DesignTimeRectangle="977, 460, 141, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='compliance-editor-form-contract-version' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='compliance-editor-form-contract-version' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Current Contract Version' /&gt;" Guid="df0a7c1c-b9d0-4de3-9f1e-b761a758f118" InformativeScreenshot="c1feecddd1aeb4235b68327ad15ad9a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CvElementArea="975, 453, 145, 29" CvType="InputBox" DesignTimeRectangle="977, 460, 142, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Current Contract Version' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Current Contract Version' parentid='compliance-editor-dialog' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' check:innerText='Current Contract Version' /&gt;" Guid="07daf265-ca4e-41df-a8ab-0704ef578220" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJIAAAARCAYAAAA2X/X4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATXSURBVGhD7ZjXSyVLEMbvP+3j4psIghF9UBFFxazog6KYUDEjYgBRzJizmFMtv9qpub29c84YzuKFOx8Mnunuqfq66uvqbv+RBAkygERICTKCREgJMoJESP9j3N7eyvX1dfD2NfwmpKenJxkbG5O8vDzJysqSqqoq2d7elre3t2DE92Bzc1Pa2tqUXxT+Fm/s4hf/mUZ/f7/Mzc0Fb//i7OxM+R8fHwctv/Dw8CCNjY2yuLgYtHwdExMT0tPTIy8vL0HL5xEK6fX1VYaGhqS7u1vu7u40CSSjoqJCDg8Pg1Hfg3RC+pu8v0NIJLWrq0ump6eDll/Y3d1VgV1dXQUt/y2EQmIF1NTUyOXlZdAimhQmPDIyEhlUAkE/4C/JZLL8Zlxtba10dnZKZWWlllFsjI6OSk5Ojj6sCISA77q6OpmcnJT8/Pzf+rBFleEpKCj4Y6XG8QYXFxfS3NwsP378kJKSEl3VVq0YNzw8LK2trdqPrZOTE7WLP/PNOPPV29srxcXF+r63t6dtjCkrK1MRGx4fH6Wvry+c7/j4uG4lxMPsRi2QtbU15cv3AK7MhYffxGV+fl5jlZ2drT4YazkaGBhQfuTHHcv8mOfNzY3adfPn22xvbw+3PeaZKj+GUEjpVj14j5AQ0dHRkZZhxuFweXk5rBSICIL0Q7KhoUGDBtGioiJdhc/Pz3JwcKAVhXaQjlscb3wThNnZWZ04WweJ39jY0H7jTTu+eeeBrz9n4zk1NaXJQLx8yxwYv7q6KtXV1dqHLwRqSYYHc7etCR9RFQnwPYtwf39f320OOzs7+r60tBQuHmxbBTO+iOX8/FzfqWQ2lvkNDg7qQoCfmz+zyaJjHPbgi424/IBQSBhNlxA/qMAXEskyMK6lpSW0Z8Gw4AD7HkL19fVatYDvK51Y4nhTIThbIF4DyeRsQDD9hLq+fB7wZA62ovn+/v5eRQRop59xzJeFwsIykFx79/26wJ5VIIB/q1AksqOjQ0VrMM745K8tEsD2TtIRO9smj3G2+EfZNP7kKy4/IKMVKVVCACTckm4PE0DhnxVSHO+ofrfto0JyeZIMElReXh7Ox7bfVIdmQzohARJIIhEnFcTOTMbJjSEPvqjyLl8AR2yxqHNzc1WQVB1g+fPnCdy2DwkJ5ULmK2ekdEKKWqGGOKK+LRdxvFNVJLYDVmc63j4Pn6f5Zk74pJ1+xkXNF3vGw/frg+rDFgVXbCJMYNXDrToGny9wfVJBZ2Zm9HvsWP5SVSSqK1vjh4SEE24/7OlW+kiCrSpLDg9juT00NTXpO/AD4yefbzgz2O2Kd4K0vr7+LiGRFHj5iONtAbEzEquRswCVBKTjbTxWVla0z+dp5w+2LGxzHiwtLdVxNl8OvtghmSSLAy3AL4dv+KYC8SksLAy3YQM2WBwsHr5HVAsLC3/EDTBPYke1Yixx8IUE3DMSvhhn22lcfkAoJMAA+38MJ3wOfNxKDBAnKZRSnCKK9woJ8NtubdwMCBDk4ohS3gkGB77T01NtcxHHO+7Wlo43CYIvh1SfJwHn9kI/D8LhsG3nQJJgtza4uTedra0tvQFZUqOAQBGmid6ADfcmZtuVHzfAWKqQjUWAVt1cIbk2o25tHxJSggSfRSKkBBlBIqQEGUEipAQZgMhPjoXQReX7zm4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Entered contract type for Canadian Carrier&quot;]" />
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap:VirtualizedContainerService.HintSize="376,489" sap2010:WorkflowViewState.IdRef="Sequence_89">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Current Contract Version'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_27" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="2024FTL" Version="V3">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="975, 453, 145, 29" CvType="InputBox" DesignTimeRectangle="977, 460, 141, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='compliance-editor-form-contract-version' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='compliance-editor-form-contract-version' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Current Contract Version' /&gt;" Guid="df0a7c1c-b9d0-4de3-9f1e-b761a758f118" InformativeScreenshot="c1feecddd1aeb4235b68327ad15ad9a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CvElementArea="975, 453, 145, 29" CvType="InputBox" DesignTimeRectangle="977, 460, 142, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Current Contract Version' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Current Contract Version' parentid='compliance-editor-dialog' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' check:innerText='Current Contract Version' /&gt;" Guid="6a16b955-7d6a-4c3c-91c4-116b30ae3de2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJIAAAARCAYAAAA2X/X4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATXSURBVGhD7ZjXSyVLEMbvP+3j4psIghF9UBFFxazog6KYUDEjYgBRzJizmFMtv9qpub29c84YzuKFOx8Mnunuqfq66uvqbv+RBAkygERICTKCREgJMoJESP9j3N7eyvX1dfD2NfwmpKenJxkbG5O8vDzJysqSqqoq2d7elre3t2DE92Bzc1Pa2tqUXxT+Fm/s4hf/mUZ/f7/Mzc0Fb//i7OxM+R8fHwctv/Dw8CCNjY2yuLgYtHwdExMT0tPTIy8vL0HL5xEK6fX1VYaGhqS7u1vu7u40CSSjoqJCDg8Pg1Hfg3RC+pu8v0NIJLWrq0ump6eDll/Y3d1VgV1dXQUt/y2EQmIF1NTUyOXlZdAimhQmPDIyEhlUAkE/4C/JZLL8Zlxtba10dnZKZWWlllFsjI6OSk5Ojj6sCISA77q6OpmcnJT8/Pzf+rBFleEpKCj4Y6XG8QYXFxfS3NwsP378kJKSEl3VVq0YNzw8LK2trdqPrZOTE7WLP/PNOPPV29srxcXF+r63t6dtjCkrK1MRGx4fH6Wvry+c7/j4uG4lxMPsRi2QtbU15cv3AK7MhYffxGV+fl5jlZ2drT4YazkaGBhQfuTHHcv8mOfNzY3adfPn22xvbw+3PeaZKj+GUEjpVj14j5AQ0dHRkZZhxuFweXk5rBSICIL0Q7KhoUGDBtGioiJdhc/Pz3JwcKAVhXaQjlscb3wThNnZWZ04WweJ39jY0H7jTTu+eeeBrz9n4zk1NaXJQLx8yxwYv7q6KtXV1dqHLwRqSYYHc7etCR9RFQnwPYtwf39f320OOzs7+r60tBQuHmxbBTO+iOX8/FzfqWQ2lvkNDg7qQoCfmz+zyaJjHPbgi424/IBQSBhNlxA/qMAXEskyMK6lpSW0Z8Gw4AD7HkL19fVatYDvK51Y4nhTIThbIF4DyeRsQDD9hLq+fB7wZA62ovn+/v5eRQRop59xzJeFwsIykFx79/26wJ5VIIB/q1AksqOjQ0VrMM745K8tEsD2TtIRO9smj3G2+EfZNP7kKy4/IKMVKVVCACTckm4PE0DhnxVSHO+ofrfto0JyeZIMElReXh7Ox7bfVIdmQzohARJIIhEnFcTOTMbJjSEPvqjyLl8AR2yxqHNzc1WQVB1g+fPnCdy2DwkJ5ULmK2ekdEKKWqGGOKK+LRdxvFNVJLYDVmc63j4Pn6f5Zk74pJ1+xkXNF3vGw/frg+rDFgVXbCJMYNXDrToGny9wfVJBZ2Zm9HvsWP5SVSSqK1vjh4SEE24/7OlW+kiCrSpLDg9juT00NTXpO/AD4yefbzgz2O2Kd4K0vr7+LiGRFHj5iONtAbEzEquRswCVBKTjbTxWVla0z+dp5w+2LGxzHiwtLdVxNl8OvtghmSSLAy3AL4dv+KYC8SksLAy3YQM2WBwsHr5HVAsLC3/EDTBPYke1Yixx8IUE3DMSvhhn22lcfkAoJMAA+38MJ3wOfNxKDBAnKZRSnCKK9woJ8NtubdwMCBDk4ohS3gkGB77T01NtcxHHO+7Wlo43CYIvh1SfJwHn9kI/D8LhsG3nQJJgtza4uTedra0tvQFZUqOAQBGmid6ADfcmZtuVHzfAWKqQjUWAVt1cIbk2o25tHxJSggSfRSKkBBlBIqQEGUEipAQZgMhPjoXQReX7zm4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Entered contract type for US Carrier&quot;]" />
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Original Contract Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="[now.ToString(&quot;MMddyyyy&quot;)]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="819, 525, 302, 32" CvType="InputBox" DesignTimeRectangle="822, 534, 296, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='contact-editor-form-original-contract-date' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='contact-editor-form-original-contract-date' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Original Contract Date' /&gt;" Guid="0191e04d-aba8-4dfb-ad7b-9673d34cc0a8" InformativeScreenshot="54b44ab9e34964feb9b64b3cac827e96.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvElementArea="819, 525, 302, 32" CvType="InputBox" DesignTimeRectangle="822, 534, 127, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Original Contract Date' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Original Contract Date' parentid='compliance-editor-dialog' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' check:innerText='Original Contract Date' /&gt;" Guid="d16335c4-0bd5-44c4-8b45-87dbb46256af" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIMAAAARCAYAAAD+Mx8uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATXSURBVGhD7ZjXSyxLEMbvP+2jiC8+KiqKqIgRxYg5IqJgQsSICTNmzDn25Vd3aqjt66xnV+GcA/NB406Hil9Xd/uPixEjQEyGGCFiMsQI8W0y3NzcuPv7++ArGq+vr+78/Nx9fHwEPelhaGjIzc7OBl8xfhIJZCBRy8vLrri42GVkZLjS0lK3vr4emcC3tzfX29vrJiYmgp5oHB4euoqKCnd1dRX0pIdkZLi8vHTNzc0uKytLWmdnp5D1uzg9PXV1dXW/RPpU8PLy4lpaWtz29nbQkwh8JQ80/GlsbHRHR0fB6NdIdeMkkGFubk4SdnZ25t7f3yUIfC8tLQUzfj+iHLy9vXW1tbVufn5ebCfQU1NTEsDn5+dgVnr4nWSgAXza2dlxJSUlbn9/X/q+QtpkuLu7c5WVlW5vby/o+Q98E4jHx0cJSlVVlevv73cFBQXybRXi3OjoqLA4NzfXDQ4OSoIIog0ov+mfnJyUeTk5OVJdcBgcHByIHnYEVWp3d1f6QZSD9HV3d4cygPqkwaNyQI7MzExXWFjoFhcXw6qH3JGREaksjKOfTYFc3Z00Ekerqalx7e3trry8XHxKZjNymI9cxkgqMcjLywvlatIt6PP7sRm9HLvYvrGxEVZytRl7sEtlQzhyQxsbG5N4+zEHIRlssiyur69ddXW1jNPy8/NlxxFoBNnkYCgyKM0YOzw8HAbLylc509PTMo/SV1ZWJv3ooxrhJM5yTJFQ9AGrzyKqX/Hw8CAEnJmZEbu5vxC8ra0tGWc9eunHJr5p2GBtB5CBYHKkIjeZzTTWrqysiF6OS8bQk0plUFhbjo+PJW7ED734pokHrNWYMA4RWltb3dPTk+Sovr5ebFaEZKAC4JBPBr5RjhE0AqqJAaqQALa1tUmAFDgZRQYbXBsUAkYVwniALnSyBlgHFbo+GRnYqQ0NDRIIBeTlzuOTGmCLBta3l7GmpqYw6MlsRi/Vxs6lijDH+v0ZsIlmgUwlLXc2q/fk5ET0qp3WJ90MkFHBmJWfcmXw56jCzxzjd6pkwDHYyuVVyxzllDXAOmgR1a9AtiZXYfv89XbMt9eXlczmhYWF/+lV0McY8j4DNtEsrC0Qi3seR57q1XgD6xN99ujQxgZmI4OU7ww2KEAVwtKOjg4pkQqcTJUMlD6YD8sJMnOYyxrgJ03BkZPszhBVGbAZ2325qZAhmc1+ZWCcWKIzHTLYOwMEpNTrC8230/pEZWAuNkYhJAOwrwmM5i/f+prwlQGrkHko/JU7g5Vjg0LiOMsvLi4ksRw7RUVFsgb4SVPoa4L5rEMmdxvOSH77dwYuk+jRM9OX65OBuRp0nwzJbIaQ+KpPdM53CEps1e/V1VWR4wObaAC5a2trIlcvxOjhuMI39devDOPj46KX9VyQe3p6ZD7fEGtzc1PmggQysAgFUf9n8JMIbBAhAMq5XPFKIBGpkgEjueXqjRcHCJ6edX7SLOz/GVjb19eXYOtXr4koMtC6urpcdna27HSfDF/ZbF8TxBQZCo4R1rBxfGCTlvPP/s/Ak3lgYCB8vfGS40jnaAe8WujXowB79TXBGu5LNj4JZPguCKwGFxA0e9GK8WfjR8lAuYOpMJazmcoAEy1BYvy5+FEy2DJEU2LE+Dvwo2SI8TfDuX8BwU3kp/0zMroAAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'Admin Hold Comments'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_28" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="New Registration - Audit Required&#xD;&#xA;10 Load Rule" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="1440, 388, 136, 13" CvTextArgument="Admin Hold Comments" CvType="Text" DesignTimeRectangle="1441, 389, 296, 73" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='compliance-editor-form-admin-hold-comments' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='compliance-editor-form-admin-hold-comments' tag='TEXTAREA' type='' class='md-text-field md-text-field--multiline md-full-width md-text' aaname='Admin Hold Comments' /&gt;" Guid="56b5f409-45d2-43e2-a65c-d86c4696505e" InformativeScreenshot="5fc36cfa1f46a1ffaaca5cf88ce4e027.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="1440, 388, 136, 13" CvTextArgument="Admin Hold Comments" CvType="Text" DesignTimeRectangle="1441, 389, 135, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Admin Hold Comments' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Admin Hold Comments' parentid='compliance-editor-dialog' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' check:innerText='Admin Hold Comments' /&gt;" Guid="35a12f56-9419-441d-91a4-5ee3cdaaa136" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIsAAAARCAYAAADt5F/aAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR1SURBVGhD7ZjXSzVJEMX3n/ZRfBDEJ0VFBBVRVMwZIyYUzJjFhIo55xz741fcGvq2470ze3dXFubA4J2e7uqqU6eru/3LRIgQEJFYIgRGJJYIgZGSWB4fH011dbU5OzuLtQQHY+/u7mJv/x3wFZ+Z38Xb25tpamoyOzs7sZYINnzFcnl5aYqKisze3l6sxR+piGV8fNx0d3ebj4+PWEtyMF9paem3ZIbxIxWxXF9fm8bGRpORkSFPR0fHrwj+nwJxEi9xB4GvWKampkxxcbHp7e01n5+fsdbvSEUsfwe/KZb7+3tTVVVlFhYWhBP6Tk5Omvr6evP6+hrr9f9CymJ5enoyNTU1Zm1tTcihyii+vr7M+vq6ycnJMVlZWVIZysrKJAFK9MjIiKmoqDDp6emyCvf394VQ3mk/Pz8XW7Ozs6a/v19+43RdXZ0ZHh4Wu9hfXl6W+WwEFQu+jI6Oii2evr4+8/LyIt9csRwcHMjCoFK0tbVJPH5iwd/Ozs64xfPw8GDKy8slRkDl0VgLCgrM0tKSxBCWG+bHx4GBAY8PRDo3N+dxT2VWX9x49RuxksOJiYlv4+A+LS1NntzcXOkLJ+QULtw5wDexsPUQyPPzs1QWSFJgsKSkxOzu7oqRjY0NU1hYKO1KCJOx0khOQ0ODkH91dSX9x8bG5Du/XbHg3OrqqmeXJJAMG0HEQnIgrrm5WYSPL4hlcHBQbNNHxUK1qKysNCsrK/Lt6OhIkuwnFny1uXDBXCRmZmZGbLHIEMD29nZobpifBMIz8cBHZmammZ6e9mzDD/7a8WKXbZHFvrm5KbHm5eXJTvH+/m6Oj48lf7QD5rErC2ImTvre3NyI/9hRxIkFRxAIxgEd7TI7Pz/vBQTsJCkhNtEQp4IAtnOuWGynbbs2VCy6IuxHV4cmDSIVkEvb7e2t9FGxkIza2lqv6vjFALQ9kVhcW4DKogIJw43LB4sG/5UP20+/eJVbO1bgxufOQ97JN3whQmLRbyBOLHQiGScnJ/KuZVYPunaCQTKxuP1t51IRiz0HsPv7jbXbePhNmzuvXwwKfE0kFtcW0DYS6tpNxI1ry43J9pNvfguopaVFKonG6o4D7jxUlMXFRbGXnZ0tFUu/gTixEIA7KY8edMNWlt8Qy0+VhZJKybfFErSyAFZdojPLT5Wlvb1d2sJwk4wP20/iZds5PT2VbzbsWIEbnz0PlYSjh95OsctWSc4VnlgolRwyCdAGRLC3aglPdmZRR8BviMU9s2CTg6IK3iYwzJlFb0PaF7vchpiH3ypSPbNw2NU9n+9huEnGh22PubgYdHV1iQ+8k8Otra24WN1xgL8IDZEwDo7gjgqDwH8UC1sNxEGKDQZyS9CTPcHn5+fLiZkqA1k4FZaQf0ssADsErbeDRLehw8NDWQzcSFpbWyUe177C/j8Ldnt6ejw7INltKCg3yfhw7dnxal4Y48bqjqMyIhYOwRcXF/LO/440vqGhIe+8CuK2oQgREiESS4TAiMQSITAisUQICGP+ALR2AMVkFszdAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Scheduled Autos Override'" sap:VirtualizedContainerService.HintSize="450,84" sap2010:WorkflowViewState.IdRef="NCheckElement_2" Result="[IsAutosCheckboxAvailable]" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                              <uix:NCheckElement.Target>
+                                <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1137, 1111, 19, 18" CvType="CheckBox" DesignTimeRectangle="1137, 1111, 20, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl idx='6' parentid='compliance-editor-dialog' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='compliance-editor-dialog' tag='I' class='md-icon material-icons md-text--inherit' aaname='check_box_outline_blank' check:innerText='check_box_outline_blank' /&gt;" Guid="0aa528ed-72b2-4d3f-9907-0553626a328d" InformativeScreenshot="987f517ae893bc544cd8fdbd6a709c47.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="1167, 1113, 148, 13" CvTextArgument="Scheduled Autos Override" CvType="Text" DesignTimeRectangle="1167, 1112, 149, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl id='compliance-editor-form-scheduled-autos-override-label' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='compliance-editor-form-scheduled-autos-override-label' tag='SPAN' type='' class='' aaname='Scheduled Autos Override' check:innerText='Scheduled Autos Override' /&gt;" Guid="c8100045-883f-4ae3-bdd4-769fc8dc13b6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAAAWCAYAAADTuj63AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAYvSURBVGhD7Zhbb1RVFMf9Tj77AXwxMTHxyfhgIonGSzSGGCQqJuINIlS5BLyBiFChQr2gGAqtFkGktgVK7xc6nZbpdNrpdKadabvdvzVd093DOacd7PhA9kr+6Zxz9l57Xf577bX7kPHipcbiSeal5lIh2cNb2j08NhUqnmQeNYOKJ5lHzaCyKSTrH5s3V7pmQ79Vg4bf02YiUzRbdveHflds/3zEZGYXzaEfxkO/RwG96GedsO8eqyDGO4+NRn7bSPxV1pBsd33C3M2UzPKyMYtLxgyNz5sdR+7cMzmIB4lkj7zYabpG8mZssmiefq83dEwYNmp7tcCG6z05UywtS16mc4vm+IWU2Bk2frPQ0T9nRiYWzJM7uu/5dt8ke/3QsJnKlsyl9hnzxFu3xbm23pxJzZTMC3sHQpUoHiSS7fxm1MzMLZpcYcl8cW4idEwYakGyx7d3me47Bdn42EVeGlrSJj+/ZE40TYbO+T9w3yRjAsF9//hqiUQZO/qThqQ8n2pOmznrIMLYwz+WkwDJbo+Ug8Fu49uBs6sGHPstJe90nn57dlef6R0tyJzCwpJUTk0U9uAINjDWJUjQSfTcHMpL9QXtdheSEL6x67GZNfBlNr8US7KWjqzs4M6BOaloWjHi7MF/FSoOY4M2DSbnzSv7BmUutl2+ma1UJ+L29ldlvS7Qg711K/FXYGNicsGcbEqZjK1smjMKA+9/vpqR56i4YzMVUeJhN1NT24x8x8b5Ytl+igZ+MZ4YnL82LfbiC/HBLo0/JyDFSPMIT3ivUiEZQUtOFU3aVrMjv96tJElxsHHcZK0h9RcnzWPbusw56whB33Z4WIxh0X1nkuIoz32JghhXdzopVeGnKxmZ19KZrVRHHJm0vzmShXB2TrUkYw2SOW5tJ4n0EVRkAv3O0TsSzKZ/ZmTto9YvghhFMjdJVDES+OaX5fXj7OGZv2q7axMnxPN7BiSBbCiqE1WIpH50IiFr8n7QbjC+qS1Bne57/FDSYO8vf5VJtefUmPhO1YuLO3ohy0UbF+yDjAuWQG19OfGX3Lskw3d0fXdpNfeFFTIynzhdteP5duaPKbENG1TW9GQk+s9bs8JGjHB7MnYegdKdTXAIFonFGPe4dIPDPJivAVSCNLamJQkaoOC8jZIMkuMkgVc9GiB2FJvm5U/LFcTVoWNdQCwNEMkgKVoVqiFZmE1UI606rKMEeOrdHsFrB4YqsVVADNXpvndtIX4aX0ijZI2KO3OxNTVdMs99XNYr+qxtbjV1SRanKy7GKmtI5oIq0GP7ARaHrfQGumgQcSTjfVAoq82293OTFJwXl1TXSX6TsKBA4OaO8hqaJFeHrqkgwRyPbkXBdr0AxNnDs2u7a5/qd9+x1tfnU5LokjUdMnPk6FiFq9N9r5UMnWwI9Ow6mTDDlgjfr9gTFXdIEdQb9E3na77d38D1BV1hAjFVKiS7cH1aAvzMh30VZTAbkqEsWMke3XrLbD04JKU1jmTBeQrW2axKxhGh/aGLaioZxwT9SVBKi8tSeeLs4dm1PaqSQQyONMa8VFe+TBG/a905iYUbe8CacT0ZFZANQXz/tjdQ2h3WZkxU3IFrK89B34BLrPUqGT2lVkUXKhWS6RlOE4jjgN84yW7RnozAQTBKPQtBxDiSMY/knW2dknn0ITcG8+bV/YMyJ6onI+msxzrM41ZF44lu10kcp8oSBCoudlMlGy9PVdWTcSwyVpMEqGCjqQX5F0KcPYzlL2TXY8/tydQ3rZKsJb2T7R/RFUUy9U1vl4wlqcHbJdWL9sa9qMTF3c0PY9cjGd+jejIpRHZu642sxB5/uTR98G1ihVmB43Lv6bHKDRFQxrkE6MI4qDc1EqK3lTiS8ezecuj3SBTBIPhdw3nRR8K4oZJUnYczegPjPWui2yUZ49CjNznGcmy88VmZLKzNRuF9Ml0Uu5QYCsjEsej6oKi3gaUqQb4oexhHsCEODfR+GxfXJkBVcW+XVB7VRbXl0uSuq8C29f5PppUz+G+NqLhXSzLmMJcNqvFlvsbfvV1iJ5UPH1UiezIPj/8KFU8yj5pBxZPMo2ZQ8STzqBlUPMk8agaVCsm8eKmVeJJ5qbEY8y8xUH/8QueiSgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NCheckElement.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NCheckElement>
+                            <If Condition="[IsAutosCheckboxAvailable]" sap:VirtualizedContainerService.HintSize="450,692" sap2010:WorkflowViewState.IdRef="If_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,268" sap2010:WorkflowViewState.IdRef="Sequence_90">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NCheck Action="Check" DisplayName="Check Scheduled Autos Override CB" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                                    <uix:NCheck.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1137, 1111, 19, 19" CvTextArea="1167, 1113, 148, 13" CvTextArgument="Scheduled Autos Override" CvType="CheckBox" DesignTimeRectangle="1127, 1101, 189, 40" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label' idx='32' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='md-selection-control-label md-pointer--hover md-text' parentid='compliance-editor-dialog' tag='LABEL' aaname='' check:innerText='check_box_outline_blank&amp;#xD;&amp;#xA;Scheduled Autos Override' /&gt;" Guid="bb1b4924-70e0-4dfa-bb3f-2e4cf9797b49" InformativeScreenshot="021dfda2129689af5cfd985d9975297e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CvElementArea="1138, 1172, 18, 18" CvTextArea="1166, 1173, 108, 13" CvTextArgument="Intrastate Override" CvType="CheckBox" DesignTimeRectangle="1127, 1161, 147, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label' idx='33' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='md-selection-control-label md-pointer--hover md-text' parentid='compliance-editor-dialog' tag='LABEL' aaname='' check:innerText='check_box_outline_blank&amp;#xD;&amp;#xA;Intrastate Override' /&gt;" Guid="9278b2bc-7110-43d0-be21-8943e6eeef6e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJcAAAAsCAYAAABokirPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS3SURBVHhe7ZpdK3VBFMefr+IDuHDvC3DBFbmQC/KSEAlJRHLhJURciAtFEkoUeSkXuEC5UEJI3l9CEnm3nue/OrObZ845+9g0T885Z/1q1z57ZtasWfPfa2Y2v0gQLCHiEqwh4hKsIeISrCHiEqwh4hKsIeISrCHiEqwh4hKsIeISrCHiEqwh4hKsIeISrCHiEqzxI3G9vr7S2NgYlZWVfelCXbQRooNvi+vg4CCggL5yoa0Q+XxbXOvr69TW1kZXV1e+J6FBXbRBW+H/5Pb2Nuicrq2tUVVVFT09PfmeuBM24sKAMDAMMBRe6nrBq12vk6GDWDU0NFBcXBzFx8dTS0sLXV9f+0rtMTAwQE1NTQG3LyKuP4S7uCCi/Px8Ghoa4raPj498X1hYSHd3d75a/56oEVdHRwf19PRQZWUlxcbGUl5eHu/l9vf3KTExkWJiYvhCPTzLzc3lvpOTk/n35uYmt0Gd1NTUv3w6PT2l8vJytpuQkEAzMzO0t7fnZxcEs4NyVRft0Ofb2xtNTEywTWSk9vZ2Fo7J+Pg41dXV0cvLi+8J8T2ezc3N0dHRERUUFNDFxYVTVl9fT8vLy/xb90nFBcCnxsZGysrKChoX9K3Ghph3d3ezrxgbsqcurmD9KMJaXAjS4eEhBxe/Ozs76fPz068ugpaUlMRv/83NDYsHbTEZHx8ftLS0RDk5OVymJmp0dJTLtre3KSMjg3Z2dvzsXl5eBrUDzDd9dnaWJ+H8/JxFhX6Gh4e5TAdjwSSbDA4OcpnycXFxkZ+fnJxQSUkJ+3N8fMz+wqf393eanp7mFwX9qZjt7u7Sw8ODX1wgfl1cuMcBDJkUY+jq6nLG49aPIqzFpU+APpFmXQQRb7rasyCI9/f3LAiA5yhHPQSqtbWV31L4izqoiwk17brZAbpPz8/PVF1d7QgC6OUK9FNbWxtQXPrEww72RvAX2Qw+435yctJ5DrBBLyoqYp/QFp+DFGZcgOojlL9u/SiiRlwYOAIAkN3wxqWnp/stXQBvHza2aWlpvIRhKYOQTLuh7ATySdVTFzKJuY8yx6ZQmQsgS1VUVNDZ2Rk1Nzc7PqGd2QeWd8TctGvGBShxmWMF+njc+lFEpbiwxGFSsY+CQPS3TmUqiAlgycnOzmafTbtudoDuk8oEKysrXOYGxuW25wLIGIjlyMgI1dTUOAJFRsFeDv6YeBHXVzJXsH4UES2uhYUFLjODuLGxwXsfCAcimp+fp5SUFK6HrIW9A/YQEBoygykuZdfNDoBPxcXFLFaADFhaWso2YXt1ddXpRwfLlH5axBXotAj7+EzR29vrTDI21ZmZmWxb+d/f388+eBGXug+253LrRxGR4gJTU1MceJx2zCBCCFhiUI4Lp04IaGtri8txSIAI1GkR2UFlMt1uKDuYFGy0sWnGZKC+Oi3CNkSMw0UgEKtQ37kgNAgOItcxT7BYuiE+r+JCLPv6+tgH+IzxwScV42D9KMJGXEL4IeISrPFtcSHN63+M9nKZH9uEyOTb4gLyLzeCGz8SlyC4IeISrCHiEqwh4hKsIeISrCHiEqwh4hKsIeISrCHiEqwh4hKsIeISrCHiEqwh4hKsIeISLEH0G7jne0U+m1imAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NCheck.Target>
+                                  </uix:NCheck>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,254" sap2010:WorkflowViewState.IdRef="Sequence_91">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,166" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Scheduled Autos Override checkbox is not available&quot;]" />
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <uix:NCheckState DisplayName="Check if Limit has to be set" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,508" sap2010:WorkflowViewState.IdRef="Sequence_92">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Limit has to be set. Entering 0.0&quot;]" />
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'flag'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="NTypeInto_29" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="0" Version="V3">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1457, 787, 123, 28" CvType="InputBox" DesignTimeRectangle="1459, 791, 121, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='contact-editor-form-general-limit' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='contact-editor-form-general-limit' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Limit*' /&gt;" Guid="41013c03-591b-4d52-bcd8-c9055c956610" InformativeScreenshot="f6db8ebe7c124baa11d55ec5e17a95d1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CvElementArea="1432, 790, 19, 21" CvType="Icon" DesignTimeRectangle="1432, 791, 20, 20" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;i' parentid='compliance-editor-dialog' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='compliance-editor-dialog' tag='I' class='md-icon material-icons compliance-editor-form__limit-flag' aaname='flag' check:innerText='flag' /&gt;" Guid="4ec44d04-ff35-48bc-9b28-4fc17bd4d4ad" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABkSURBVEhL7Y9RCsAgDEN3Ti/i9byU310KCoVlxIHDnz4ICAk+etnPpEBySNC7WSloUbPUOoYarAlK4J1vFsCaoAQsL1ehIaQggIaQggAawhR4/B1p7fn5VsFHUiA5JNhICgRmN/asFBNJIFOxAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NTypeInto>
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_93">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
+                                <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1432, 764, 19, 20" CvType="Icon" DesignTimeRectangle="1432, 765, 20, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;i' parentid='compliance-editor-dialog' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='compliance-editor-dialog' tag='I' class='md-icon material-icons compliance-editor-form__limit-flag' aaname='flag' check:innerText='flag' /&gt;" Guid="66c4dba3-c3a6-45fa-b39a-e7ea8e715336" InformativeScreenshot="2dcfdb9aa8184a18127d46c98e9e74c4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvElementArea="1455, 767, 125, 30" CvType="InputBox" DesignTimeRectangle="1459, 774, 121, 15" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='contact-editor-form-general-limit' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='contact-editor-form-general-limit' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Limit*' /&gt;" Guid="165d8b3e-4c20-4e3c-95b7-3903648b2262" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAATCAYAAAC9fgIPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGBSURBVGhD7ZbNi4JAGIf3n+7otWtnQYQOXfqiW5co6FAQEhmIgZCHKKhQRAj6sH7LO1grWyyu5Low7wOC83tnnMMzM84HGOlg6RLC0iUklfTb7QbP83C5XOIkPYfDAWEYxi3mP/CQTnI0TYPrunHyRRAE0HUdm80mTtIzHo/R7XYRRRHO5zNardbTHL1e7+W8TD6kkv4uktLp9DBNE7Zti0VhWRZGoxF2u13cm8mLVNKpVqvVhJC7uOFwiGq1CkVR0Gw2sVqtUK/XRZvy/X4vxk6nU7GTaWylUkGpVBIPZfSt5XIJVVXR6XQy/0KY35FZOu3O0+mE4/GIRqMhjn/f93G9XsWOpTq936UT3493qg8GA0wmE7TbbWy3W5Ez+ZJZerKfYRgPsQTVqA/1/Uk6LZrZbCby9XoNx3FEzuTLW6QnxRJppTPFwNIlpBDpi8VCtJlieJJ+v10nb9nvkk7M53OUy2X0+/04Yf6ah3RGHli6hLB0CWHpEsLSJYSlSwfwCS+KipHFnlpOAAAAAElFTkSuQmCC" SearchSteps="Selector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NCheckState.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NCheckState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="4" DelayBefore="1" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="450,182" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/carrier-portfolio" CVScreenId="d6721ce6-2cbd-46ef-b7a8-3af5b38475b4" CvTextArea="1702, 1287, 51, 13" CvTextArgument="SUBMIT" CvType="Text" DesignTimeRectangle="1684, 1279, 88, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Submit' parentid='compliance-editor-dialog' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' parentid='compliance-editor-dialog' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block compliance-editor__submit-button' check:innerText='SUBMIT' /&gt;" Guid="cb940d4e-4a1b-4266-8103-247f27a41fe3" InformativeScreenshot="5fa56559e9448658abc593518481fac3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="d6721ce6-2cbd-46ef-b7a8-3af5b38475b4" CvTextArea="1613, 1287, 54, 13" CvTextArgument="CANCEL" CvType="Text" DesignTimeRectangle="1596, 1279, 88, 32" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Cancel' parentid='compliance-editor-dialog' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cancel' parentid='compliance-editor-dialog' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block compliance-editor__cancel-button' check:innerText='CANCEL' /&gt;" Guid="31e47578-4427-4ee9-ac64-f29104dca92a" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                          </Sequence>
+                        </TryCatch.Try>
+                        <TryCatch.Catches>
+                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="516,22" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ActivityAction x:TypeArguments="s:Exception">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                              </ActivityAction.Argument>
+                              <Sequence sap:VirtualizedContainerService.HintSize="416,533" sap2010:WorkflowViewState.IdRef="Sequence_154">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,84" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Error" Message="[&quot;Error found in the Compliance tab. Error message: &quot; +exception.Message]">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:LogMessage>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Cancel'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_62" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/carrier-portfolio" CVScreenId="346fb496-afb9-41e8-96e7-b05c17fcf7ab" CvElementArea="1594, 1277, 92, 36" CvTextArea="1613, 1287, 54, 13" CvTextArgument="CANCEL" CvType="Button" DesignTimeRectangle="1596, 1279, 88, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Cancel' parentid='compliance-editor-dialog' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cancel' parentid='compliance-editor-dialog' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block compliance-editor__cancel-button' check:innerText='CANCEL' /&gt;" Guid="abbbf430-9504-4db7-af18-f8dc3fd2f9e8" InformativeScreenshot="19aef34660cda445e8d5774435d80d21.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="346fb496-afb9-41e8-96e7-b05c17fcf7ab" CvTextArea="1702, 1287, 51, 13" CvTextArgument="SUBMIT" CvType="Text" DesignTimeRectangle="1684, 1279, 88, 32" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Submit' parentid='compliance-editor-dialog' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' parentid='compliance-editor-dialog' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block compliance-editor__submit-button' check:innerText='SUBMIT' /&gt;" Guid="206ae28c-5324-4e5a-b503-f39224c2bba9" SearchSteps="FuzzySelector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_63" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/carrier-portfolio" CVScreenId="5d5ec422-1e1f-43c1-8805-888fbae4f8e8" CvElementArea="1439, 778, 67, 39" CvTextArea="1458, 788, 29, 13" CvTextArgument="YES" CvType="Button" DesignTimeRectangle="1441, 779, 64, 36" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='button-confirm' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='button-confirm' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block md-btn--dialog button-confirm' aaname='Yes' check:innerText='YES' /&gt;" Guid="2c015f3c-443a-4493-9f58-7ba944303281" InformativeScreenshot="a07149686a773542fa60710c94babe47.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="5d5ec422-1e1f-43c1-8805-888fbae4f8e8" CvTextArea="1085, 680, 275, 23" CvTextArgument="You have unsaved changes." CvType="Text" DesignTimeRectangle="1063, 653, 450, 72" ElementType="Text" FullSelectorArgument="&lt;webctrl id='modal-confirmation-title' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl id='modal-confirmation-title' tag='H2' type='' class='md-title md-title--dialog modal-title' aaname='You have unsaved changes.' check:innerText='You have unsaved changes.' /&gt;" Guid="c0dceb1e-fc0d-49cd-b893-8dbd0355151b" SearchSteps="FuzzySelector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                              </Sequence>
+                            </ActivityAction>
+                          </Catch>
+                        </TryCatch.Catches>
+                      </TryCatch>
+                    </Sequence>
+                    <uix:NCheckState DisplayName="Check App State 'Compliance Editor'" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NCheckState_11" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Timeout="5" Version="V3">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,636" sap2010:WorkflowViewState.IdRef="Sequence_155">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="LogMessage_35" Level="Warn" Message="[&quot;Compliance editor window is still open. Closing it&quot;]" />
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Cancel'" sap:VirtualizedContainerService.HintSize="388,189" sap2010:WorkflowViewState.IdRef="NClick_64" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/carrier-portfolio" CVScreenId="346fb496-afb9-41e8-96e7-b05c17fcf7ab" CvElementArea="1594, 1277, 92, 36" CvTextArea="1613, 1287, 54, 13" CvTextArgument="CANCEL" CvType="Button" DesignTimeRectangle="1596, 1279, 88, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Cancel' parentid='compliance-editor-dialog' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cancel' parentid='compliance-editor-dialog' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block compliance-editor__cancel-button' check:innerText='CANCEL' /&gt;" Guid="abbbf430-9504-4db7-af18-f8dc3fd2f9e8" InformativeScreenshot="19aef34660cda445e8d5774435d80d21.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="346fb496-afb9-41e8-96e7-b05c17fcf7ab" CvTextArea="1702, 1287, 51, 13" CvTextArgument="SUBMIT" CvType="Text" DesignTimeRectangle="1684, 1279, 88, 32" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Submit' parentid='compliance-editor-dialog' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' parentid='compliance-editor-dialog' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block compliance-editor__submit-button' check:innerText='SUBMIT' /&gt;" Guid="206ae28c-5324-4e5a-b503-f39224c2bba9" SearchSteps="FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_65" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/carrier-portfolio" CVScreenId="5d5ec422-1e1f-43c1-8805-888fbae4f8e8" CvElementArea="1439, 778, 67, 39" CvTextArea="1458, 788, 29, 13" CvTextArgument="YES" CvType="Button" DesignTimeRectangle="1441, 779, 64, 36" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='button-confirm' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='button-confirm' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block md-btn--dialog button-confirm' aaname='Yes' check:innerText='YES' /&gt;" Guid="2c015f3c-443a-4493-9f58-7ba944303281" InformativeScreenshot="a07149686a773542fa60710c94babe47.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="5d5ec422-1e1f-43c1-8805-888fbae4f8e8" CvTextArea="1085, 680, 275, 23" CvTextArgument="You have unsaved changes." CvType="Text" DesignTimeRectangle="1063, 653, 450, 72" ElementType="Text" FullSelectorArgument="&lt;webctrl id='modal-confirmation-title' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl id='modal-confirmation-title' tag='H2' type='' class='md-title md-title--dialog modal-title' aaname='You have unsaved changes.' check:innerText='You have unsaved changes.' /&gt;" Guid="c0dceb1e-fc0d-49cd-b893-8dbd0355151b" SearchSteps="FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_156">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/carrier-portfolio" CVScreenId="865a02da-e1ff-42f8-8d2f-288107b64798" CvTextArea="395, 182, 173, 22" CvTextArgument="Compliance Editor" CvType="Text" DesignTimeRectangle="372, 153, 1000, 72" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='compliance-editor-dialog-title' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl id='compliance-editor-dialog-title' tag='H2' type='' class='md-title md-title--dialog compliance-modal-title' aaname='Compliance Editor' check:innerText='Compliance Editor' /&gt;" Guid="20d6c0bb-d892-400a-9550-744ffc3aa120" InformativeScreenshot="d0ce262b0cb6af5503f7ab6df8a42506.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="865a02da-e1ff-42f8-8d2f-288107b64798" CvElementArea="1216, 246, 19, 19" CvTextArea="405, 240, 906, 20" CvTextArgument="General Information Do Not Use" CvType="CheckBox" DesignTimeRectangle="406, 235, 915, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl class='compliance-editor-form__general-info-title' parentid='compliance-editor-dialog' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='compliance-editor-form__general-info-title' parentid='compliance-editor-dialog' tag='DIV' type='' aaname='General Information' check:innerText='General Information' /&gt;" Guid="a4934a41-c7f6-4b47-91c6-29312e5d60d5" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                    <Sequence DisplayName="Update Address tab" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_69">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1387,254 +1776,12 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NCheckState>
                     </Sequence>
-                    <Sequence DisplayName="Update Compliance tab" sap:VirtualizedContainerService.HintSize="1016,57" sap2010:WorkflowViewState.IdRef="Sequence_95">
-                      <Sequence.Variables>
-                        <Variable x:TypeArguments="x:Boolean" Name="IsAutosCheckboxAvailable" />
-                      </Sequence.Variables>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Entering information in the Compliance tab&quot;]" />
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="2" DisplayName="Click on the Compliance tab" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
-                        <uix:NClick.Target>
-                          <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="898, 261, 82, 11" CvTextArgument="COMPLIANCE" CvType="Text" DesignTimeRectangle="885, 250, 110, 38" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl id='compliance-tab' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl id='compliance-tab' tag='LI' type='' class='md-fake-btn md-pointer--hover md-fake-btn--no-outline md-tab md-tab--inactive tabs-card__tab-selector' aaname='' check:innerText='COMPLIANCE' /&gt;" Guid="31f77a32-1472-4250-91b3-851f140b995c" InformativeScreenshot="bf40a5ae6a06a9ba247305186b76e8e7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CvTextArea="1008, 261, 82, 12" CvTextArgument="ACCOUNTING" CvType="Text" DesignTimeRectangle="1010, 261, 80, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl class='md-tab-label' parentid='accounting-tab' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='md-tab-label' parentid='accounting-tab' tag='DIV' type='' aaname='ACCOUNTING' check:innerText='ACCOUNTING' /&gt;" Guid="b0b6b1c2-9023-4d6d-806a-00b7ab889259" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAARCAYAAABD/oseAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANcSURBVFhH7ZbJaxRREMY9efTuTfAmnryIiiKKiAcPgiAiLoggIoKCCx5EBBcUBRH3FVdc4u6fICKuMe6TOMlkkslkJpPVe1m/nqmm+6V7nDjtrQ8f3a/29716y6TJLzOSIjmkhCaMlNCEkRKaMMYROu1NVi70DcuLym85kBsI6cCmTFFu9Y/Kc9U/VVwtjsjKb72+fsnnvJwpDHk6bO6VR2VntiRTXrV7+pnvO+VQd0UeDYx5Ofge1PH0t1mZ9aFLbvSPyGOVrfvZ58c8V6jWs/1XyZOjb1GsCOQ9rDGwOa25H5SrsaNALLNtJB42jN26mR+55rV2+z5gHKGrvhfkYc3pmpJFINNt0OQEpICLSvolBYEhbdmXHpn9MSfXlRCIhJiztclhs0MLY7Eogth3S6Oe/r76Mj7ZOyRzWnMNE8oYfxYCGyPgRM+gB/JcLg7LM5UxH2yR7esaiCQ0Lh42bt3836zN84rD0ThC6UqKgKQnlTHZqB2J3DoX3baO/pA9ifbrd09n2UtySsmxjlytC8Qi0Mm7tFMp/rYWNf9TdWX5MsZmd7Y8IUJtobBxOwqYLTHpfpPHERoXz5osWDcknlc+7qgs2NkhQukwtjNdBTkkgBx0c7W1CYiObW0+M951euOFbd1yXDvDndTU1x2yqC0vS9XGijySr/h6YH5H84MNE0qddDcdQ/xmCa0XD/BvXNRDiFC6ka6k9QlKcDp1sf5DGmS6hAYRnHiU3orkGyVnizZKKLK9tR2Bf5AA85sIofXiAf6RBf2BW6tPKFuUFSAg3YksOP5bh1JwvQ5doFuF8wt9Eh2KjG3HGcZxwWK4uSdKaFw8wL91KEcA5NNssYSyJSELRxdcPhwH//sMpTBycNRsaa/m4OwmP3m3at4gAejX6hhfq7UZQuPiRZ2hxItafJ9QIwPWucUAW59AJIAYu+UBBbCaTB6f5V/Dtzw6bPDHhqdT1G3JlzG3PIvApYB9MAfx7GxzCcAnuAWbJTQqHjLqY0zTwYu9cPBd88MhlFbnieR2Hzim25BAfBlvbi96k2OSBIx6h/KkQmcL1Og7FD123PYttd1CHOLxLEPvEgCsy40Ak/8LoSAqHvWxG4N1Mff16m9+IHQppWgeKaEJIyU0YaSEJoqM/AFSCFEqQQqkjAAAAABJRU5ErkJggg==" SearchSteps="Selector" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NClick.Target>
-                      </uix:NClick>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="4" DelayBefore="1" DisplayName="Click on Add" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_39" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
-                        <uix:NClick.Target>
-                          <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1077, 304, 24, 23" CvType="Icon" DesignTimeRectangle="1080, 305, 20, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='edit' parentid='tabs-card-panel-3' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='edit' parentid='tabs-card-panel-3' tag='I' type='' class='md-icon material-icons md-text--inherit' check:innerText='edit' /&gt;" Guid="76cc3e28-f0ab-4476-8350-11d1956f7a51" InformativeScreenshot="8799cd69c470be2d68ef27523dcfd224.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CvElementArea="994, 248, 127, 40" CvTextArea="1008, 261, 82, 12" CvTextArgument="ACCOUNTING" CvType="Button" DesignTimeRectangle="1010, 261, 80, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl class='md-tab-label' parentid='accounting-tab' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='md-tab-label' parentid='accounting-tab' tag='DIV' type='' aaname='ACCOUNTING' check:innerText='ACCOUNTING' /&gt;" Guid="5f887f80-6fda-40fe-a157-2bb91e7dd614" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAARCAYAAABD/oseAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANcSURBVFhH7ZbJaxRREMY9efTuTfAmnryIiiKKiAcPgiAiLoggIoKCCx5EBBcUBRH3FVdc4u6fICKuMe6TOMlkkslkJpPVe1m/nqmm+6V7nDjtrQ8f3a/29716y6TJLzOSIjmkhCaMlNCEkRKaMMYROu1NVi70DcuLym85kBsI6cCmTFFu9Y/Kc9U/VVwtjsjKb72+fsnnvJwpDHk6bO6VR2VntiRTXrV7+pnvO+VQd0UeDYx5Ofge1PH0t1mZ9aFLbvSPyGOVrfvZ58c8V6jWs/1XyZOjb1GsCOQ9rDGwOa25H5SrsaNALLNtJB42jN26mR+55rV2+z5gHKGrvhfkYc3pmpJFINNt0OQEpICLSvolBYEhbdmXHpn9MSfXlRCIhJiztclhs0MLY7Eogth3S6Oe/r76Mj7ZOyRzWnMNE8oYfxYCGyPgRM+gB/JcLg7LM5UxH2yR7esaiCQ0Lh42bt3836zN84rD0ThC6UqKgKQnlTHZqB2J3DoX3baO/pA9ifbrd09n2UtySsmxjlytC8Qi0Mm7tFMp/rYWNf9TdWX5MsZmd7Y8IUJtobBxOwqYLTHpfpPHERoXz5osWDcknlc+7qgs2NkhQukwtjNdBTkkgBx0c7W1CYiObW0+M951euOFbd1yXDvDndTU1x2yqC0vS9XGijySr/h6YH5H84MNE0qddDcdQ/xmCa0XD/BvXNRDiFC6ka6k9QlKcDp1sf5DGmS6hAYRnHiU3orkGyVnizZKKLK9tR2Bf5AA85sIofXiAf6RBf2BW6tPKFuUFSAg3YksOP5bh1JwvQ5doFuF8wt9Eh2KjG3HGcZxwWK4uSdKaFw8wL91KEcA5NNssYSyJSELRxdcPhwH//sMpTBycNRsaa/m4OwmP3m3at4gAejX6hhfq7UZQuPiRZ2hxItafJ9QIwPWucUAW59AJIAYu+UBBbCaTB6f5V/Dtzw6bPDHhqdT1G3JlzG3PIvApYB9MAfx7GxzCcAnuAWbJTQqHjLqY0zTwYu9cPBd88MhlFbnieR2Hzim25BAfBlvbi96k2OSBIx6h/KkQmcL1Og7FD123PYttd1CHOLxLEPvEgCsy40Ak/8LoSAqHvWxG4N1Mff16m9+IHQppWgeKaEJIyU0YaSEJoqM/AFSCFEqQQqkjAAAAABJRU5ErkJggg==" SearchSteps="Selector" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NClick.Target>
-                      </uix:NClick>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Current Contract Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="[now.ToString(&quot;MM/dd/yyyy&quot;)]" Version="V3">
-                        <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="821, 460, 127, 12" CvTextArgument="Current Contract Date" CvType="Text" DesignTimeRectangle="822, 460, 141, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='contact-editor-form-contract-date' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='contact-editor-form-contract-date' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Current Contract Date' /&gt;" Guid="5ced1c8a-605f-4b97-82db-600f6d413ec0" InformativeScreenshot="1956cfe304ba232e483821efa7ae7863.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CvTextArea="821, 460, 127, 12" CvTextArgument="Current Contract Date" CvType="Text" DesignTimeRectangle="822, 460, 125, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Current Contract Date' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Current Contract Date' parentid='compliance-editor-dialog' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' check:innerText='Current Contract Date' /&gt;" Guid="fedf8608-5e83-4efa-b554-3314ad8a6303" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIEAAAARCAYAAAD6xs8TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARdSURBVGhD7ZjZLyZREMXnn/Yo3rxICBIPiBDEvj4QYgtCeBBrBLGH2LfYt5r51Xz1pVzdzcxIPEyfpMPte2/VqarTt6u/H5Liv0cqghSpCFKkIkjxC29E8PLyIrOzs1JaWio5OTlSVlYmS0tL8vr6mlnxPdjc3JS2tjZ5fHzM3HkL7o+Pj0tBQYHyrqqqku3t7S/hPTAwIDMzM5nR1yEpJvwRB1dubq7U1NTI+vr6p+P5KF8hsiLAAc4bGxvl4uJCx8fHx5rQtbW1zKrvQVJQCHd4eFh6enrk9vZWeSOAiooKOTg4yKz6e3yXCGyOeI6OjrQOi4uLmRXJ+GsRXF9fS21trezt7WXu/AaEuru75fn5+V1CvDP+Z39XV5dUVlZqIVBwX1+flJSUaCCsGxsbk/z8fL0mJye1iNzHzvT0tO5B/a2trcoJn/ZUFBUVqR0PxuxBuAYSx77R0VEdh377+/vl/v5e5+Dd1NQkIyMjOldYWKjJvrm50TjMN/wQGX8HBwc1JnLBut7eXsnLy3sTE3h4eFBf5ndiYkKenp4+jMmLwLCzsyN1dXXKAcT5jbJtJzyxsR5OcDNkRcDi+vp6NR6Hj0QAGV4fEMVecXGxTE1NaTEhQiHa29u1AFdXV9LQ0KCnjInACs98S0tL1pf3EyJpDiAI8wsvK8zQ0JByMt7Ly8s6Xl1dlerqauUBfMye59nZmdpC5NiiuAiRvdjEFsKyhOMbDgsLC2oriXeUCKgL9bGixvkFoW1EbQ8KXHioeeAMWRGwEeX/iwgonDmGLMq1ZJIExvv7+zoG2MIme7BjQQCbA2FQHlEJ84jye3p6qvcuLy/f2fbJBlEi2NjY0DECu7u701PSxhSd9fhF5IeHhzoHEI6N/zQmePFK4ERI8gu8bUTS0dGh4jaEvr/0JPCGQ3v89cerXRAkIPZiw4Cfz4ggaQ6ERQX+Xrg/XB8lAs/z/PxcTwaOWYuJ9QiNonm/Hkm82R/Ohbzi/AJv2zjbGrvghlBBVgQ8FRwZ/9ITeOKQ9SKIejIMRtQnFz+fEQHNHwHF9QRxJwGx8mSGtv9EBBytzc3NMjc3p0c0sPVR8bLf9yJxMbE/nPM9QZJf4G3bSWCnVxSyIiBxGEFdCIIxXwckywzYPCR4emlMzFkYVCgCe0daF8+Y9yOfPuxhryUX4MuLgITiMwR2+DrgOGQe3jSl9hQy9j0BvmjseKeyN+QdJQIaOuyEPPHH2pWVFbVlX1Nwt3jxxT6KTzFo0EBSTOw3Tvjd3d3VU9S+DpL8gtA2Pv1XH/Wcn5/X/0FWBACD/neC8vJybdxsMUmk+6d75zcEAjSyYTJDEQDmrEvnGENEzHPfJxd4EdBXEBSN5snJid7zYL/9TgC38CvH++VCMHFPZCiCra0t7arjXlsIjlzgt7OzUy86dcDDgi98ws1/OSTFROx2bMf9TpDkN7RtdSUO1nOK8DoxvBFBiv8TqQhSpCJIkYoghYj8BDPddvEwZLFeAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NTypeInto.Target>
-                      </uix:NTypeInto>
-                      <If Condition="[In_TransactionItem.SpecificContent(&quot;Zip&quot;).ToString.Length &gt; 5]" DisplayName="Check Zipcode lenght to determine contract type" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_10">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="376,489" sap2010:WorkflowViewState.IdRef="Sequence_88">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Current Contract Version'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="2024CAN" Version="V3">
-                              <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="975, 453, 145, 29" CvType="InputBox" DesignTimeRectangle="977, 460, 141, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='compliance-editor-form-contract-version' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='compliance-editor-form-contract-version' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Current Contract Version' /&gt;" Guid="df0a7c1c-b9d0-4de3-9f1e-b761a758f118" InformativeScreenshot="c1feecddd1aeb4235b68327ad15ad9a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CvElementArea="975, 453, 145, 29" CvType="InputBox" DesignTimeRectangle="977, 460, 142, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Current Contract Version' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Current Contract Version' parentid='compliance-editor-dialog' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' check:innerText='Current Contract Version' /&gt;" Guid="07daf265-ca4e-41df-a8ab-0704ef578220" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJIAAAARCAYAAAA2X/X4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATXSURBVGhD7ZjXSyVLEMbvP+3j4psIghF9UBFFxazog6KYUDEjYgBRzJizmFMtv9qpub29c84YzuKFOx8Mnunuqfq66uvqbv+RBAkygERICTKCREgJMoJESP9j3N7eyvX1dfD2NfwmpKenJxkbG5O8vDzJysqSqqoq2d7elre3t2DE92Bzc1Pa2tqUXxT+Fm/s4hf/mUZ/f7/Mzc0Fb//i7OxM+R8fHwctv/Dw8CCNjY2yuLgYtHwdExMT0tPTIy8vL0HL5xEK6fX1VYaGhqS7u1vu7u40CSSjoqJCDg8Pg1Hfg3RC+pu8v0NIJLWrq0ump6eDll/Y3d1VgV1dXQUt/y2EQmIF1NTUyOXlZdAimhQmPDIyEhlUAkE/4C/JZLL8Zlxtba10dnZKZWWlllFsjI6OSk5Ojj6sCISA77q6OpmcnJT8/Pzf+rBFleEpKCj4Y6XG8QYXFxfS3NwsP378kJKSEl3VVq0YNzw8LK2trdqPrZOTE7WLP/PNOPPV29srxcXF+r63t6dtjCkrK1MRGx4fH6Wvry+c7/j4uG4lxMPsRi2QtbU15cv3AK7MhYffxGV+fl5jlZ2drT4YazkaGBhQfuTHHcv8mOfNzY3adfPn22xvbw+3PeaZKj+GUEjpVj14j5AQ0dHRkZZhxuFweXk5rBSICIL0Q7KhoUGDBtGioiJdhc/Pz3JwcKAVhXaQjlscb3wThNnZWZ04WweJ39jY0H7jTTu+eeeBrz9n4zk1NaXJQLx8yxwYv7q6KtXV1dqHLwRqSYYHc7etCR9RFQnwPYtwf39f320OOzs7+r60tBQuHmxbBTO+iOX8/FzfqWQ2lvkNDg7qQoCfmz+zyaJjHPbgi424/IBQSBhNlxA/qMAXEskyMK6lpSW0Z8Gw4AD7HkL19fVatYDvK51Y4nhTIThbIF4DyeRsQDD9hLq+fB7wZA62ovn+/v5eRQRop59xzJeFwsIykFx79/26wJ5VIIB/q1AksqOjQ0VrMM745K8tEsD2TtIRO9smj3G2+EfZNP7kKy4/IKMVKVVCACTckm4PE0DhnxVSHO+ofrfto0JyeZIMElReXh7Ox7bfVIdmQzohARJIIhEnFcTOTMbJjSEPvqjyLl8AR2yxqHNzc1WQVB1g+fPnCdy2DwkJ5ULmK2ekdEKKWqGGOKK+LRdxvFNVJLYDVmc63j4Pn6f5Zk74pJ1+xkXNF3vGw/frg+rDFgVXbCJMYNXDrToGny9wfVJBZ2Zm9HvsWP5SVSSqK1vjh4SEE24/7OlW+kiCrSpLDg9juT00NTXpO/AD4yefbzgz2O2Kd4K0vr7+LiGRFHj5iONtAbEzEquRswCVBKTjbTxWVla0z+dp5w+2LGxzHiwtLdVxNl8OvtghmSSLAy3AL4dv+KYC8SksLAy3YQM2WBwsHr5HVAsLC3/EDTBPYke1Yixx8IUE3DMSvhhn22lcfkAoJMAA+38MJ3wOfNxKDBAnKZRSnCKK9woJ8NtubdwMCBDk4ohS3gkGB77T01NtcxHHO+7Wlo43CYIvh1SfJwHn9kI/D8LhsG3nQJJgtza4uTedra0tvQFZUqOAQBGmid6ADfcmZtuVHzfAWKqQjUWAVt1cIbk2o25tHxJSggSfRSKkBBlBIqQEGUEipAQZgMhPjoXQReX7zm4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NTypeInto.Target>
-                            </uix:NTypeInto>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Entered contract type for Canadian Carrier&quot;]" />
-                          </Sequence>
-                        </If.Then>
-                        <If.Else>
-                          <Sequence sap:VirtualizedContainerService.HintSize="376,489" sap2010:WorkflowViewState.IdRef="Sequence_89">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Current Contract Version'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_27" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="2024FTL" Version="V3">
-                              <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="975, 453, 145, 29" CvType="InputBox" DesignTimeRectangle="977, 460, 141, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='compliance-editor-form-contract-version' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='compliance-editor-form-contract-version' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Current Contract Version' /&gt;" Guid="df0a7c1c-b9d0-4de3-9f1e-b761a758f118" InformativeScreenshot="c1feecddd1aeb4235b68327ad15ad9a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CvElementArea="975, 453, 145, 29" CvType="InputBox" DesignTimeRectangle="977, 460, 142, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Current Contract Version' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Current Contract Version' parentid='compliance-editor-dialog' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' check:innerText='Current Contract Version' /&gt;" Guid="6a16b955-7d6a-4c3c-91c4-116b30ae3de2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJIAAAARCAYAAAA2X/X4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATXSURBVGhD7ZjXSyVLEMbvP+3j4psIghF9UBFFxazog6KYUDEjYgBRzJizmFMtv9qpub29c84YzuKFOx8Mnunuqfq66uvqbv+RBAkygERICTKCREgJMoJESP9j3N7eyvX1dfD2NfwmpKenJxkbG5O8vDzJysqSqqoq2d7elre3t2DE92Bzc1Pa2tqUXxT+Fm/s4hf/mUZ/f7/Mzc0Fb//i7OxM+R8fHwctv/Dw8CCNjY2yuLgYtHwdExMT0tPTIy8vL0HL5xEK6fX1VYaGhqS7u1vu7u40CSSjoqJCDg8Pg1Hfg3RC+pu8v0NIJLWrq0ump6eDll/Y3d1VgV1dXQUt/y2EQmIF1NTUyOXlZdAimhQmPDIyEhlUAkE/4C/JZLL8Zlxtba10dnZKZWWlllFsjI6OSk5Ojj6sCISA77q6OpmcnJT8/Pzf+rBFleEpKCj4Y6XG8QYXFxfS3NwsP378kJKSEl3VVq0YNzw8LK2trdqPrZOTE7WLP/PNOPPV29srxcXF+r63t6dtjCkrK1MRGx4fH6Wvry+c7/j4uG4lxMPsRi2QtbU15cv3AK7MhYffxGV+fl5jlZ2drT4YazkaGBhQfuTHHcv8mOfNzY3adfPn22xvbw+3PeaZKj+GUEjpVj14j5AQ0dHRkZZhxuFweXk5rBSICIL0Q7KhoUGDBtGioiJdhc/Pz3JwcKAVhXaQjlscb3wThNnZWZ04WweJ39jY0H7jTTu+eeeBrz9n4zk1NaXJQLx8yxwYv7q6KtXV1dqHLwRqSYYHc7etCR9RFQnwPYtwf39f320OOzs7+r60tBQuHmxbBTO+iOX8/FzfqWQ2lvkNDg7qQoCfmz+zyaJjHPbgi424/IBQSBhNlxA/qMAXEskyMK6lpSW0Z8Gw4AD7HkL19fVatYDvK51Y4nhTIThbIF4DyeRsQDD9hLq+fB7wZA62ovn+/v5eRQRop59xzJeFwsIykFx79/26wJ5VIIB/q1AksqOjQ0VrMM745K8tEsD2TtIRO9smj3G2+EfZNP7kKy4/IKMVKVVCACTckm4PE0DhnxVSHO+ofrfto0JyeZIMElReXh7Ox7bfVIdmQzohARJIIhEnFcTOTMbJjSEPvqjyLl8AR2yxqHNzc1WQVB1g+fPnCdy2DwkJ5ULmK2ekdEKKWqGGOKK+LRdxvFNVJLYDVmc63j4Pn6f5Zk74pJ1+xkXNF3vGw/frg+rDFgVXbCJMYNXDrToGny9wfVJBZ2Zm9HvsWP5SVSSqK1vjh4SEE24/7OlW+kiCrSpLDg9juT00NTXpO/AD4yefbzgz2O2Kd4K0vr7+LiGRFHj5iONtAbEzEquRswCVBKTjbTxWVla0z+dp5w+2LGxzHiwtLdVxNl8OvtghmSSLAy3AL4dv+KYC8SksLAy3YQM2WBwsHr5HVAsLC3/EDTBPYke1Yixx8IUE3DMSvhhn22lcfkAoJMAA+38MJ3wOfNxKDBAnKZRSnCKK9woJ8NtubdwMCBDk4ohS3gkGB77T01NtcxHHO+7Wlo43CYIvh1SfJwHn9kI/D8LhsG3nQJJgtza4uTedra0tvQFZUqOAQBGmid6ADfcmZtuVHzfAWKqQjUWAVt1cIbk2o25tHxJSggSfRSKkBBlBIqQEGUEipAQZgMhPjoXQReX7zm4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NTypeInto.Target>
-                            </uix:NTypeInto>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Entered contract type for US Carrier&quot;]" />
-                          </Sequence>
-                        </If.Else>
-                      </If>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Original Contract Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="[now.ToString(&quot;MM/dd/yyyy&quot;)]" Version="V3">
-                        <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="819, 525, 302, 32" CvType="InputBox" DesignTimeRectangle="822, 534, 296, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='contact-editor-form-original-contract-date' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='contact-editor-form-original-contract-date' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Original Contract Date' /&gt;" Guid="0191e04d-aba8-4dfb-ad7b-9673d34cc0a8" InformativeScreenshot="54b44ab9e34964feb9b64b3cac827e96.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CvElementArea="819, 525, 302, 32" CvType="InputBox" DesignTimeRectangle="822, 534, 127, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Original Contract Date' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Original Contract Date' parentid='compliance-editor-dialog' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' check:innerText='Original Contract Date' /&gt;" Guid="d16335c4-0bd5-44c4-8b45-87dbb46256af" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIMAAAARCAYAAAD+Mx8uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATXSURBVGhD7ZjXSyxLEMbvP+2jiC8+KiqKqIgRxYg5IqJgQsSICTNmzDn25Vd3aqjt66xnV+GcA/NB406Hil9Xd/uPixEjQEyGGCFiMsQI8W0y3NzcuPv7++ArGq+vr+78/Nx9fHwEPelhaGjIzc7OBl8xfhIJZCBRy8vLrri42GVkZLjS0lK3vr4emcC3tzfX29vrJiYmgp5oHB4euoqKCnd1dRX0pIdkZLi8vHTNzc0uKytLWmdnp5D1uzg9PXV1dXW/RPpU8PLy4lpaWtz29nbQkwh8JQ80/GlsbHRHR0fB6NdIdeMkkGFubk4SdnZ25t7f3yUIfC8tLQUzfj+iHLy9vXW1tbVufn5ebCfQU1NTEsDn5+dgVnr4nWSgAXza2dlxJSUlbn9/X/q+QtpkuLu7c5WVlW5vby/o+Q98E4jHx0cJSlVVlevv73cFBQXybRXi3OjoqLA4NzfXDQ4OSoIIog0ov+mfnJyUeTk5OVJdcBgcHByIHnYEVWp3d1f6QZSD9HV3d4cygPqkwaNyQI7MzExXWFjoFhcXw6qH3JGREaksjKOfTYFc3Z00Ekerqalx7e3trry8XHxKZjNymI9cxkgqMcjLywvlatIt6PP7sRm9HLvYvrGxEVZytRl7sEtlQzhyQxsbG5N4+zEHIRlssiyur69ddXW1jNPy8/NlxxFoBNnkYCgyKM0YOzw8HAbLylc509PTMo/SV1ZWJv3ooxrhJM5yTJFQ9AGrzyKqX/Hw8CAEnJmZEbu5vxC8ra0tGWc9eunHJr5p2GBtB5CBYHKkIjeZzTTWrqysiF6OS8bQk0plUFhbjo+PJW7ED734pokHrNWYMA4RWltb3dPTk+Sovr5ebFaEZKAC4JBPBr5RjhE0AqqJAaqQALa1tUmAFDgZRQYbXBsUAkYVwniALnSyBlgHFbo+GRnYqQ0NDRIIBeTlzuOTGmCLBta3l7GmpqYw6MlsRi/Vxs6lijDH+v0ZsIlmgUwlLXc2q/fk5ET0qp3WJ90MkFHBmJWfcmXw56jCzxzjd6pkwDHYyuVVyxzllDXAOmgR1a9AtiZXYfv89XbMt9eXlczmhYWF/+lV0McY8j4DNtEsrC0Qi3seR57q1XgD6xN99ujQxgZmI4OU7ww2KEAVwtKOjg4pkQqcTJUMlD6YD8sJMnOYyxrgJ03BkZPszhBVGbAZ2325qZAhmc1+ZWCcWKIzHTLYOwMEpNTrC8230/pEZWAuNkYhJAOwrwmM5i/f+prwlQGrkHko/JU7g5Vjg0LiOMsvLi4ksRw7RUVFsgb4SVPoa4L5rEMmdxvOSH77dwYuk+jRM9OX65OBuRp0nwzJbIaQ+KpPdM53CEps1e/V1VWR4wObaAC5a2trIlcvxOjhuMI39devDOPj46KX9VyQe3p6ZD7fEGtzc1PmggQysAgFUf9n8JMIbBAhAMq5XPFKIBGpkgEjueXqjRcHCJ6edX7SLOz/GVjb19eXYOtXr4koMtC6urpcdna27HSfDF/ZbF8TxBQZCo4R1rBxfGCTlvPP/s/Ak3lgYCB8vfGS40jnaAe8WujXowB79TXBGu5LNj4JZPguCKwGFxA0e9GK8WfjR8lAuYOpMJazmcoAEy1BYvy5+FEy2DJEU2LE+Dvwo2SI8TfDuX8BwU3kp/0zMroAAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NTypeInto.Target>
-                      </uix:NTypeInto>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'Admin Hold Comments'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_28" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="New Registration - Audit Required&#xA;10 Load Rule" Version="V3">
-                        <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="1440, 388, 136, 13" CvTextArgument="Admin Hold Comments" CvType="Text" DesignTimeRectangle="1441, 389, 296, 73" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='compliance-editor-form-admin-hold-comments' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='compliance-editor-form-admin-hold-comments' tag='TEXTAREA' type='' class='md-text-field md-text-field--multiline md-full-width md-text' aaname='Admin Hold Comments' /&gt;" Guid="56b5f409-45d2-43e2-a65c-d86c4696505e" InformativeScreenshot="5fc36cfa1f46a1ffaaca5cf88ce4e027.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CvTextArea="1440, 388, 136, 13" CvTextArgument="Admin Hold Comments" CvType="Text" DesignTimeRectangle="1441, 389, 135, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Admin Hold Comments' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Admin Hold Comments' parentid='compliance-editor-dialog' tag='LABEL' type='' class='md-floating-label md-floating-label--inactive md-floating-label--inactive-sized md-text--secondary' check:innerText='Admin Hold Comments' /&gt;" Guid="35a12f56-9419-441d-91a4-5ee3cdaaa136" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIsAAAARCAYAAADt5F/aAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR1SURBVGhD7ZjXSzVJEMX3n/ZRfBDEJ0VFBBVRVMwZIyYUzJjFhIo55xz741fcGvq2470ze3dXFubA4J2e7uqqU6eru/3LRIgQEJFYIgRGJJYIgZGSWB4fH011dbU5OzuLtQQHY+/u7mJv/x3wFZ+Z38Xb25tpamoyOzs7sZYINnzFcnl5aYqKisze3l6sxR+piGV8fNx0d3ebj4+PWEtyMF9paem3ZIbxIxWxXF9fm8bGRpORkSFPR0fHrwj+nwJxEi9xB4GvWKampkxxcbHp7e01n5+fsdbvSEUsfwe/KZb7+3tTVVVlFhYWhBP6Tk5Omvr6evP6+hrr9f9CymJ5enoyNTU1Zm1tTcihyii+vr7M+vq6ycnJMVlZWVIZysrKJAFK9MjIiKmoqDDp6emyCvf394VQ3mk/Pz8XW7Ozs6a/v19+43RdXZ0ZHh4Wu9hfXl6W+WwEFQu+jI6Oii2evr4+8/LyIt9csRwcHMjCoFK0tbVJPH5iwd/Ozs64xfPw8GDKy8slRkDl0VgLCgrM0tKSxBCWG+bHx4GBAY8PRDo3N+dxT2VWX9x49RuxksOJiYlv4+A+LS1NntzcXOkLJ+QULtw5wDexsPUQyPPzs1QWSFJgsKSkxOzu7oqRjY0NU1hYKO1KCJOx0khOQ0ODkH91dSX9x8bG5Du/XbHg3OrqqmeXJJAMG0HEQnIgrrm5WYSPL4hlcHBQbNNHxUK1qKysNCsrK/Lt6OhIkuwnFny1uXDBXCRmZmZGbLHIEMD29nZobpifBMIz8cBHZmammZ6e9mzDD/7a8WKXbZHFvrm5KbHm5eXJTvH+/m6Oj48lf7QD5rErC2ImTvre3NyI/9hRxIkFRxAIxgEd7TI7Pz/vBQTsJCkhNtEQp4IAtnOuWGynbbs2VCy6IuxHV4cmDSIVkEvb7e2t9FGxkIza2lqv6vjFALQ9kVhcW4DKogIJw43LB4sG/5UP20+/eJVbO1bgxufOQ97JN3whQmLRbyBOLHQiGScnJ/KuZVYPunaCQTKxuP1t51IRiz0HsPv7jbXbePhNmzuvXwwKfE0kFtcW0DYS6tpNxI1ry43J9pNvfguopaVFKonG6o4D7jxUlMXFRbGXnZ0tFUu/gTixEIA7KY8edMNWlt8Qy0+VhZJKybfFErSyAFZdojPLT5Wlvb1d2sJwk4wP20/iZds5PT2VbzbsWIEbnz0PlYSjh95OsctWSc4VnlgolRwyCdAGRLC3aglPdmZRR8BviMU9s2CTg6IK3iYwzJlFb0PaF7vchpiH3ypSPbNw2NU9n+9huEnGh22PubgYdHV1iQ+8k8Otra24WN1xgL8IDZEwDo7gjgqDwH8UC1sNxEGKDQZyS9CTPcHn5+fLiZkqA1k4FZaQf0ssADsErbeDRLehw8NDWQzcSFpbWyUe177C/j8Ldnt6ejw7INltKCg3yfhw7dnxal4Y48bqjqMyIhYOwRcXF/LO/440vqGhIe+8CuK2oQgREiESS4TAiMQSITAisUQICGP+ALR2AMVkFszdAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NTypeInto.Target>
-                      </uix:NTypeInto>
-                      <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Scheduled Autos Override'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NCheckElement_2" Result="[IsAutosCheckboxAvailable]" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
-                        <uix:NCheckElement.Target>
-                          <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1137, 1111, 19, 18" CvType="CheckBox" DesignTimeRectangle="1137, 1111, 20, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl idx='6' parentid='compliance-editor-dialog' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='compliance-editor-dialog' tag='I' class='md-icon material-icons md-text--inherit' aaname='check_box_outline_blank' check:innerText='check_box_outline_blank' /&gt;" Guid="0aa528ed-72b2-4d3f-9907-0553626a328d" InformativeScreenshot="987f517ae893bc544cd8fdbd6a709c47.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CvTextArea="1167, 1113, 148, 13" CvTextArgument="Scheduled Autos Override" CvType="Text" DesignTimeRectangle="1167, 1112, 149, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl id='compliance-editor-form-scheduled-autos-override-label' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='compliance-editor-form-scheduled-autos-override-label' tag='SPAN' type='' class='' aaname='Scheduled Autos Override' check:innerText='Scheduled Autos Override' /&gt;" Guid="c8100045-883f-4ae3-bdd4-769fc8dc13b6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAAAWCAYAAADTuj63AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAYvSURBVGhD7Zhbb1RVFMf9Tj77AXwxMTHxyfhgIonGSzSGGCQqJuINIlS5BLyBiFChQr2gGAqtFkGktgVK7xc6nZbpdNrpdKadabvdvzVd093DOacd7PhA9kr+6Zxz9l57Xf577bX7kPHipcbiSeal5lIh2cNb2j08NhUqnmQeNYOKJ5lHzaCyKSTrH5s3V7pmQ79Vg4bf02YiUzRbdveHflds/3zEZGYXzaEfxkO/RwG96GedsO8eqyDGO4+NRn7bSPxV1pBsd33C3M2UzPKyMYtLxgyNz5sdR+7cMzmIB4lkj7zYabpG8mZssmiefq83dEwYNmp7tcCG6z05UywtS16mc4vm+IWU2Bk2frPQ0T9nRiYWzJM7uu/5dt8ke/3QsJnKlsyl9hnzxFu3xbm23pxJzZTMC3sHQpUoHiSS7fxm1MzMLZpcYcl8cW4idEwYakGyx7d3me47Bdn42EVeGlrSJj+/ZE40TYbO+T9w3yRjAsF9//hqiUQZO/qThqQ8n2pOmznrIMLYwz+WkwDJbo+Ug8Fu49uBs6sGHPstJe90nn57dlef6R0tyJzCwpJUTk0U9uAINjDWJUjQSfTcHMpL9QXtdheSEL6x67GZNfBlNr8US7KWjqzs4M6BOaloWjHi7MF/FSoOY4M2DSbnzSv7BmUutl2+ma1UJ+L29ldlvS7Qg711K/FXYGNicsGcbEqZjK1smjMKA+9/vpqR56i4YzMVUeJhN1NT24x8x8b5Ytl+igZ+MZ4YnL82LfbiC/HBLo0/JyDFSPMIT3ivUiEZQUtOFU3aVrMjv96tJElxsHHcZK0h9RcnzWPbusw56whB33Z4WIxh0X1nkuIoz32JghhXdzopVeGnKxmZ19KZrVRHHJm0vzmShXB2TrUkYw2SOW5tJ4n0EVRkAv3O0TsSzKZ/ZmTto9YvghhFMjdJVDES+OaX5fXj7OGZv2q7axMnxPN7BiSBbCiqE1WIpH50IiFr8n7QbjC+qS1Bne57/FDSYO8vf5VJtefUmPhO1YuLO3ohy0UbF+yDjAuWQG19OfGX3Lskw3d0fXdpNfeFFTIynzhdteP5duaPKbENG1TW9GQk+s9bs8JGjHB7MnYegdKdTXAIFonFGPe4dIPDPJivAVSCNLamJQkaoOC8jZIMkuMkgVc9GiB2FJvm5U/LFcTVoWNdQCwNEMkgKVoVqiFZmE1UI606rKMEeOrdHsFrB4YqsVVADNXpvndtIX4aX0ijZI2KO3OxNTVdMs99XNYr+qxtbjV1SRanKy7GKmtI5oIq0GP7ARaHrfQGumgQcSTjfVAoq82293OTFJwXl1TXSX6TsKBA4OaO8hqaJFeHrqkgwRyPbkXBdr0AxNnDs2u7a5/qd9+x1tfnU5LokjUdMnPk6FiFq9N9r5UMnWwI9Ow6mTDDlgjfr9gTFXdIEdQb9E3na77d38D1BV1hAjFVKiS7cH1aAvzMh30VZTAbkqEsWMke3XrLbD04JKU1jmTBeQrW2axKxhGh/aGLaioZxwT9SVBKi8tSeeLs4dm1PaqSQQyONMa8VFe+TBG/a905iYUbe8CacT0ZFZANQXz/tjdQ2h3WZkxU3IFrK89B34BLrPUqGT2lVkUXKhWS6RlOE4jjgN84yW7RnozAQTBKPQtBxDiSMY/knW2dknn0ITcG8+bV/YMyJ6onI+msxzrM41ZF44lu10kcp8oSBCoudlMlGy9PVdWTcSwyVpMEqGCjqQX5F0KcPYzlL2TXY8/tydQ3rZKsJb2T7R/RFUUy9U1vl4wlqcHbJdWL9sa9qMTF3c0PY9cjGd+jejIpRHZu642sxB5/uTR98G1ihVmB43Lv6bHKDRFQxrkE6MI4qDc1EqK3lTiS8ezecuj3SBTBIPhdw3nRR8K4oZJUnYczegPjPWui2yUZ49CjNznGcmy88VmZLKzNRuF9Ml0Uu5QYCsjEsej6oKi3gaUqQb4oexhHsCEODfR+GxfXJkBVcW+XVB7VRbXl0uSuq8C29f5PppUz+G+NqLhXSzLmMJcNqvFlvsbfvV1iJ5UPH1UiezIPj/8KFU8yj5pBxZPMo2ZQ8STzqBlUPMk8agaVCsm8eKmVeJJ5qbEY8y8xUH/8QueiSgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NCheckElement.Target>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </uix:NCheckElement>
-                      <If Condition="[IsAutosCheckboxAvailable]" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_11">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_90">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <uix:NCheck Action="Check" DisplayName="Check Scheduled Autos Override CB" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
-                              <uix:NCheck.Target>
-                                <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1137, 1111, 19, 19" CvTextArea="1167, 1113, 148, 13" CvTextArgument="Scheduled Autos Override" CvType="CheckBox" DesignTimeRectangle="1127, 1101, 189, 40" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label' idx='32' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='md-selection-control-label md-pointer--hover md-text' parentid='compliance-editor-dialog' tag='LABEL' aaname='' check:innerText='check_box_outline_blank&amp;#xD;&amp;#xA;Scheduled Autos Override' /&gt;" Guid="bb1b4924-70e0-4dfa-bb3f-2e4cf9797b49" InformativeScreenshot="021dfda2129689af5cfd985d9975297e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CvElementArea="1138, 1172, 18, 18" CvTextArea="1166, 1173, 108, 13" CvTextArgument="Intrastate Override" CvType="CheckBox" DesignTimeRectangle="1127, 1161, 147, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label' idx='33' parentid='compliance-editor-dialog' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='md-selection-control-label md-pointer--hover md-text' parentid='compliance-editor-dialog' tag='LABEL' aaname='' check:innerText='check_box_outline_blank&amp;#xD;&amp;#xA;Intrastate Override' /&gt;" Guid="9278b2bc-7110-43d0-be21-8943e6eeef6e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJcAAAAsCAYAAABokirPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS3SURBVHhe7ZpdK3VBFMefr+IDuHDvC3DBFbmQC/KSEAlJRHLhJURciAtFEkoUeSkXuEC5UEJI3l9CEnm3nue/OrObZ845+9g0T885Z/1q1z57ZtasWfPfa2Y2v0gQLCHiEqwh4hKsIeISrCHiEqwh4hKsIeISrCHiEqwh4hKsIeISrCHiEqwh4hKsIeISrCHiEqzxI3G9vr7S2NgYlZWVfelCXbQRooNvi+vg4CCggL5yoa0Q+XxbXOvr69TW1kZXV1e+J6FBXbRBW+H/5Pb2Nuicrq2tUVVVFT09PfmeuBM24sKAMDAMMBRe6nrBq12vk6GDWDU0NFBcXBzFx8dTS0sLXV9f+0rtMTAwQE1NTQG3LyKuP4S7uCCi/Px8Ghoa4raPj498X1hYSHd3d75a/56oEVdHRwf19PRQZWUlxcbGUl5eHu/l9vf3KTExkWJiYvhCPTzLzc3lvpOTk/n35uYmt0Gd1NTUv3w6PT2l8vJytpuQkEAzMzO0t7fnZxcEs4NyVRft0Ofb2xtNTEywTWSk9vZ2Fo7J+Pg41dXV0cvLi+8J8T2ezc3N0dHRERUUFNDFxYVTVl9fT8vLy/xb90nFBcCnxsZGysrKChoX9K3Ghph3d3ezrxgbsqcurmD9KMJaXAjS4eEhBxe/Ozs76fPz068ugpaUlMRv/83NDYsHbTEZHx8ftLS0RDk5OVymJmp0dJTLtre3KSMjg3Z2dvzsXl5eBrUDzDd9dnaWJ+H8/JxFhX6Gh4e5TAdjwSSbDA4OcpnycXFxkZ+fnJxQSUkJ+3N8fMz+wqf393eanp7mFwX9qZjt7u7Sw8ODX1wgfl1cuMcBDJkUY+jq6nLG49aPIqzFpU+APpFmXQQRb7rasyCI9/f3LAiA5yhHPQSqtbWV31L4izqoiwk17brZAbpPz8/PVF1d7QgC6OUK9FNbWxtQXPrEww72RvAX2Qw+435yctJ5DrBBLyoqYp/QFp+DFGZcgOojlL9u/SiiRlwYOAIAkN3wxqWnp/stXQBvHza2aWlpvIRhKYOQTLuh7ATySdVTFzKJuY8yx6ZQmQsgS1VUVNDZ2Rk1Nzc7PqGd2QeWd8TctGvGBShxmWMF+njc+lFEpbiwxGFSsY+CQPS3TmUqiAlgycnOzmafTbtudoDuk8oEKysrXOYGxuW25wLIGIjlyMgI1dTUOAJFRsFeDv6YeBHXVzJXsH4UES2uhYUFLjODuLGxwXsfCAcimp+fp5SUFK6HrIW9A/YQEBoygykuZdfNDoBPxcXFLFaADFhaWso2YXt1ddXpRwfLlH5axBXotAj7+EzR29vrTDI21ZmZmWxb+d/f388+eBGXug+253LrRxGR4gJTU1MceJx2zCBCCFhiUI4Lp04IaGtri8txSIAI1GkR2UFlMt1uKDuYFGy0sWnGZKC+Oi3CNkSMw0UgEKtQ37kgNAgOItcxT7BYuiE+r+JCLPv6+tgH+IzxwScV42D9KMJGXEL4IeISrPFtcSHN63+M9nKZH9uEyOTb4gLyLzeCGz8SlyC4IeISrCHiEqwh4hKsIeISrCHiEqwh4hKsIeISrCHiEqwh4hKsIeISrCHiEqwh4hKsIeISLEH0G7jne0U+m1imAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NCheck.Target>
-                            </uix:NCheck>
-                          </Sequence>
-                        </If.Then>
-                        <If.Else>
-                          <Sequence sap:VirtualizedContainerService.HintSize="376,231" sap2010:WorkflowViewState.IdRef="Sequence_91">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Scheduled Autos Override checkbox is not available&quot;]" />
-                          </Sequence>
-                        </If.Else>
-                      </If>
-                      <uix:NCheckState DisplayName="Check if Limit has to be set" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
-                        <uix:NCheckState.IfExists>
-                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,350" sap2010:WorkflowViewState.IdRef="Sequence_92">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Limit has to be set. Entering 0.0&quot;]" />
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'flag'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NTypeInto_29" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Text="0" Version="V3">
-                              <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1457, 787, 123, 28" CvType="InputBox" DesignTimeRectangle="1459, 791, 121, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='contact-editor-form-general-limit' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='contact-editor-form-general-limit' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Limit*' /&gt;" Guid="41013c03-591b-4d52-bcd8-c9055c956610" InformativeScreenshot="f6db8ebe7c124baa11d55ec5e17a95d1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CvElementArea="1432, 790, 19, 21" CvType="Icon" DesignTimeRectangle="1432, 791, 20, 20" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;i' parentid='compliance-editor-dialog' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='compliance-editor-dialog' tag='I' class='md-icon material-icons compliance-editor-form__limit-flag' aaname='flag' check:innerText='flag' /&gt;" Guid="4ec44d04-ff35-48bc-9b28-4fc17bd4d4ad" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABkSURBVEhL7Y9RCsAgDEN3Ti/i9byU310KCoVlxIHDnz4ICAk+etnPpEBySNC7WSloUbPUOoYarAlK4J1vFsCaoAQsL1ehIaQggIaQggAawhR4/B1p7fn5VsFHUiA5JNhICgRmN/asFBNJIFOxAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NTypeInto.Target>
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </uix:NTypeInto>
-                          </Sequence>
-                        </uix:NCheckState.IfExists>
-                        <uix:NCheckState.IfNotExists>
-                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_93">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </Sequence>
-                        </uix:NCheckState.IfNotExists>
-                        <uix:NCheckState.Target>
-                          <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="1432, 764, 19, 20" CvType="Icon" DesignTimeRectangle="1432, 765, 20, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;i' parentid='compliance-editor-dialog' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='compliance-editor-dialog' tag='I' class='md-icon material-icons compliance-editor-form__limit-flag' aaname='flag' check:innerText='flag' /&gt;" Guid="66c4dba3-c3a6-45fa-b39a-e7ea8e715336" InformativeScreenshot="2dcfdb9aa8184a18127d46c98e9e74c4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CvElementArea="1455, 767, 125, 30" CvType="InputBox" DesignTimeRectangle="1459, 774, 121, 15" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='contact-editor-form-general-limit' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='contact-editor-form-general-limit' tag='INPUT' type='text' class='md-text-field md-text-field--floating-margin md-full-width md-text' aaname='Limit*' /&gt;" Guid="165d8b3e-4c20-4e3c-95b7-3903648b2262" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAATCAYAAAC9fgIPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGBSURBVGhD7ZbNi4JAGIf3n+7otWtnQYQOXfqiW5co6FAQEhmIgZCHKKhQRAj6sH7LO1grWyyu5Low7wOC83tnnMMzM84HGOlg6RLC0iUklfTb7QbP83C5XOIkPYfDAWEYxi3mP/CQTnI0TYPrunHyRRAE0HUdm80mTtIzHo/R7XYRRRHO5zNardbTHL1e7+W8TD6kkv4uktLp9DBNE7Zti0VhWRZGoxF2u13cm8mLVNKpVqvVhJC7uOFwiGq1CkVR0Gw2sVqtUK/XRZvy/X4vxk6nU7GTaWylUkGpVBIPZfSt5XIJVVXR6XQy/0KY35FZOu3O0+mE4/GIRqMhjn/f93G9XsWOpTq936UT3493qg8GA0wmE7TbbWy3W5Ez+ZJZerKfYRgPsQTVqA/1/Uk6LZrZbCby9XoNx3FEzuTLW6QnxRJppTPFwNIlpBDpi8VCtJlieJJ+v10nb9nvkk7M53OUy2X0+/04Yf6ah3RGHli6hLB0CWHpEsLSJYSlSwfwCS+KipHFnlpOAAAAAElFTkSuQmCC" SearchSteps="Selector" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NCheckState.Target>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </uix:NCheckState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="4" DelayBefore="1" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
-                        <uix:NClick.Target>
-                          <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvTextArea="1702, 1287, 51, 13" CvTextArgument="SUBMIT" CvType="Text" DesignTimeRectangle="1684, 1279, 88, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Submit' parentid='compliance-editor-dialog' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' parentid='compliance-editor-dialog' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block compliance-editor__submit-button' check:innerText='SUBMIT' /&gt;" Guid="001c83ac-570f-4c0a-b688-79ed8dcb2b26" InformativeScreenshot="5fa56559e9448658abc593518481fac3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CvTextArea="1613, 1287, 54, 13" CvTextArgument="CANCEL" CvType="Text" DesignTimeRectangle="1596, 1279, 88, 32" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Cancel' parentid='compliance-editor-dialog' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cancel' parentid='compliance-editor-dialog' tag='BUTTON' type='button' class='md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block compliance-editor__cancel-button' check:innerText='CANCEL' /&gt;" Guid="5f13d4cc-fa46-4933-8fb3-b442002b8797" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAkCAYAAAAEnl30AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZbLbQJBEESdyqZDEJABCRAAdyLZM1eOxEAKXDmOVSOXXW6POVjekryuJ40Yz2eXft20/NKClQg3E+FmItxMhJuJcDMRbibCzUS4mQg3E+FmItzMYsJvt1vbbDZtmqY+DodDezweb7sfzPPcz+G8wvvYV+73e9vv95/OY223272/C3OsETyDe3Vcr9d+5nQ69bE0iwhHEBoMQDBVOubH47GPKpbCq7wqfJQYzPUe/v4u4eTPCkdQCK4KZBVqEjDH2cvl8kUsRG632z5URBU+ElW/w6qFUxSFPAMBQsYoGXzO+XzuFcw9FT66N2LVwhF8rdYRtVIhRQPWxKkwvadnnoH7tXdjaBJWLxznqmCI5D2VqS3ip8L/dUuhwFHVQQ6oz0GC2FrSUgStRkXXIUurmaiYKhxACPYpnGsjUbq+auEAFYdq1cpD0Gw1mI+CU8kj4axoVDrX8Vn/LeSvgWdWLxxQBFsFA37WBvgrQOC4P2pNkKcyAZ/JdzGxBHe4VwcThXfWvfqe32Ax4WFMhJuJcDMRbibCzUS4mQg3E+FmItxMhJuJcDMRbibCzUS4ldZeAccdOlK0j0JJAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NClick.Target>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </uix:NClick>
-                    </Sequence>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DelayBefore="1" DisplayName="Click 'Match Offer Book'" sap:VirtualizedContainerService.HintSize="1016,50" sap2010:WorkflowViewState.IdRef="NClick_53" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DelayBefore="2" DisplayName="Click 'Match Offer Book'" sap:VirtualizedContainerService.HintSize="450,50" sap2010:WorkflowViewState.IdRef="NClick_53" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="84d21a00-2129-4a5a-98aa-4e79bdfa49e4" Version="V3">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="27, 290, 29, 26" CvType="Icon" DesignTimeRectangle="32, 294, 21, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='MatchOfferBook-menu-item' tag='use' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='MatchOfferBook-menu-item' tag='use' type='' class='' aaname='' /&gt;" Guid="f7f0ef9e-4da3-4f63-9873-cdd39a7da4c7" InformativeScreenshot="90732dc91ad4c0756c8a494788741193.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/truck-entry" CvElementArea="27, 290, 29, 26" CvType="Icon" DesignTimeRectangle="32, 258, 21, 17" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='MatchOfferBook-menu-item' tag='use' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='MatchOfferBook-menu-item' tag='use' type='' class='' aaname='' /&gt;" Guid="f7f0ef9e-4da3-4f63-9873-cdd39a7da4c7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADKSURBVEhLY9A3MPpPazwMLXn69ClevHzFyv++fv5gvGLlSqxq0DHZlgQGBf/fuWvXf2IAhiW1dfV4cVJyyn9rGzvKLCEWBwWFkG/JtOkz8OKS0rL/Do5OlFlCCIAMBgUVRZZs2LgRL25ta//v4upGWZx4ennjxaCgMjYxGwKWYAsiZEyV4CIEQAZTHPHYki0ypkoSJhZTZAm2ogQZU6VYwVYoImOqFJDYDEbGVCnqT585gxeDIt/D0wucZ6bPmIlVDTrGsIR22Og/ALyliBaBE4klAAAAAElFTkSuQmCC" InformativeScreenshot="88ac5a69fcf40646618d2f977992fc04.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
                             <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target DesignTimeRectangle="-220, 285, 300, 36" FullSelectorArgument="&lt;webctrl parentid='MatchOfferBook-menu-item' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='MatchOfferBook-menu-item' tag='DIV' type='' class='nav-link-name menu-item' aaname='' check:innerText='Match Offer Book' /&gt;" Guid="bd91f40a-a45a-4048-956d-a91634a711f2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAoCAYAAABtla08AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGgSURBVGhD7dg9SgNBGMZxb6So2CiiomIiKkZPoB5B7fxoop7AxBOYdKY0VzDXSJd+y/Hd1YcZwsPMFJPueeHX7cuGP2z2Y8nGxSyvrEoExlrxgMCWxZvNZg1rxQMCWxYPY614QGDL4mGsFQ8IbFk8jLXiAYEti4exVjwgsGXxMNaKBwS2LB7GWvGAwJbFw1grHhDYsngYa8UDAlsWD2OteEBgy+JhrBUPCGy5pOl0GvU5GLqT07PGYDikx8xj51kUjLXiAYEtl8RChBDyvHPhvsfj/58dH3aeRcFYKx4Q2HJJD49PUVfXN25za1shS+l0LhUy5r3Xj7q9u3c7u3sKmZKaOl59WStkwtdoFNV9eXX7B4f6j0xptY+j6st6bX1DIVNYvJBCZmKXc0iXdqbU1PF0s8nAHnlCevwpTCET2GthSK+ImdiHipA+WmRi8UL6jJbpZzKJqm84R61280zZ63/QY+ax8ywKxlrxgMCWxcNYKx4Q2LJ4VVU1rBUPCGxZPIUsRCELUchCFLIQhSxEIQvJDvncfZMIhSzkL2TlfgFGEfGzlydTxwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                              <uix:Target DesignTimeRectangle="-220, 249, 300, 36" FullSelectorArgument="&lt;webctrl parentid='MatchOfferBook-menu-item' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='MatchOfferBook-menu-item' tag='DIV' type='' class='nav-link-name menu-item' aaname='' check:innerText='Match Offer Book' /&gt;" Guid="bd91f40a-a45a-4048-956d-a91634a711f2" SearchSteps="FuzzySelector" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
                         </uix:TargetAnchorable>
@@ -1654,32 +1801,32 @@
               </uix:NApplicationCard.TargetApp>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NApplicationCard>
           </Sequence>
-          <Sequence DisplayName="Using MOB section" sap:VirtualizedContainerService.HintSize="964,3976" sap2010:WorkflowViewState.IdRef="Sequence_130">
+          <Sequence DisplayName="Using MOB section" sap:VirtualizedContainerService.HintSize="1174,4308" sap2010:WorkflowViewState.IdRef="Sequence_130">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: MOB" sap:VirtualizedContainerService.HintSize="902,3865" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: MOB" sap:VirtualizedContainerService.HintSize="1112,4197" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="868,3585" sap2010:WorkflowViewState.IdRef="Sequence_133">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1078,3917" sap2010:WorkflowViewState.IdRef="Sequence_133">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Update Scheduled Lanes tab" sap:VirtualizedContainerService.HintSize="806,3495" sap2010:WorkflowViewState.IdRef="Sequence_112">
+                    <Sequence DisplayName="Update Scheduled Lanes tab" sap:VirtualizedContainerService.HintSize="1016,3827" sap2010:WorkflowViewState.IdRef="Sequence_112">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:Int32" Name="Counter" />
                         <Variable x:TypeArguments="x:String" Name="Origin" />
@@ -1693,7 +1840,7 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="744,57" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="CommentOut_12">
                         <ui:CommentOut.Body>
                           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="541,475" sap2010:WorkflowViewState.IdRef="Sequence_149">
                             <sap:WorkflowViewStateService.ViewState>
@@ -1794,7 +1941,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:CommentOut>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="744,57" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Finalizing with the Scheduled Lanes on MOB section&quot;]">
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Finalizing with the Scheduled Lanes on MOB section&quot;]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1802,7 +1949,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:LogMessage>
-                      <If Condition="[Convert.ToInt32(EquipmentFlat) &gt; 0]" DisplayName="Check if Flat equipment is present" sap:VirtualizedContainerService.HintSize="744,57" sap2010:WorkflowViewState.IdRef="If_17">
+                      <If Condition="[Convert.ToInt32(EquipmentFlat) &gt; 0]" DisplayName="Check if Flat equipment is present" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="If_17">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1842,7 +1989,7 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[Convert.ToInt32(EquipmentRefeer) &gt; 0]" DisplayName="Check if Refrigerated equipment is present" sap:VirtualizedContainerService.HintSize="744,57" sap2010:WorkflowViewState.IdRef="If_18">
+                      <If Condition="[Convert.ToInt32(EquipmentRefeer) &gt; 0]" DisplayName="Check if Refrigerated equipment is present" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="If_18">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1882,7 +2029,7 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[Convert.ToInt32(EquipmentVan) &gt; 0]" DisplayName="Check if Van equipment is present" sap:VirtualizedContainerService.HintSize="744,57" sap2010:WorkflowViewState.IdRef="If_19">
+                      <If Condition="[Convert.ToInt32(EquipmentVan) &gt; 0]" DisplayName="Check if Van equipment is present" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="If_19">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1922,7 +2069,7 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <ui:MultipleAssign DisplayName="Assign Scheduled lanes" sap:VirtualizedContainerService.HintSize="744,272" sap2010:WorkflowViewState.IdRef="MultipleAssign_12">
+                      <ui:MultipleAssign DisplayName="Assign Scheduled lanes" sap:VirtualizedContainerService.HintSize="954,272" sap2010:WorkflowViewState.IdRef="MultipleAssign_12">
                         <ui:MultipleAssign.AssignOperations>
                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_26">
@@ -1974,7 +2121,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:MultipleAssign>
-                      <uix:NCheckState DisplayName="Check App State 'Post a Truck'" sap:VirtualizedContainerService.HintSize="744,57" sap2010:WorkflowViewState.IdRef="NCheckState_10" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
+                      <uix:NCheckState DisplayName="Check App State 'Post a Truck'" sap:VirtualizedContainerService.HintSize="954,521" sap2010:WorkflowViewState.IdRef="NCheckState_10" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
                         <uix:NCheckState.IfExists>
                           <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_150">
                             <sap:WorkflowViewStateService.ViewState>
@@ -1993,10 +2140,10 @@
                             </sap:WorkflowViewStateService.ViewState>
                             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Post a Truck'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_54" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
                               <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" CvElementArea="1756, 209, 142, 44" CvTextArea="1780, 225, 94, 14" CvTextArgument="Post A Truck" CvType="Button" DesignTimeRectangle="1757, 212, 139, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Post a Truck' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Post a Truck' tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-disableElevation css-1curkti' check:innerText='Post A Truck' /&gt;" Guid="169c9d72-56f8-4bd1-ad33-7d25d03795e4" InformativeScreenshot="100b4cf0da62182ecce5ab6e7f63149c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" CvElementArea="1756, 209, 142, 44" CvTextArea="1780, 225, 94, 14" CvTextArgument="Post A Truck" CvType="Button" DesignTimeRectangle="2397, 212, 139, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Post a Truck' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Post a Truck' tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-disableElevation css-1curkti' check:innerText='Post A Truck' /&gt;" Guid="169c9d72-56f8-4bd1-ad33-7d25d03795e4" ImageBase64="" InformativeScreenshot="0f3f4f5afb2958ab9f0e5c4645413308.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
                                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CvTextArea="1763, 146, 107, 18" CvTextArgument="Hello, Fin FR" CvType="Text" DesignTimeRectangle="1753, 136, 155, 38" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Hello, FinFR' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Hello, FinFR' tag='BUTTON' type='' class='arrive_NavBar__helloUser arrive_NavBar__darkHelloUser' check:innerText='Hello, *' /&gt;" Guid="00277f5d-e5b5-48eb-8060-cba337c7648c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ8AAAAqCAYAAACtHIkmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAW6SURBVHhe7ZztTxRHHMf795g0EmmvmrSvm75VKVpUIpHYmhaT2mLadya0UB6ija8F0lJEhMODinoCJ0+l3B1PtkDkscgBx/EQIDY8CPl2Z+8Obu9+t+zd7e6sdib5JHs7OzO/ZD/MzO7O8M7RtGNIhLRjNoFAF4R8Am4I+QTcEPJZmA9OfIT869+jsq4JfaMTmPEv49+tbRl2zM5VSHnf5n8H2/EPyTqsjJDPguRcugyH6w9s7rxG89QavuwK4FybHx8/nEd6/awMO2bnvpLyHk2vYWtnF/bWblzMySXrtCJCPguRcfY8OodG4Z5bQ1arH0dqXybEeamMd24dHQPDyMjMItuwEkI+C3A0/Th+/NUB5+QKctsDpFiJcLkjAOfEMgrK7yNNqptq0woI+SxA3e+PUfX3IilSKlQPB3DP0Uy2aQWEfJy5XXkXP/XOk/LoQalnAT/f+Y1smzdCPo7UNTajqMdHSqMnpb0+1NQ7yBh4IuTjRGHJTVQNzZGyGEHN4EsUFJWQsfBCyMeBT89kwTk4RkpiJC3PJ3Aq4wwZEw+EfBzocvch12XcPC8eXzxbQHuPh4yJB0I+k2EvkN0zy6QcZtA/u4Lsi5fI2MwmeflKvNgAMNWorDCMY0rK3PCimMijaQIrsl9f47T0axqOmOtSoQweFnS8FI7XkLaDPHD1JPUCWS8utPlhb+smYzOb/6d8U01EnvGwb7XskxklhZJXmJTCjEnbmyiU8hvWQ78VaQ+9A1Rdsezs7uI92wkyRjMR8pkIWyTQPL5ECqEkKN/kNJUXkm/9leJc4eLevpyR5ymeTC7j2jfXyRjNxFT5iqPGPGXZw+WLLr/hKdvP04ZG+RRtB8tseJqUQ3ZCf1hBKmob5EUClBBKEpfvyMAm1rGDhshzccjrWsKdmnoyRjMxTb6gOBvwlISuCZU/EEhdPrk+1fJaSF4+lvZjS6ptG7yjk/JKFEoIJcb2fNmuRbhHxskYzSRl+VTTvnxBsaJvVlDI8E1WkS+O6MryWkhBvqgyiU8rbPIaPLYUihJCCTXnO+jV6Dmftl6P8UnzPKYXlsgYw7ybV0qWjYRdQ5XVijk9n3wzI3qtMHId4fMq8qmWjx9DLAe9WGyKkJiQL/oPJxn52CJQthaPupFKEun5VtG7Lf1cXFVcowaLgcVCxRiJmoCpiscwUb54Sat8EXKESVa+pOZ8Osi3aYR8EvJ8L/710cjySbFQMUZDCaiHeAy+PZ+CZHu+w+qNhK98M9JQl8iwa9ScTx525xfJGCkiBdRLPIY58sW7VnGTrT3n00O+vuEXhj1whMtoGX6z2QPHX6NkjPFg0ukpHsMc+SRinnZDsh3cVBX5JOT6IsuH2o+WQh2+8lVU3dX4qsVYrnYHUP4L/zV+psnHCAp4kJQ3VF0+qnx023KbqmLxlY/tMns0xl8+5/givr6WT8ZoJsnLZ0kkgQ8TiyNse+OWps9rxvJ6dw/p77/Jn9esiNRjJTYMm4/9aQfOcVxYkO3yo/5xGxmb2bxV8jmmEnny5QPbV+ud1f5OTm8G5lZxITuHjM1s3rJh982gwzMob2+k5DCSK50BuP7sI2PigZCPAxmZn8E5ouVls760jPpw8nQmGRMPhHyc+KHsNqoN2Ksbj9qRAG4U3yJj4YWQjyP3HA9R6l0gZdGTm31+VNsbyRh4IuTjzK3KGpT2GdcD3uwPoExsGhfEo6b+AWoG9Z8D1j73ofq+nWzTCgj5LEJBYTFaBl/g82epb6m80j6P1qEx3CgoItuyCkI+C3E64yzae9zo963Ku8wosdRgCwYGfCtwdffi5CnrPNXGQ8hnQdi+WntLF3Z29/DknzXkdS/JYrGlUGwtHoMds3NXpTyndA37ZFb3tNMyL5C1IOSzMGx7I9tlVl7bCPfwmLz0PfxvcdkxO8fy2CIBK3yrTRQhn4AbQj4BN4R8Ak7Y8B9uaQ9wOHpnGwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                                      <uix:Target CvTextArea="1763, 146, 107, 18" CvTextArgument="Hello, Fin FR" CvType="Text" DesignTimeRectangle="2370, 136, 178, 38" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Hello, FinFR' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Hello, FinFR' tag='BUTTON' type='' class='arrive_NavBar__helloUser arrive_NavBar__darkHelloUser' check:innerText='Hello, *' /&gt;" Guid="00277f5d-e5b5-48eb-8060-cba337c7648c" SearchSteps="FuzzySelector" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
@@ -2011,28 +2158,28 @@
                           </Sequence>
                         </uix:NCheckState.IfNotExists>
                         <uix:NCheckState.Target>
-                          <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" DesignTimeRectangle="2162, 267, 390, 743" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='full-page-container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation5 css-182jv8f' parentid='full-page-container' tag='DIV' aaname='' check:innerText='Post a Truck*' /&gt;" Guid="f9ad0b14-552c-4649-9534-5a00e15c6a20" ImageBase64="" InformativeScreenshot="94ebb29306896496e852195e5e327808.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" CVScreenId="78c256bc-d492-4276-97a4-5782fe50ca75" CvTextArea="2178, 291, 121, 19" CvTextArgument="Post a Truck" CvType="Text" DesignTimeRectangle="2178, 272, 325, 60" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='MuiTypography-root MuiTypography-h6 MuiTypography-noWrap MuiDialogTitle-root css-jiwc1t' aaname='Post a Truck' check:innerText='Post a Truck' /&gt;" Guid="1bc4ee1e-e8aa-47e0-850d-96fc278f20f4" InformativeScreenshot="59520cede8bdb8fb1658165e73a3ebb5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target CVScreenId="3ba31ed5-c4cb-4134-b2d7-9daa762ac5a0" CvTextArea="2178, 291, 121, 19" CvTextArgument="Post a Truck" CvType="Text" DesignTimeRectangle="2178, 272, 325, 60" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='MuiTypography-root MuiTypography-h6 MuiTypography-noWrap MuiDialogTitle-root css-jiwc1t' aaname='Post a Truck' check:innerText='Post a Truck' /&gt;" Guid="57483978-1619-4ce9-b493-23e9e3282f82" SearchSteps="FuzzySelector" />
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="2166, 321, 370, 581" FullSelectorArgument="&lt;webctrl parentid='postTruckingForm' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='postTruckingForm' tag='DIV' type='' class='MuiGrid-root MuiGrid-container post_trucking_form__content css-1u5bbeh' aaname='' check:innerText='Carrier *' /&gt;" Guid="8010448a-e8e7-4108-a623-79306ec71f79" SearchSteps="FuzzySelector" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NCheckState.Target>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NCheckState>
-                      <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" CurrentIndex="{x:Null}" DisplayName="For Each Equipment type" sap:VirtualizedContainerService.HintSize="744,2766" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[EquipDictionary]">
+                      <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" CurrentIndex="{x:Null}" DisplayName="For Each Equipment type" sap:VirtualizedContainerService.HintSize="954,2634" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[EquipDictionary]">
                         <ui:ForEach.Body>
                           <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:Object)">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" Name="currentItem" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="710,2627" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="710,2495" sap2010:WorkflowViewState.IdRef="Sequence_129">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2060,9 +2207,9 @@
                                   </scg:List>
                                 </ui:MultipleAssign.AssignOperations>
                               </ui:MultipleAssign>
-                              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[Counter &lt;= 4]" DisplayName="While" sap:VirtualizedContainerService.HintSize="648,2360" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[Counter &lt;= 4]" DisplayName="While" sap:VirtualizedContainerService.HintSize="648,2228" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
                                 <ui:InterruptibleWhile.Body>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="614,2223" sap2010:WorkflowViewState.IdRef="Sequence_128">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="614,2091" sap2010:WorkflowViewState.IdRef="Sequence_128">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2138,7 +2285,7 @@
                                         </Sequence>
                                       </If.Else>
                                     </If>
-                                    <TryCatch DisplayName="Entering PreferredLanes" sap:VirtualizedContainerService.HintSize="552,1907" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                                    <TryCatch DisplayName="Entering PreferredLanes" sap:VirtualizedContainerService.HintSize="552,1775" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2146,7 +2293,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <TryCatch.Try>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="514,1656" sap2010:WorkflowViewState.IdRef="Sequence_127">
+                                        <Sequence sap:VirtualizedContainerService.HintSize="514,1524" sap2010:WorkflowViewState.IdRef="Sequence_127">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="x:Boolean" Name="IsBtnEnabled" />
                                             <Variable x:TypeArguments="x:String" Name="CarrierText" />
@@ -2221,9 +2368,9 @@
                                           </If>
                                           <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DisplayName="Type Origin" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_37" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Text="[Origin + &quot;[k(Tab)]&quot; + Destination]" Version="V3">
                                             <uix:NTypeInto.Target>
-                                              <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" DesignTimeRectangle="1529, 450, 342, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='postTruckingForm' parentname='PickupLocation' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='postTruckingForm' parentname='PickupLocation' tag='DIV' class='MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1xrjl9g' aaname='' /&gt;" Guid="b4936049-1722-43e6-a8be-914247cc8828" InformativeScreenshot="0ee23b3660ed2ada9b4b770ed6e6df33.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Accelerate' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" CVScreenId="f13b272e-12f0-4051-94db-3fdaef73d7cb" CvTextArea="1541, 457, 100, 15" CvTextArgument="Pickup Location *" CvType="Text" DesignTimeRectangle="1517, 434, 354, 64" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='postTruckingForm' parentname='PickupLocation' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='postTruckingForm' parentname='PickupLocation' tag='DIV' class='MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1xrjl9g' aaname='' /&gt;" Guid="b4936049-1722-43e6-a8be-914247cc8828" ImageBase64="" InformativeScreenshot="6d202254362c8ec15b35b6a4111959e6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Accelerate' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                                 <uix:TargetAnchorable.Anchors>
-                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
                                                     <uix:Target CVScreenId="909775fe-60ab-4090-8cbf-82cc6d0a730f" CvTextArea="1541, 457, 101, 15" CvTextArgument="Pickup Location *" CvType="Text" DesignTimeRectangle="1541, 454, 100, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl id='pickup-location-autocomplete-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='pickup-location-autocomplete-label' tag='LABEL' type='' class='MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-filled MuiFormLabel-colorPrimary MuiFormLabel-filled Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-filled css-v69b96' aaname='Pickup Location' check:innerText='Pickup Location *' /&gt;" Guid="0aba6dfb-bac4-4201-9b5e-dc0dbd6793d1" SearchSteps="FuzzySelector" />
                                                   </scg:List>
                                                 </uix:TargetAnchorable.Anchors>
@@ -2264,19 +2411,19 @@
                                               </Sequence>
                                             </ui:CommentOut.Body>
                                           </ui:CommentOut>
-                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to expand equipment type dropdown" sap:VirtualizedContainerService.HintSize="452,189" sap2010:WorkflowViewState.IdRef="NClick_45" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to expand equipment type dropdown" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NClick_45" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
                                             <uix:NClick.Target>
-                                              <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" DesignTimeRectangle="1529, 409, 165, 48" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='equipment' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='equipment' tag='DIV' type='' class='MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input MuiInputBase-inputSizeSmall css-8e53i1' aaname='V' /&gt;" Guid="146e078e-df20-4b3f-bda3-008c562764a2" InformativeScreenshot="b55675401738dc659574d8dd7e65c05f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" DesignTimeRectangle="1529, 369, 165, 48" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='equipment' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='equipment' tag='DIV' type='' class='MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input MuiInputBase-inputSizeSmall css-8e53i1' aaname='V' /&gt;" Guid="146e078e-df20-4b3f-bda3-008c562764a2" InformativeScreenshot="0c50ac17c7164a10d1073320434a20cc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                                 <uix:TargetAnchorable.Anchors>
-                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                    <uix:Target CvElementArea="1528, 407, 168, 53" CvType="InputBox" DesignTimeRectangle="1541, 413, 70, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Equipment' parentid='postTruckingForm' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Equipment' parentid='postTruckingForm' tag='LABEL' type='' class='MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-filled MuiFormLabel-colorPrimary MuiFormLabel-filled Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-filled css-v69b96' check:innerText='Equipment *' /&gt;" Guid="ff725dd7-f936-423c-9055-1990e0fea534" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAWCAYAAABnnAr9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALYSURBVFhH7ZVrTxNBFIb9LX7wz5j41QSjMfEPeIFIrNwicqdSwNqK3EGoQICKpURNvKAx8YvGYMqlWKtcSi1tua200OO+J51mu4V2INGA7JNstmfnzJkz78w5PUUGUhhCSWIIJYkhlCSGUJIYQkny14XyTM/S3cp6Cv4KJb8cT9KE6uzup6s3bqU9lmY7KYqS9Dg4U189x0qoeDBIM5ev8FtLhlCfPn9JWv8n4XCEDx9vLYl4nBbMDbQ65qLpC5co5HxKP6pq+Ds4cUItB1ao/t79DKGA4p0nT95F+nj6DHnO57EtkBYqEonSo7ZuupZvoqKSChoYGqUHD9u5LH0+P9lbOlIlCru61sLJaMdgNzTaaHziBRWayjgWYiI2cE+8pD7HEPtcL7hNVlsr97jKmgb2xffV1TD7KspvejI4Qvk3i3PGEfOwN21bgV8aiQQtWm00dfYcv2ELcvYoBN/ejpFNFcU55ubfW1sKtXc+TvWvgwhVeqea5yIGNusYGObxWCzGiZer/SywEuR1Wlq7qKLKzLcAdldPv5rDuJp/gnNxuZ9TXC2N3d1devP2Pee/s7OTEQfzsA5ADnuVHlC8XvKZiigeCtH34lJS5uaSI5I3CgviuorTBPPffIe6UXXmZlpYXGI/gNhmi5XHsEFsXgAbOQmEvbGxyXH0hwpR19bX2W9k9FlyFvGeRJxsQmXjyAmFR5BNKEuTnWZmvcmRdPRx/plQuN7oAfuVHjZeXlFHs2riKAP0oLLymj2F0pded6+D2jp6UiWj3aAQRqC1UYKN6vrR6BqvOfnuA/X2Dar5bWfE0QtVa24iv/8n27Lk7FFCDG0zRyNGsxQ3Cj3j1etJ/o7mCiHEP4teKDTWEadr32au3aBWGKC1cWDDankVFJakGv3ScoDH9HG0QuFAUJaYo/XJRZpQB0FfbjJAqMNc+6OAIZQkhlCSHFqok4YhlCSGUFIQ/QE6fkS1wj78fQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CvElementArea="1528, 407, 168, 53" CvType="InputBox" DesignTimeRectangle="1541, 373, 70, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Equipment' parentid='postTruckingForm' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Equipment' parentid='postTruckingForm' tag='LABEL' type='' class='MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-filled MuiFormLabel-colorPrimary MuiFormLabel-filled Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-filled css-v69b96' check:innerText='Equipment *' /&gt;" Guid="ff725dd7-f936-423c-9055-1990e0fea534" SearchSteps="FuzzySelector" />
                                                   </scg:List>
                                                 </uix:TargetAnchorable.Anchors>
                                               </uix:TargetAnchorable>
                                             </uix:NClick.Target>
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
@@ -2286,14 +2433,14 @@
                                               <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                 <ui:IfElseIfBlock BlockType="If" Condition="[PrimaryEquipment.Equals(&quot;R&quot;)]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
                                                   <ui:IfElseIfBlock.Then>
-                                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_123">
+                                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,268" sap2010:WorkflowViewState.IdRef="Sequence_123">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Select Equipment type from dropdown" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="NClick_46" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
+                                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Select Equipment type from dropdown" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_46" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
                                                         <uix:NClick.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" CvTextArea="2202, 530, 10, 14" CvTextArgument="R" CvType="Text" DesignTimeRectangle="2186, 517, 165, 40" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl aria-label='R' aria-role='option' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='R' aria-role='option' tag='LI' type='' class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-13pb194' aaname='R' check:innerText='R' /&gt;" Guid="39dfc861-493d-4b98-99e8-e3202e71c5f9" InformativeScreenshot="2344cf1a4269db4b422322896eb8fad4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -2305,7 +2452,7 @@
                                                         </uix:NClick.Target>
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
@@ -2315,14 +2462,14 @@
                                                 </ui:IfElseIfBlock>
                                                 <ui:IfElseIfBlock BlockType="ElseIf" Condition="[PrimaryEquipment.Equals(&quot;F&quot;)]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
                                                   <ui:IfElseIfBlock.Then>
-                                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_124">
+                                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,268" sap2010:WorkflowViewState.IdRef="Sequence_124">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Select Equipment type from dropdown" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="NClick_47" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
+                                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Select Equipment type from dropdown" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_47" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
                                                         <uix:NClick.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" CvTextArea="2202, 570, 9, 14" CvTextArgument="F" CvType="Text" DesignTimeRectangle="2186, 557, 165, 40" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl aria-label='F' aria-role='option' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='F' aria-role='option' tag='LI' type='' class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-13pb194' aaname='F' check:innerText='F' /&gt;" Guid="328c121e-bcf4-4bf4-8c03-af858e1aca7c" InformativeScreenshot="f4dba2fcd900ed6109e789292a8fb685.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -2334,7 +2481,7 @@
                                                         </uix:NClick.Target>
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
@@ -2344,14 +2491,14 @@
                                                 </ui:IfElseIfBlock>
                                                 <ui:IfElseIfBlock BlockType="Else" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_3">
                                                   <ui:IfElseIfBlock.Then>
-                                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_125">
+                                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,268" sap2010:WorkflowViewState.IdRef="Sequence_125">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Select Equipment type from dropdown" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="NClick_48" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
+                                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Select Equipment type from dropdown" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_48" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
                                                         <uix:NClick.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" CvTextArea="2200, 490, 13, 14" CvTextArgument="v" CvType="Text" DesignTimeRectangle="2186, 477, 165, 40" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl aria-role='option' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='option' tag='LI' type='' class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters Mui-selected MuiMenuItem-root MuiMenuItem-gutters Mui-selected css-13pb194' aaname='V' check:innerText='V' /&gt;" Guid="d5c50499-190f-473c-8476-f5d90cc73faf" InformativeScreenshot="d77fc71fe9df7e435889e9a0418f38c0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -2363,7 +2510,7 @@
                                                         </uix:NClick.Target>
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
@@ -2514,14 +2661,14 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <If.Then>
-                                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,311" sap2010:WorkflowViewState.IdRef="Sequence_138">
+                                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,336" sap2010:WorkflowViewState.IdRef="Sequence_138">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Button is enabled&quot;]" />
-                                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="NClick_51" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
+                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Button is enabled&quot;]" />
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="354,75" sap2010:WorkflowViewState.IdRef="NClick_51" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
                                                   <uix:NClick.Target>
                                                     <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" CVScreenId="4e91eabe-fc87-4ccf-bb6c-5eea8da67abc" CvElementArea="2184, 1041, 346, 35" CvTextArea="2333, 1050, 48, 13" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="2186, 1042, 342, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-1wvm9ey' aaname='Submit' check:innerText='Submit' /&gt;" Guid="05deeed4-6694-4797-840b-85e9c088b243" InformativeScreenshot="77f988644c6a9ed3e1fa0d9824de1580.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Truck Entry' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                                       <uix:TargetAnchorable.Anchors>
@@ -2541,13 +2688,13 @@
                                               </Sequence>
                                             </If.Then>
                                             <If.Else>
-                                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,338" sap2010:WorkflowViewState.IdRef="Sequence_139">
+                                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,336" sap2010:WorkflowViewState.IdRef="Sequence_139">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Trace" Message="[&quot;Button is disabled&quot;]" />
+                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Trace" Message="[&quot;Button is disabled&quot;]" />
                                                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reset'" sap:VirtualizedContainerService.HintSize="354,75" sap2010:WorkflowViewState.IdRef="NClick_58" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad269fcd-4572-4f96-a8ff-1f97a2f27c3d" Version="V3">
                                                   <uix:NClick.Target>
                                                     <uix:TargetAnchorable BrowserURL="https://xlr8.arrivelogistics.com/#/match-offer-book" CVScreenId="530921bc-475a-4c7a-9974-20ec655cd305" CvTextArea="1507, 970, 36, 13" CvTextArgument="Reset" CvType="Text" DesignTimeRectangle="1354, 962, 342, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Reset' parentid='postTruckingForm' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Reset' parentid='postTruckingForm' tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-15asrhb' check:innerText='Reset' /&gt;" Guid="c79dccd3-392f-4e7f-9f3b-9d977fb645f0" InformativeScreenshot="a94b556ede00abfb2a0ca6e7a3e24510.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Accelerate' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
@@ -2674,7 +2821,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1030,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1240,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>

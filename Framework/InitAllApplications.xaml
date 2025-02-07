@@ -51,6 +51,7 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -108,9 +109,10 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="1266,5801" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="1899,5680" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ArriveNow_Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="ArriveNow_Password" />
@@ -121,8 +123,8 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="1204,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening Chrome browser and creating execution report&quot;]" />
-    <Assign DisplayName="Reset Exception variable" sap:VirtualizedContainerService.HintSize="1204,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="1176,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening Chrome browser and creating execution report.&quot;]" />
+    <Assign DisplayName="Reset Exception variable" sap:VirtualizedContainerService.HintSize="1176,114" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Boolean">[out_ArrivePortalException]</OutArgument>
       </Assign.To>
@@ -130,21 +132,21 @@
         <InArgument x:TypeArguments="x:Boolean">False</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_Config(&quot;ArriveNow_CredentialName&quot;).ToString]" CacheStrategy="None" DisplayName="Get ArriveNow Credentials" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="1204,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[ArriveNow_Password]" Username="[ArriveNow_Username]" />
-    <Sequence DisplayName="Open Arrive portal" sap:VirtualizedContainerService.HintSize="1204,5220" sap2010:WorkflowViewState.IdRef="Sequence_11">
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_Config(&quot;ArriveNow_CredentialName&quot;).ToString]" CacheStrategy="None" DisplayName="Get ArriveNow Credentials" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="1176,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[ArriveNow_Password]" Username="[ArriveNow_Username]" />
+    <Sequence DisplayName="Open Arrive portal" sap:VirtualizedContainerService.HintSize="1176,5164" sap2010:WorkflowViewState.IdRef="Sequence_11">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Loggin into Arrive Portal" sap:VirtualizedContainerService.HintSize="1142,3376" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="7aa6c8e2-3267-4559-ab77-ef2742355273" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Loggin into Arrive Portal" sap:VirtualizedContainerService.HintSize="1142,3348" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="7aa6c8e2-3267-4559-ab77-ef2742355273" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1062,3127" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1034,3099" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -234,7 +236,7 @@
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="https://portal.arrivelogistics.com/oauth2/v1/authorize?client_id=okta.2b1959c8-bcc0-56eb-a589-cfcfb7422f26&amp;code_challenge=HOkyCUV1nRdGx9wx_Y08HM7mKWKDQET17_395cBZyXA&amp;code_challenge_method=S256&amp;nonce=W89AzZt4oCs8FEfK3TrJodHzHo47NBeYz9YubapSEBlSrEcj9Pwe4iH7RQitiaXF&amp;redirect_uri=https%3A%2F%2Fportal.arrivelogistics.com%2Fenduser%2Fcallback&amp;response_type=code&amp;state=CEgQgUwLkBo1dgyUu0Z7E2dpVsXqkjFeyWlXuGO4f51n69zvXvJrgJoJt6YaVJNO&amp;scope=openid%20profile%20email%20okta.users.read.self%20okta.users.manage.self%20okta.internal.enduser.read%20okta.internal.enduser.manage%20okta.enduser.dashboard.read%20okta.enduser.dashboard.manage%20okta.myAccount.sessions.manage" CVScreenId="a9f916c2-2079-4bcf-ae10-79d876161517" CvElementArea="798, 538, 340, 51" CvType="InputBox" DesignTimeRectangle="800, 541, 302, 46" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='credentials.passcode' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='credentials.passcode' tag='INPUT' type='password' class='MuiInputBase-input MuiInputBase-inputAdornedEnd sgrxmiqbj-u8py3n' aaname='Password' /&gt;" Guid="8d38de5f-06ad-4149-ae7c-2796cdbdd9ba" InformativeScreenshot="7ae22495b99cb75d756c17f3a13e2d35.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign In' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                           <uix:Target CVScreenId="a9f916c2-2079-4bcf-ae10-79d876161517" CvTextArea="798, 512, 77, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="799, 511, 338, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl id='credentials.passcode-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='credentials.passcode-label' tag='LABEL' type='' class='MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-sizeMedium MuiInputLabel-outlined sgrxmiqbj-1k0q358' aaname='' check:innerText='Password' /&gt;" Guid="07b8ae88-7cca-47eb-b9c6-4504c13039e9" SearchSteps="FuzzySelector" />
                         </scg:List>
                       </uix:TargetAnchorable.Anchors>
@@ -245,7 +247,7 @@
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://portal.arrivelogistics.com/oauth2/v1/authorize?client_id=okta.2b1959c8-bcc0-56eb-a589-cfcfb7422f26&amp;code_challenge=HOkyCUV1nRdGx9wx_Y08HM7mKWKDQET17_395cBZyXA&amp;code_challenge_method=S256&amp;nonce=W89AzZt4oCs8FEfK3TrJodHzHo47NBeYz9YubapSEBlSrEcj9Pwe4iH7RQitiaXF&amp;redirect_uri=https%3A%2F%2Fportal.arrivelogistics.com%2Fenduser%2Fcallback&amp;response_type=code&amp;state=CEgQgUwLkBo1dgyUu0Z7E2dpVsXqkjFeyWlXuGO4f51n69zvXvJrgJoJt6YaVJNO&amp;scope=openid%20profile%20email%20okta.users.read.self%20okta.users.manage.self%20okta.internal.enduser.read%20okta.internal.enduser.manage%20okta.enduser.dashboard.read%20okta.enduser.dashboard.manage%20okta.myAccount.sessions.manage" CVScreenId="aad06d58-d88f-401f-98ab-f71572ffaea3" CvElementArea="797, 656, 339, 52" CvTextArea="941, 673, 53, 18" CvTextArgument="Sign In" CvType="Button" DesignTimeRectangle="799, 658, 338, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='MuiButtonBase-root MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth sgrxmiqbj-4zq4fw' aaname='Sign in' check:innerText='Sign in' /&gt;" Guid="a40bc4d6-6c6a-4913-b180-1fd773c487dc" InformativeScreenshot="2aef80cadfa33eedcbee849cd9f6f220.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign In' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                           <uix:Target CVScreenId="aad06d58-d88f-401f-98ab-f71572ffaea3" CvTextArea="825, 621, 139, 18" CvTextArgument="Keep me signed in" CvType="Text" DesignTimeRectangle="826, 620, 311, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Keep me signed in' parentid='rememberMe-checkbox' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Keep me signed in' parentid='rememberMe-checkbox' tag='SPAN' type='' class='MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label sgrxmiqbj-1nys44p' check:innerText='Keep me signed in' /&gt;" Guid="2b1a0834-5891-45dc-a3bf-d500452030b7" SearchSteps="FuzzySelector" />
                         </scg:List>
                       </uix:TargetAnchorable.Anchors>
